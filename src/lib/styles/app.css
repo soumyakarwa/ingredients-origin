@@ -4,6 +4,6 @@
 
 @layer components {
 	.content-well {
-		@apply mx-auto w-full max-w-[1800px] px-5 md:px-8;
+		@apply mx-auto w-full max-w-[1800px] px-2 md:px-4;
 	}
 }

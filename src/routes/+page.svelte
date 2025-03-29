@@ -1,5 +1,7 @@
 <script lang="ts">
 	import Map from '$lib/components/Map.svelte';
+	// import countries from '$lib/data/countries.csv';
+
 	// import { onMount } from 'svelte';
 
 	// let countries: any[] = $state([]);

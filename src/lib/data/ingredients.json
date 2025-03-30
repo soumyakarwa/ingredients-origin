@@ -5,5 +5,12 @@
 		"country": "Syria",
 		"text": "Aleppo pepper is a type of black pepper that is native to Syria. It is known for its unique flavor and aroma, which is described as smoky and slightly spicy. The peppercorn is small and has a dark brown color, and it is often used in Middle Eastern cuisine.",
 		"route": ["Mexico", "Portugal", "Spain", "Morocco", "Syria"]
+	},
+	{
+		"id": "aleppo-pepper",
+		"name": "Basil",
+		"country": "Italy",
+		"text": "Aleppo pepper is a type of black pepper that is native to Syria. It is known for its unique flavor and aroma, which is described as smoky and slightly spicy. The peppercorn is small and has a dark brown color, and it is often used in Middle Eastern cuisine.",
+		"route": ["Mexico", "Portugal", "Spain", "Italy"]
 	}
 ]

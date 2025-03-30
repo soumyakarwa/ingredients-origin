@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { icons } from '$lib/stores';
-	import Tooltip from './Tooltip.svelte';
+	import { tick } from 'svelte';
+	import HoverTooltip from '$lib/components/HoverTooltip.svelte';
 
 	interface Props {
 		ingredient: {
@@ -11,29 +12,39 @@
 			[key: string]: any;
 		};
 		coords: number[];
+		// value: 'inactive' | 'hover' | 'active';
+		i: number;
+		activeIndex: number | null;
 	}
 
-	let { ingredient, coords }: Props = $props();
-	let tooltipState = $state<'inactive' | 'hover' | 'active'>('inactive');
+	let { ingredient, coords, i, activeIndex = $bindable() }: Props = $props();
+	let isHovering = $state(false);
 
 	const imageSrc =
 		icons[`/src/lib/assets/ingredient-icons/${ingredient.id}.svg`]?.default ?? 'null';
 	// adding a random translate to prevent icons from sitting on top of each other?
+
+	$inspect(isHovering);
 </script>
 
 <div class="absolute" style={`left:${coords[0]}px; top:${coords[1]}px`}>
 	<img
 		src={imageSrc}
 		alt={`${ingredient.name} img`}
-		class={['h-auto w-2 lg:w-4', tooltipState != 'inactive' ? 'cursor-pointer' : 'cursor-default']}
+		class={['h-auto w-2 cursor-pointer lg:w-4']}
 		role="presentation"
-		onmouseenter={() => (tooltipState = 'hover')}
-		onmouseleave={() => {
-			if (tooltipState === 'hover') {
-				tooltipState = 'inactive';
-			}
+		onmouseenter={() => {
+			isHovering = true;
 		}}
-		onclick={() => (tooltipState = 'active')}
+		onmouseleave={() => {
+			isHovering = false;
+		}}
+		onclick={() => {
+			activeIndex = i;
+			isHovering = false;
+		}}
 	/>
-	<Tooltip {ingredient} {tooltipState} />
 </div>
+{#if isHovering}
+	<HoverTooltip name={ingredient.name} country={ingredient.country} />
+{/if}

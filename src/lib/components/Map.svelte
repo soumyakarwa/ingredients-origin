@@ -1,6 +1,7 @@
 <script lang="ts">
 	import topojsonData from '$lib/data/map.topojson.json';
 	import ingredients from '$lib/data/ingredients.json';
+	import InfoTooltip from '$lib/components/InfoTooltip.svelte';
 	import IngredientIcon from '$lib/components/IngredientIcon.svelte';
 	import RouteLabel from '$lib/components/RouteLabel.svelte';
 	import { feature, merge } from 'topojson-client';
@@ -15,7 +16,6 @@
 	} from 'd3';
 	import { getCoords } from './utils/getCoords';
 	import { createPath } from './utils/createPath';
-	import { onMount, tick } from 'svelte';
 
 	let width = $state(1000);
 	let heightProportion = 0.52;
@@ -34,24 +34,10 @@
 	);
 	let geoPathFn: GeoPath = $derived(geoPath(projectionFn));
 
-	// let pathRefs: SVGPathElement[] = $state([]);
+	let infoTooltipState = $state<'inactive' | 'active'>('inactive');
+	let activeIndex = $state<number | null>(null);
 
-	// function animatePaths() {
-	// 	pathRefs.forEach(async (path: SVGPathElement) => {
-	// 		const length = path.getTotalLength();
-	// 		console.log(length);
-	// 		path.style.strokeDasharray = length.toString();
-	// 		path.style.strokeDashoffset = length.toString();
-	// 		await tick(); // wait for DOM update
-
-	// 		path.style.transition = 'stroke-dashoffset 1s ease-out';
-	// 		path.style.strokeDashoffset = '0';
-	// 	});
-	// }
-
-	// onMount(() => {
-	// 	animatePaths();
-	// });
+	$inspect(activeIndex);
 </script>
 
 <div class="relative w-full bg-blue-100" bind:clientWidth={width} style:height="{height}px">
@@ -68,8 +54,10 @@
 				filter="url(#noise)"
 			/>
 		</g>
-		{#each ingredients as ingredient, i}
-			{@const routeCoords = ingredient.route.map((country) => projectionFn(getCoords(country)))}
+		{#if activeIndex != null}
+			{@const routeCoords = ingredients[activeIndex].route.map((country) =>
+				projectionFn(getCoords(country))
+			)}
 			<path
 				d={createPath(routeCoords)}
 				class="fill-none stroke-black stroke-[0.25] lg:stroke-1"
@@ -78,17 +66,26 @@
 			{#each routeCoords as [x, y], i}
 				<circle cx={x} cy={y} r={3} class="fill-red-100" />
 			{/each}
-		{/each}
+		{/if}
 	</svg>
 
 	{#each ingredients as ingredient, i}
 		{@const coords = projectionFn(getCoords(ingredient.country))}
-		<IngredientIcon {ingredient} {coords} />
-		<RouteLabel route={ingredient.route} {projectionFn} />
+		<IngredientIcon {ingredient} {coords} {i} bind:activeIndex />
 	{/each}
+
+	{#if activeIndex != null}
+		<RouteLabel route={ingredients[activeIndex].route} {projectionFn} />
+		<InfoTooltip
+			ingredient={ingredients[activeIndex]}
+			bind:activeIndex
+			bind:value={infoTooltipState}
+		/>
+	{/if}
 </div>
 
 <!-- @keyframes draw {
+ 
     from {
       stroke-dashoffset: 400;
     }
@@ -100,3 +97,23 @@
   .animate-draw {
     animation: draw 3s ease-in-out forwards; /* Adjust timing as needed */
   } -->
+
+<!-- 
+  // let pathRefs: SVGPathElement[] = $state([]);
+
+	// function animatePaths() {
+	// 	pathRefs.forEach(async (path: SVGPathElement) => {
+	// 		const length = path.getTotalLength();
+	// 		console.log(length);
+	// 		path.style.strokeDasharray = length.toString();
+	// 		path.style.strokeDashoffset = length.toString();
+	// 		await tick(); // wait for DOM update
+
+	// 		path.style.transition = 'stroke-dashoffset 1s ease-out';
+	// 		path.style.strokeDashoffset = '0';
+	// 	});
+	// }
+
+	// onMount(() => {
+	// 	animatePaths(); -->
+<!-- // }); -->

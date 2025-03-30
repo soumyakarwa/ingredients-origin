@@ -74,7 +74,7 @@
 				class="fill-none stroke-black stroke-[0.25] lg:stroke-1"
 				stroke-dasharray="3 4"
 			/>
-			{#each routeCoords as [x, y]}
+			{#each routeCoords as [x, y], i}
 				<circle cx={x} cy={y} r={3} class="fill-red-100" />
 			{/each}
 		{/each}
@@ -83,6 +83,15 @@
 	{#each ingredients as ingredient, i}
 		{@const coords = projectionFn(getCoords(ingredient.country))}
 		<IngredientIcon {ingredient} {coords} />
+		{#each ingredient.route as country, i}
+			{@const routeCoords = projectionFn(getCoords(country))}
+			<div
+				style={`left:${routeCoords[0]}px; top:${routeCoords[1]}px;`}
+				class="heading-2 absolute fill-black"
+			>
+				{country}
+			</div>
+		{/each}
 	{/each}
 </div>
 

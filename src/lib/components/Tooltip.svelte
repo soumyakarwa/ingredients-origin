@@ -14,7 +14,6 @@
 	let { ingredient, tooltipState }: Props = $props();
 </script>
 
-<!-- Hover tooltip -->
 {#if tooltipState === 'hover'}
 	<div class="border-1 border-black bg-blue-100 p-1 shadow-lg" in:fade={{ duration: 200 }}>
 		<p class="heading-1">{ingredient.name}</p>

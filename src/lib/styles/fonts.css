@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'LeagueMono';
+	font-style: normal;
+	font-weight: 100 900;
+	font-display: swap;
+	src: url('/fonts/LeagueMono/variable/TTF/LeagueMono-VF.ttf') format('truetype');
+}

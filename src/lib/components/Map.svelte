@@ -1,7 +1,7 @@
 <script lang="ts">
 	import topojsonData from '$lib/data/map.topojson.json';
 	import ingredients from '$lib/data/ingredients.json';
-	import aleppoPepper from '$lib/assets/aleppo-pepper.svg';
+	import IngredientIcon from '$lib/components/IngredientIcon.svelte';
 	import { feature, merge } from 'topojson-client';
 	import {
 		geoNaturalEarth1,
@@ -18,7 +18,6 @@
 
 	let width = $state(1000);
 	let heightProportion = 0.52;
-	let mapHeight = $state(0);
 	let height = $derived(width * heightProportion);
 
 	let topojsonFiltered = $state(topojsonData);
@@ -33,11 +32,6 @@
 		geoNaturalEarth1().fitSize([width, height], countriesGeojson)
 	);
 	let geoPathFn: GeoPath = $derived(geoPath(projectionFn));
-
-	// const controlX = $derived((mexico[0] + spain[0]) / 2);
-	// const controlY = $derived(Math.min(mexico[1], spain[1]) + 80); // peak 100 units above
-
-	// const pathD = $derived(arcLine([mexico, [controlX, controlY], spain]));
 
 	// let pathRefs: SVGPathElement[] = $state([]);
 
@@ -67,7 +61,7 @@
 		</filter>
 		<g class="country-outline">
 			<path
-				class="linear fill-yellow-100 stroke-black stroke-1 transition-[opacity] duration-300"
+				class="linear fill-yellow-100 stroke-black stroke-[0.25] transition-[opacity] duration-300 lg:stroke-1"
 				role="presentation"
 				d={geoPathFn(landGeoJson)}
 				filter="url(#noise)"
@@ -77,21 +71,19 @@
 			{@const routeCoords = ingredient.route.map((country) => projectionFn(getCoords(country)))}
 			<path
 				d={createPath(routeCoords)}
-				class="fill-none stroke-black stroke-1"
+				class="fill-none stroke-black stroke-[0.25] lg:stroke-1"
 				stroke-dasharray="3 4"
 			/>
 			{#each routeCoords as [x, y]}
 				<circle cx={x} cy={y} r={3} class="fill-red-100" />
 			{/each}
 		{/each}
-
-		<!-- <img
-		src={aleppoPepper}
-		alt={'Aleppo Pepper img'}
-		style={`left:${projectionFn(getCoords('Syria'))[0]}px; top:${projectionFn(getCoords('Syria'))[1]}px`}
-		class="absolute h-auto w-4 -translate-x-1/2 -translate-y-1/2"
-	/> -->
 	</svg>
+
+	{#each ingredients as ingredient, i}
+		{@const coords = projectionFn(getCoords(ingredient.country))}
+		<IngredientIcon {ingredient} {coords} />
+	{/each}
 </div>
 
 <!-- @keyframes draw {

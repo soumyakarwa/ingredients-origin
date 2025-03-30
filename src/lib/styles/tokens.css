@@ -2,9 +2,52 @@
 	/* Colors */
 	--color-*: initial;
 	--color-black: #000000;
+	--color-white: #fbfafa;
 	--color-yellow-100: #fff6d8;
 	--color-blue-100: #9eeef1;
 	--color-red-100: #ff0000;
 
 	/* Typography */
+	--font-mono: 'LeagueMono', monospace;
+}
+
+@utility heading-1 {
+	font-size: 0.7rem;
+	font-weight: 600;
+	text-transform: uppercase;
+
+	@variant md {
+		font-size: 0.8rem;
+	}
+
+	@variant lg {
+		font-size: 0.9rem;
+	}
+}
+
+@utility heading-2 {
+	font-size: 0.5rem;
+	font-weight: 400;
+	text-transform: uppercase;
+
+	@variant md {
+		font-size: 0.6rem;
+	}
+
+	@variant lg {
+		font-size: 0.7rem;
+	}
+}
+
+@utility body {
+	@apply font-normal tracking-tighter;
+	font-size: 0.5rem;
+
+	@variant md {
+		font-size: 0.6rem;
+	}
+
+	@variant lg {
+		font-size: 0.7rem;
+	}
 }

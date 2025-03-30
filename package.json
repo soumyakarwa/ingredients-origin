@@ -20,6 +20,7 @@
 		"@eslint/compat": "^1.2.5",
 		"@eslint/js": "^9.18.0",
 		"@playwright/test": "^1.49.1",
+		"@rollup/plugin-dsv": "^3.0.5",
 		"@sveltejs/adapter-vercel": "^5.5.2",
 		"@sveltejs/kit": "^2.16.0",
 		"@sveltejs/vite-plugin-svelte": "^5.0.0",
@@ -29,6 +30,7 @@
 		"@testing-library/jest-dom": "^6.6.3",
 		"@testing-library/svelte": "^5.2.4",
 		"@types/d3": "^7.4.3",
+		"@types/lodash.debounce": "^4.0.9",
 		"@types/topojson-client": "^3.1.5",
 		"eslint": "^9.18.0",
 		"eslint-config-prettier": "^10.0.1",
@@ -53,6 +55,8 @@
 	},
 	"dependencies": {
 		"d3": "^7.9.0",
+		"lodash.debounce": "^4.0.8",
+		"svelte-device-info": "^1.0.6",
 		"topojson-client": "^3.1.0"
 	}
 }

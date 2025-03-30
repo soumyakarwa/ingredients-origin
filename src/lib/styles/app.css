@@ -2,8 +2,14 @@
 
 @import './tokens.css';
 
+@layer base {
+	:root {
+		@apply font-mono;
+	}
+}
+
 @layer components {
 	.content-well {
-		@apply mx-auto w-full max-w-[1800px] px-2 md:px-4;
+		@apply mx-auto w-full p-2 md:p-4;
 	}
 }

@@ -2,6 +2,7 @@
 	import topojsonData from '$lib/data/map.topojson.json';
 	import ingredients from '$lib/data/ingredients.json';
 	import IngredientIcon from '$lib/components/IngredientIcon.svelte';
+	import RouteLabel from '$lib/components/RouteLabel.svelte';
 	import { feature, merge } from 'topojson-client';
 	import {
 		geoNaturalEarth1,
@@ -83,15 +84,7 @@
 	{#each ingredients as ingredient, i}
 		{@const coords = projectionFn(getCoords(ingredient.country))}
 		<IngredientIcon {ingredient} {coords} />
-		{#each ingredient.route as country, i}
-			{@const routeCoords = projectionFn(getCoords(country))}
-			<div
-				style={`left:${routeCoords[0]}px; top:${routeCoords[1]}px;`}
-				class="heading-2 absolute fill-black"
-			>
-				{country}
-			</div>
-		{/each}
+		<RouteLabel route={ingredient.route} {projectionFn} />
 	{/each}
 </div>
 

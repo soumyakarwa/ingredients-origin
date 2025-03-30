@@ -16,6 +16,8 @@
 	} from 'd3';
 	import { getCoords } from './utils/getCoords';
 	import { createPath } from './utils/createPath';
+	import { fly, fade } from 'svelte/transition';
+	import { linear } from 'svelte/easing';
 
 	let width = $state(1000);
 	let heightProportion = 0.52;
@@ -60,11 +62,19 @@
 			)}
 			<path
 				d={createPath(routeCoords)}
+				style="animation: animate-dash 3s ease-in-out forwards;"
 				class="fill-none stroke-black stroke-[0.25] lg:stroke-1"
-				stroke-dasharray="3 4"
+				stroke-dasharray="1000"
+				stroke-dashoffset="1000"
 			/>
 			{#each routeCoords as [x, y], i}
-				<circle cx={x} cy={y} r={3} class="fill-red-100" />
+				<circle
+					cx={x}
+					cy={y}
+					r={3}
+					class="fill-red-100"
+					in:fade={{ duration: 300, delay: i * 10000, easing: linear }}
+				/>
 			{/each}
 		{/if}
 	</svg>
@@ -75,45 +85,13 @@
 	{/each}
 
 	{#if activeIndex != null}
+		{@const coords = projectionFn(getCoords(ingredients[activeIndex].country))}
 		<RouteLabel route={ingredients[activeIndex].route} {projectionFn} />
 		<InfoTooltip
 			ingredient={ingredients[activeIndex]}
 			bind:activeIndex
 			bind:value={infoTooltipState}
+			{coords}
 		/>
 	{/if}
 </div>
-
-<!-- @keyframes draw {
- 
-    from {
-      stroke-dashoffset: 400;
-    }
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
-
-  .animate-draw {
-    animation: draw 3s ease-in-out forwards; /* Adjust timing as needed */
-  } -->
-
-<!-- 
-  // let pathRefs: SVGPathElement[] = $state([]);
-
-	// function animatePaths() {
-	// 	pathRefs.forEach(async (path: SVGPathElement) => {
-	// 		const length = path.getTotalLength();
-	// 		console.log(length);
-	// 		path.style.strokeDasharray = length.toString();
-	// 		path.style.strokeDashoffset = length.toString();
-	// 		await tick(); // wait for DOM update
-
-	// 		path.style.transition = 'stroke-dashoffset 1s ease-out';
-	// 		path.style.strokeDashoffset = '0';
-	// 	});
-	// }
-
-	// onMount(() => {
-	// 	animatePaths(); -->
-<!-- // }); -->

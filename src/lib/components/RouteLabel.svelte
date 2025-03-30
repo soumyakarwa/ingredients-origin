@@ -35,6 +35,7 @@
 	<div
 		style={`left:${coords[0]}px; top:${coords[1]}px;`}
 		class={['heading-2 absolute font-semibold text-black', translateText(coords, i)]}
+		transition:fade={{ duration: 200, easing: linear }}
 	>
 		{country}
 	</div>

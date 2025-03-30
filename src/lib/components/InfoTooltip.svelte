@@ -1,6 +1,7 @@
 <script lang="ts">
-	import { fade } from 'svelte/transition';
+	import { fade, slide } from 'svelte/transition';
 	import { linear } from 'svelte/easing';
+	import { getCoords } from '$lib/components/utils/getCoords';
 
 	interface Props {
 		ingredient: {
@@ -10,13 +11,15 @@
 		};
 		activeIndex: number | null;
 		value: 'active' | 'inactive';
+		coords: [number, number];
 	}
 
-	let { ingredient, activeIndex = $bindable(), value = $bindable() }: Props = $props();
+	let { ingredient, coords, activeIndex = $bindable(), value = $bindable() }: Props = $props();
 </script>
 
 <div
-	class="absolute top-0 left-0 flex max-w-sm items-center justify-center border-1 border-black bg-white px-3 py-3 shadow-xl"
+	style={`left:${coords[0]}px; top:${coords[1]}px;`}
+	class="absolute flex max-w-sm translate-x-1/20 translate-y-1/20 items-center justify-center border-1 border-black bg-white px-3 py-3 shadow-xl"
 	transition:fade={{ duration: 300, delay: 100, easing: linear }}
 >
 	<div class="flex w-full flex-col items-start gap-2">

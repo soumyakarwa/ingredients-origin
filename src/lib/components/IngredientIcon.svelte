@@ -5,13 +5,7 @@
 	import { linear } from 'svelte/easing';
 
 	interface Props {
-		ingredient: {
-			id: string;
-			name: string;
-			country: string;
-			text: string;
-			[key: string]: any;
-		};
+		ingredient: Ingredient;
 		coords: number[];
 		i: number;
 		activeIndex: number | null;
@@ -25,30 +19,30 @@
 	// adding a random translate to prevent icons from sitting on top of each other?
 </script>
 
-{#if activeIndex == null || activeIndex == i}
-	<div
-		class="absolute"
-		style={`left:${coords[0]}px; top:${coords[1]}px`}
-		transition:fade={{ duration: 300, delay: 100, easing: linear }}
-	>
-		<img
-			src={imageSrc}
-			alt={`${ingredient.name} img`}
-			class={['h-auto w-2 cursor-pointer lg:w-4']}
-			role="presentation"
-			onmouseenter={() => {
-				isHovering = true;
-			}}
-			onmouseleave={() => {
-				isHovering = false;
-			}}
-			onclick={() => {
-				activeIndex = i;
-				isHovering = false;
-			}}
-		/>
-	</div>
-	{#if isHovering}
-		<HoverTooltip name={ingredient.name} country={ingredient.country} {coords} />
-	{/if}
+<!-- {#if activeIndex == null || activeIndex == i} -->
+<div
+	class="absolute"
+	style={`left:${coords[0]}px; top:${coords[1]}px`}
+	transition:fade={{ duration: 300, delay: 100, easing: linear }}
+>
+	<img
+		src={imageSrc}
+		alt={`${ingredient.name} img`}
+		class={['h-auto w-2 cursor-pointer lg:w-4']}
+		role="presentation"
+		onmouseenter={() => {
+			isHovering = true;
+		}}
+		onmouseleave={() => {
+			isHovering = false;
+		}}
+		onclick={() => {
+			activeIndex = i;
+			// isHovering = false; [this prevents another ingredient to be clicked while one's info is already open]
+		}}
+	/>
+</div>
+{#if isHovering}
+	<HoverTooltip name={ingredient.name} country={ingredient.country.label} {coords} />
 {/if}
+<!-- {/if} -->

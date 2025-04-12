@@ -34,7 +34,7 @@
 	{@const coords = projectionFn(getCoords(country))}
 	<div
 		style={`left:${coords[0]}px; top:${coords[1]}px;`}
-		class={['heading-2 absolute font-semibold text-black', translateText(coords, i)]}
+		class={['body absolute font-semibold text-black uppercase', translateText(coords, i)]}
 		transition:fade={{ duration: 200, easing: linear }}
 	>
 		{country}

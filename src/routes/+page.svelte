@@ -11,6 +11,7 @@
 	// });
 </script>
 
-<div class="content-well flex flex-col items-center justify-center">
+<div class="content-well flex flex-col items-start">
+	<!-- <div class="body">Ingredients Origin combines history, data and storytelling to</div> -->
 	<Map />
 </div>

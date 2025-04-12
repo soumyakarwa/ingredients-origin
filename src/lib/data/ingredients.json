@@ -2,15 +2,56 @@
 	{
 		"id": "aleppo-pepper",
 		"name": "Aleppo Pepper",
-		"country": "Syria",
-		"text": "Aleppo pepper is a type of black pepper that is native to Syria. It is known for its unique flavor and aroma, which is described as smoky and slightly spicy. The peppercorn is small and has a dark brown color, and it is often used in Middle Eastern cuisine.",
+		"country": {
+			"label": "Syria",
+			"coords": "Syria"
+		},
+		"text": [
+			"Aleppo pepper is a type of black pepper that is native to Syria. It is known for its unique flavor and aroma, which is described as smoky and slightly spicy. The peppercorn is small and has a dark brown color, and it is often used in Middle Eastern cuisine."
+		],
 		"route": ["Mexico", "Portugal", "Spain", "Morocco", "Syria"]
 	},
 	{
 		"id": "aleppo-pepper",
-		"name": "Basil",
-		"country": "Italy",
-		"text": "Aleppo pepper is a type of black pepper that is native to Syria. It is known for its unique flavor and aroma, which is described as smoky and slightly spicy. The peppercorn is small and has a dark brown color, and it is often used in Middle Eastern cuisine.",
-		"route": ["Mexico", "Portugal", "Spain", "Italy"]
+		"name": "Asafoetida",
+		"country": {
+			"label": "India",
+			"coords": "India"
+		},
+		"text": [
+			"A greyish-yellow spice with a sharp, sulphurous odor, asafoetida takes its name from a blend of Farsi and Latin, literally meaning “stinking resin.” The name doesn’t get any gentler in other tongues either. English, Turkish, and French offer equally vivid translations: Devil’s Dung, Şeytan Tersi, and Merde du Diable. And yet, despite (or perhaps because of) its overpowering aroma, asafoetida, hing in Hindi, has become an essential ingredient in the Indian kitchen.",
+			"To understand asafoetida’s curious place in culinary history, we must first look to silphium, a prized plant in ancient Greek and Roman civilizations. In 631 BCE, when the Greeks colonized the city of Cyrene (present-day Libya), they encountered this extraordinary herb and quickly fell under its spell. Silphium became so valuable, it was used as a vegetable, seasoning, animal feed, and medicine. It even appeared on Cyrenian currency. But despite strict efforts to conserve it, overharvesting eventually led to its disappearance.",
+			"Now imagine the scene centuries later, in 328 B.C., as Alexander the Great's army marched through the wild landscapes of Afghanistan. There, his soldiers stumbled upon a plant that looked and smelled remarkably like their long-lost silphium. They believed they had found their beloved herb again, but in fact, it was a pungent resin-producing plant we now know as asafoetida.",
+			"Although historical records are hazy, it is widely believed that Alexander, mistaking asafoetida for silphium, brought the plant along on his expedition to India. While he may have returned in defeat, asafoetida remained, eventually embedding itself in the culinary and medicinal traditions of the subcontinent. In fact, it’s possible that asafoetida made its way to India even earlier. References to meat dishes spiced with hing appear in the Mahabharata, the ancient Indian epic that recounts events from around 800 BCE, predating the more commonly cited, Euro-centric story of silphium’s disappearance."
+		],
+		"route": ["Afghanistan", "India"]
+	},
+	{
+		"id": "aleppo-pepper",
+		"name": "Avocado",
+		"country": {
+			"label": "Mexico",
+			"coords": "Mexico"
+		},
+		"text": [
+			"The avocado tree, Persea americana, belongs to the laurel family, making it a distant cousin of cinnamon, bay leaf, and sassafras. Alongside corn, beans, and chili peppers, avocados were a staple in the pre-Columbian Mesoamerican diet. Archaeological findings suggest that wild avocados first emerged in South-Central Mexico and were being cultivated across Mexico, Central America, and parts of South America as far back as 7,000 years ago.",
+			"The first recorded mention of the avocado in Western literature dates to 1518, when Spanish conquistador Martín Fernández de Enciso wrote about eating the fruit in Colombia. A year later, when Hernán Cortés arrived in the grand Aztec capital of Tenochtitlan (modern-day Mexico City), he encountered avocados as part of the refined cuisine served to Emperor Montezuma. One notable preparation was ahuaca-mulli, a vibrant mash of avocado, tomato, and onion.",
+			"The Aztecs called the fruit ahuacatl, which also meant \"testicle,\" a nod to its shape and reputation as an aphrodisiac believed to enhance male vitality. According to food historian Sophie Coe, avocados played a crucial role in the primarily low-fat Mesoamerican diet, offering a rich source of nutrition with an oil content reaching up to 30%."
+		],
+		"route": ["Mexico"]
+	},
+	{
+		"id": "aleppo-pepper",
+		"name": "Avocado",
+		"country": {
+			"label": "United States",
+			"coords": "United States"
+		},
+		"text": [
+			"The avocado tree, Persea americana, belongs to the laurel family, making it a distant cousin of cinnamon, bay leaf, and sassafras. Alongside corn, beans, and chili peppers, avocados were a staple in the pre-Columbian Mesoamerican diet. Archaeological findings suggest that wild avocados first emerged in South-Central Mexico and were being cultivated across Mexico, Central America, and parts of South America as far back as 7,000 years ago.",
+			"The first recorded mention of the avocado in Western literature dates to 1518, when Spanish conquistador Martín Fernández de Enciso wrote about eating the fruit in Colombia. A year later, when Hernán Cortés arrived in the grand Aztec capital of Tenochtitlan (modern-day Mexico City), he encountered avocados as part of the refined cuisine served to Emperor Montezuma. One notable preparation was ahuaca-mulli, a vibrant mash of avocado, tomato, and onion.",
+			"The Aztecs called the fruit ahuacatl, which also meant \"testicle,\" a nod to its shape and reputation as an aphrodisiac believed to enhance male vitality. According to food historian Sophie Coe, avocados played a crucial role in the primarily low-fat Mesoamerican diet, offering a rich source of nutrition with an oil content reaching up to 30%."
+		],
+		"route": ["Mexico", "United States"]
 	}
 ]

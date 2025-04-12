@@ -38,8 +38,6 @@
 
 	let infoTooltipState = $state<'inactive' | 'active'>('inactive');
 	let activeIndex = $state<number | null>(null);
-
-	$inspect(activeIndex);
 </script>
 
 <div class="relative w-full bg-blue-100" bind:clientWidth={width} style:height="{height}px">
@@ -60,37 +58,41 @@
 				filter="url(#noise)"
 			/>
 		</g>
-		{#if activeIndex != null}
-			{@const routeCoords = ingredients[activeIndex].route.map((country) =>
-				projectionFn(getCoords(country))
-			)}
-			<path
-				d={createPath(routeCoords)}
-				class="animate-dash fill-none stroke-black stroke-[0.25] lg:stroke-1"
-				style="stroke-dasharray: 1000; stroke-dashoffset: 1000;"
-				filter="url(#routeNoise)"
-			/>
+		{#key activeIndex}
+			{#if activeIndex != null}
+				{@const routeCoords = ingredients[activeIndex].route.map((country) =>
+					projectionFn(getCoords(country))
+				)}
+				{#if routeCoords.length > 1}
+					<path
+						d={createPath(routeCoords)}
+						class="animate-dash fill-none stroke-black stroke-[0.25] lg:stroke-1"
+						style="stroke-dasharray: 1000; stroke-dashoffset: 1000;"
+						filter="url(#routeNoise)"
+					/>
+				{/if}
 
-			<!-- stroke-dasharray="3 4" -->
-			{#each routeCoords as [x, y], i}
-				<circle
-					cx={x}
-					cy={y}
-					r={3}
-					class="fill-red-100"
-					in:fade={{ duration: 300, delay: i * 10000, easing: linear }}
-				/>
-			{/each}
-		{/if}
+				<!-- stroke-dasharray="3 4" -->
+				{#each routeCoords as [x, y], i}
+					<circle
+						cx={x}
+						cy={y}
+						r={3}
+						class="fill-red-100"
+						in:fade={{ duration: 300, delay: i * 10000, easing: linear }}
+					/>
+				{/each}
+			{/if}
+		{/key}
 	</svg>
 
 	{#each ingredients as ingredient, i}
-		{@const coords = projectionFn(getCoords(ingredient.country))}
+		{@const coords = projectionFn(getCoords(ingredient.country.coords))}
 		<IngredientIcon {ingredient} {coords} {i} bind:activeIndex />
 	{/each}
 
 	{#if activeIndex != null}
-		{@const coords = projectionFn(getCoords(ingredients[activeIndex].country))}
+		{@const coords = projectionFn(getCoords(ingredients[activeIndex].country.coords))}
 		<RouteLabel route={ingredients[activeIndex].route} {projectionFn} />
 		<InfoTooltip
 			ingredient={ingredients[activeIndex]}

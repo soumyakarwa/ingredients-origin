@@ -8,6 +8,17 @@ declare global {
 		name: string;
 	};
 
+	type Ingredient = {
+		id: string;
+		name: string;
+		country: {
+			label: string;
+			coords: string;
+		};
+		text: string[];
+		route: string[];
+	};
+
 	namespace App {
 		// interface Error {}
 		// interface Locals {}

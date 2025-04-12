@@ -48,6 +48,10 @@
 			<feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="2" />
 			<feDisplacementMap in="SourceGraphic" scale="5" />
 		</filter>
+		<filter id="routeNoise">
+			<feTurbulence type="turbulence" baseFrequency="0.06" numOctaves="4" />
+			<feDisplacementMap in="SourceGraphic" scale="3" />
+		</filter>
 		<g class="country-outline">
 			<path
 				class="linear fill-yellow-100 stroke-black stroke-[0.25] transition-[opacity] duration-300 lg:stroke-1"
@@ -62,11 +66,12 @@
 			)}
 			<path
 				d={createPath(routeCoords)}
-				style="animation: animate-dash 3s ease-in-out forwards;"
-				class="fill-none stroke-black stroke-[0.25] lg:stroke-1"
-				stroke-dasharray="1000"
-				stroke-dashoffset="1000"
+				class="animate-dash fill-none stroke-black stroke-[0.25] lg:stroke-1"
+				style="stroke-dasharray: 1000; stroke-dashoffset: 1000;"
+				filter="url(#routeNoise)"
 			/>
+
+			<!-- stroke-dasharray="3 4" -->
 			{#each routeCoords as [x, y], i}
 				<circle
 					cx={x}

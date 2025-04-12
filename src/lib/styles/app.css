@@ -18,7 +18,6 @@
 
 @layer utilities {
 	.animate-dash {
-		stroke-dasharray: 3 4;
-		animation: dash 2s ease-in-out forwards;
+		animation: dash 2s linear forwards;
 	}
 }

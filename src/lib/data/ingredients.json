@@ -45,13 +45,13 @@
 		"name": "Avocado",
 		"country": {
 			"label": "United States",
-			"coords": "United States"
+			"coords": "California"
 		},
 		"text": [
 			"The avocado tree, Persea americana, belongs to the laurel family, making it a distant cousin of cinnamon, bay leaf, and sassafras. Alongside corn, beans, and chili peppers, avocados were a staple in the pre-Columbian Mesoamerican diet. Archaeological findings suggest that wild avocados first emerged in South-Central Mexico and were being cultivated across Mexico, Central America, and parts of South America as far back as 7,000 years ago.",
 			"The first recorded mention of the avocado in Western literature dates to 1518, when Spanish conquistador Martín Fernández de Enciso wrote about eating the fruit in Colombia. A year later, when Hernán Cortés arrived in the grand Aztec capital of Tenochtitlan (modern-day Mexico City), he encountered avocados as part of the refined cuisine served to Emperor Montezuma. One notable preparation was ahuaca-mulli, a vibrant mash of avocado, tomato, and onion.",
 			"The Aztecs called the fruit ahuacatl, which also meant \"testicle,\" a nod to its shape and reputation as an aphrodisiac believed to enhance male vitality. According to food historian Sophie Coe, avocados played a crucial role in the primarily low-fat Mesoamerican diet, offering a rich source of nutrition with an oil content reaching up to 30%."
 		],
-		"route": ["Mexico", "United States"]
+		"route": ["Mexico", "California"]
 	}
 ]

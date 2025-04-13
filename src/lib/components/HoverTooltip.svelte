@@ -13,7 +13,7 @@
 
 <div
 	style={`left:${coords[0]}px; top:${coords[1]}px;`}
-	class="glass-bg absolute z-10 translate-x-1/5 translate-y-1/5 border-1 border-blue-100 p-2 text-black shadow-lg"
+	class="glass-bg absolute z-10 translate-x-1/5 translate-y-1/5 rounded-none border-1 border-blue-100 px-1 pt-1 pb-2 text-black shadow-lg"
 	transition:fade={{ duration: 200, easing: linear }}
 >
 	<!-- <p class="heading-2">{name}</p>

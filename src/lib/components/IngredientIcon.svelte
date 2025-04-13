@@ -28,7 +28,7 @@
 	<img
 		src={imageSrc}
 		alt={`${ingredient.name} img`}
-		class={['h-auto w-2 cursor-pointer lg:w-4']}
+		class={['h-auto w-2 cursor-pointer lg:w-6']}
 		role="presentation"
 		onmouseenter={() => {
 			isHovering = true;

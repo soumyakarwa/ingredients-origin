@@ -18,6 +18,7 @@
 	import { createPath } from './utils/createPath';
 	import { fly, fade } from 'svelte/transition';
 	import { linear } from 'svelte/easing';
+	import NumberFlow, { continuous } from '@number-flow/svelte';
 
 	let width = $state(1000);
 	let heightProportion = 0.52;
@@ -39,7 +40,7 @@
 	let activeIndex = $state<number | null>(null);
 </script>
 
-<div class="relative w-full bg-blue-100" bind:clientWidth={width} style:height="{height}px">
+<div class="relative h-full w-full bg-blue-100" bind:clientWidth={width}>
 	<svg {width} {height}>
 		<!-- <filter id="noise">
 			<feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="2" />
@@ -97,4 +98,16 @@
 			{coords}
 		/>
 	{/if}
+
+	<div class="title absolute right-3 bottom-0">
+		<!-- <div class="flex flex-col items-end">
+			<div class="heading-2 font-semibold">CIRCA</div> -->
+		<NumberFlow
+			plugins={[continuous]}
+			value={activeIndex != null ? ingredients[activeIndex].year : '2025'}
+			format={{ notation: 'standard', useGrouping: false }}
+			suffix={activeIndex != null ? ingredients[activeIndex].suffix : ''}
+		/>
+		<!-- </div> -->
+	</div>
 </div>

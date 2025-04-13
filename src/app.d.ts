@@ -17,6 +17,7 @@ declare global {
 		};
 		text: string[];
 		route: string[];
+		year: string;
 	};
 
 	namespace App {

@@ -13,13 +13,20 @@
 	--font-serif: 'Cormorant Garamond', serif;
 }
 
-@utility heading-1 {
+@utility title {
 	font-size: 3rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 50%;
+}
+
+@utility heading-1 {
+	font-size: 1.8rem;
 	font-weight: 600;
 	text-transform: uppercase;
 
 	@variant md {
-		font-size: 2rem;
+		font-size: 1.7rem;
 	}
 
 	@variant lg {

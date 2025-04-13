@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@number-flow/svelte':
+        specifier: ^0.3.7
+        version: 0.3.7(svelte@5.25.3)
       d3:
         specifier: ^7.9.0
         version: 7.9.0
@@ -573,6 +576,11 @@ packages:
   '@nodelib/fs.walk@1.2.8':
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
+
+  '@number-flow/svelte@0.3.7':
+    resolution: {integrity: sha512-FusxKvImj13+15N+pQrrGsu8cNTQ0BCUWxshNUpPU4opFufVpHO+RMxsYrtZ7xloVL/TjDLpO+SWjrxxx7iPJg==}
+    peerDependencies:
+      svelte: ^4 || ^5
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -1957,6 +1965,9 @@ packages:
     engines: {node: ^18.17.0 || >=20.5.0}
     hasBin: true
 
+  number-flow@0.5.7:
+    resolution: {integrity: sha512-P83Y9rBgN3Xpz5677YDNtuQHZpIldw6WXeWRg0+edrfFthhV7QqRdABas5gtu07QPLvbA8XhfO69rIvbKRzYIg==}
+
   nwsapi@2.2.20:
     resolution: {integrity: sha512-/ieB+mDe4MrrKMT8z+mQL8klXydZWGR5Dowt4RAGKbJ3kIGEx3X4ljUo+6V73IXtUPWgfOlU5B9MlGxFO5T+cA==}
 
@@ -2864,6 +2875,12 @@ snapshots:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.1
+
+  '@number-flow/svelte@0.3.7(svelte@5.25.3)':
+    dependencies:
+      esm-env: 1.2.2
+      number-flow: 0.5.7
+      svelte: 5.25.3
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
@@ -4290,6 +4307,10 @@ snapshots:
   nopt@8.1.0:
     dependencies:
       abbrev: 3.0.0
+
+  number-flow@0.5.7:
+    dependencies:
+      esm-env: 1.2.2
 
   nwsapi@2.2.20: {}
 

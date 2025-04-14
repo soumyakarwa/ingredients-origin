@@ -16,13 +16,21 @@
 
 	const imageSrc =
 		icons[`/src/lib/assets/ingredient-icons/${ingredient.id}.svg`]?.default ?? 'null';
-	// adding a random translate to prevent icons from sitting on top of each other?
+
+	const getRandomOffset = () => {
+		const offsetRange = 10; // adjust this value as needed
+		const x = Math.floor(Math.random() * offsetRange * 2 - offsetRange); // -10 to +10
+		const y = Math.floor(Math.random() * offsetRange * 2 - offsetRange);
+		return `translate(${x}px, ${y}px)`;
+	};
+
+	let randomTranslate = getRandomOffset();
 </script>
 
 <!-- {#if activeIndex == null || activeIndex == i} -->
 <div
 	class="absolute"
-	style={`left:${coords[0]}px; top:${coords[1]}px`}
+	style={`left:${coords[0]}px; top:${coords[1]}px; transform: ${randomTranslate}`}
 	transition:fade={{ duration: 300, delay: 100, easing: linear }}
 >
 	<img

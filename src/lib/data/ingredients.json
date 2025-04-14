@@ -10,8 +10,10 @@
 			"Aleppo pepper is a type of black pepper that is native to Syria. It is known for its unique flavor and aroma, which is described as smoky and slightly spicy. The peppercorn is small and has a dark brown color, and it is often used in Middle Eastern cuisine."
 		],
 		"route": ["Mexico", "Portugal", "Spain", "Morocco", "Syria"],
-		"year": "2025",
-		"suffix": ""
+		"year": {
+			"label": "2025",
+			"suffix": ""
+		}
 	},
 	{
 		"id": "spice",
@@ -27,8 +29,10 @@
 			"Although historical records are hazy, it is widely believed that Alexander, mistaking asafoetida for silphium, brought the plant along on his expedition to India. While he may have returned in defeat, asafoetida remained, eventually embedding itself in the culinary and medicinal traditions of the subcontinent. In fact, it’s possible that asafoetida made its way to India even earlier. References to meat dishes spiced with hing appear in the Mahabharata, the ancient Indian epic that recounts events from around 800 BCE, predating the more commonly cited, Euro-centric story of silphium’s disappearance."
 		],
 		"route": ["Afghanistan", "India"],
-		"year": "328",
-		"suffix": "B.C."
+		"year": {
+			"label": "328",
+			"suffix": "B.C"
+		}
 	},
 	{
 		"id": "avocado",
@@ -43,8 +47,10 @@
 			"The Aztecs called the fruit ahuacatl, which also meant \"testicle,\" a nod to its shape and reputation as an aphrodisiac believed to enhance male vitality. According to food historian Sophie Coe, avocados played a crucial role in the primarily low-fat Mesoamerican diet, offering a rich source of nutrition with an oil content reaching up to 30%."
 		],
 		"route": ["Mexico"],
-		"year": "2025",
-		"suffix": ""
+		"year": {
+			"label": "2025",
+			"suffix": ""
+		}
 	},
 	{
 		"id": "avocado",
@@ -59,7 +65,149 @@
 			"The Aztecs called the fruit ahuacatl, which also meant \"testicle,\" a nod to its shape and reputation as an aphrodisiac believed to enhance male vitality. According to food historian Sophie Coe, avocados played a crucial role in the primarily low-fat Mesoamerican diet, offering a rich source of nutrition with an oil content reaching up to 30%."
 		],
 		"route": ["Mexico", "California"],
-		"year": "2025",
-		"suffix": ""
+		"year": {
+			"label": "2025",
+			"suffix": ""
+		}
+	},
+	{
+		"id": "roots",
+		"name": "Bok Choy",
+		"country": {
+			"label": "China",
+			"coords": "China"
+		},
+		"text": ["txt tba"],
+		"route": ["China"],
+		"year": {
+			"label": "2025",
+			"suffix": ""
+		}
+	},
+	{
+		"id": "roots",
+		"name": "Bamboo Shoot",
+		"country": {
+			"label": "Thailand",
+			"coords": "Thailand"
+		},
+		"text": ["txt tba"],
+		"route": ["Thailand"],
+		"year": {
+			"label": "2025",
+			"suffix": ""
+		}
+	},
+	{
+		"id": "leave",
+		"name": "Basil",
+		"country": {
+			"label": "Italy",
+			"coords": "Italy"
+		},
+		"text": ["txt tba"],
+		"route": ["Italy"],
+		"year": {
+			"label": "2025",
+			"suffix": ""
+		}
+	},
+	{
+		"id": "leave",
+		"name": "Basil",
+		"country": {
+			"label": "Morocco",
+			"coords": "Morocco"
+		},
+		"text": ["txt tba"],
+		"route": ["Morocco"],
+		"year": {
+			"label": "2025",
+			"suffix": ""
+		}
+	},
+	{
+		"id": "leave",
+		"name": "Basil",
+		"country": {
+			"label": "Thailand",
+			"coords": "Thailand"
+		},
+		"text": ["txt tba"],
+		"route": ["Thailand"],
+		"year": {
+			"label": "2025",
+			"suffix": ""
+		}
+	},
+	{
+		"id": "leave",
+		"name": "Pesto",
+		"country": {
+			"label": "Italy",
+			"coords": "Italy"
+		},
+		"text": ["txt tba"],
+		"route": ["Italy"],
+		"year": {
+			"label": "2025",
+			"suffix": ""
+		}
+	},
+	{
+		"id": "leave",
+		"name": "Pesto",
+		"country": {
+			"label": "Morocco",
+			"coords": "Morocco"
+		},
+		"text": ["txt tba"],
+		"route": ["Morocco"],
+		"year": {
+			"label": "2025",
+			"suffix": ""
+		}
+	},
+	{
+		"id": "leave",
+		"name": "Bean Curd",
+		"country": {
+			"label": "China",
+			"coords": "China"
+		},
+		"text": ["txt tba"],
+		"route": ["China"],
+		"year": {
+			"label": "2025",
+			"suffix": ""
+		}
+	},
+	{
+		"id": "leave",
+		"name": "Bean Sprout",
+		"country": {
+			"label": "Malaysia",
+			"coords": "Malaysia"
+		},
+		"text": ["txt tba"],
+		"route": ["Malaysia"],
+		"year": {
+			"label": "2025",
+			"suffix": ""
+		}
+	},
+	{
+		"id": "roots",
+		"name": "Bell Peppers",
+		"country": {
+			"label": "India",
+			"coords": "India"
+		},
+		"text": ["txt tba"],
+		"route": ["India"],
+		"year": {
+			"label": "2025",
+			"suffix": ""
+		}
 	}
 ]

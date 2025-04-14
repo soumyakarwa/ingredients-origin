@@ -104,9 +104,9 @@
 			<div class="heading-2 font-semibold">CIRCA</div> -->
 		<NumberFlow
 			plugins={[continuous]}
-			value={activeIndex != null ? ingredients[activeIndex].year : '2025'}
+			value={activeIndex != null ? ingredients[activeIndex].year.label : '2025'}
 			format={{ notation: 'standard', useGrouping: false }}
-			suffix={activeIndex != null ? ingredients[activeIndex].suffix : ''}
+			suffix={activeIndex != null ? ingredients[activeIndex].year.suffix : ''}
 		/>
 		<!-- </div> -->
 	</div>

@@ -17,7 +17,10 @@ declare global {
 		};
 		text: string[];
 		route: string[];
-		year: string;
+		year: {
+			label: string;
+			suffix: string;
+		};
 	};
 
 	namespace App {

@@ -1,17 +1,10 @@
 <script lang="ts">
+	import Globe from '$lib/components/Globe.svelte';
 	import Map from '$lib/components/Map.svelte';
-	// import countries from '$lib/data/countries.csv';
-
-	// import { onMount } from 'svelte';
-
-	// let countries: any[] = $state([]);
-
-	// onMount(async () => {
-	// 	countries = await csv('/src/lib/data/countries.csv'); // still needs fixing
-	// });
 </script>
 
 <div class="content-well flex flex-col items-start">
 	<!-- <div class="body">Ingredients Origin combines history, data and storytelling to</div> -->
-	<Map />
+	<!-- <Map /> -->
+	<Globe />
 </div>

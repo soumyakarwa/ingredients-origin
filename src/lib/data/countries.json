@@ -1506,9 +1506,105 @@
 		"name": "Zimbabwe"
 	},
 	{
-		"key": "CA",
+		"key": "California",
 		"latitude": 36.7783,
 		"longitude": -119.4179,
 		"name": "California"
+	},
+	{
+		"key": "Sichuan",
+		"latitude": 30.65,
+		"longitude": 104.07,
+		"name": "Sichuan"
+	},
+	{
+		"key": "Louisiana",
+		"latitude": 30.9843,
+		"longitude": -91.9623,
+		"name": "Louisiana"
+	},
+	{
+		"key": "Mumbai",
+		"latitude": 19.076,
+		"longitude": 72.8777,
+		"name": "Mumbai"
+	},
+	{
+		"key": "Kerala",
+		"latitude": 10.8505,
+		"longitude": 76.2711,
+		"name": "Kerala"
+	},
+	{
+		"key": "Bangkok",
+		"latitude": 13.7563,
+		"longitude": 100.5018,
+		"name": "Bangkok"
+	},
+	{
+		"key": "KohSamui",
+		"latitude": 9.512,
+		"longitude": 100.0136,
+		"name": "Koh Samui"
+	},
+	{
+		"key": "NewYork",
+		"latitude": 40.7128,
+		"longitude": -74.006,
+		"name": "New York"
+	},
+	{
+		"key": "Rome",
+		"latitude": 41.9028,
+		"longitude": 12.4964,
+		"name": "Rome"
+	},
+	{
+		"key": "Venice",
+		"latitude": 45.4408,
+		"longitude": 12.3155,
+		"name": "Venice"
+	},
+	{
+		"key": "SouthOfItaly",
+		"latitude": 40.0,
+		"longitude": 17.0,
+		"name": "South of Italy"
+	},
+	{
+		"key": "Beijing",
+		"latitude": 39.9042,
+		"longitude": 116.4074,
+		"name": "Beijing"
+	},
+	{
+		"key": "Shanghai",
+		"latitude": 31.2304,
+		"longitude": 121.4737,
+		"name": "Shanghai"
+	},
+	{
+		"key": "Chengdu",
+		"latitude": 30.5728,
+		"longitude": 104.0668,
+		"name": "Chengdu"
+	},
+	{
+		"key": "Xinjiang",
+		"latitude": 43.7934,
+		"longitude": 87.6271,
+		"name": "Xinjiang"
+	},
+	{
+		"key": "Delhi",
+		"latitude": 28.6139,
+		"longitude": 77.209,
+		"name": "Delhi"
+	},
+	{
+		"key": "NorthCarolina",
+		"latitude": 35.7596,
+		"longitude": -79.0193,
+		"name": "North Carolina"
 	}
 ]

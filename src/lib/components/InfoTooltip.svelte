@@ -58,6 +58,38 @@
 					<p class="body font-sans tracking-normal text-black">{t}</p>
 				{/each}
 			{:else}
+				<div class="grid w-full grid-cols-1 lg:grid-cols-2">
+					<div class="body flex w-[70%] flex-col gap-0.5 p-1">
+						<p class="w-full self-center uppercase">Aleppo Sweets</p>
+						<div class="flex w-full flex-row justify-between">
+							<p>⭐</p>
+							<p>9.0/10.0</p>
+						</div>
+						<div class="flex w-full flex-row justify-between">
+							<p>🍝</p>
+							<p>Dish Name</p>
+						</div>
+						<div class="flex w-full flex-row justify-between">
+							<p>📍</p>
+							<p>Location</p>
+						</div>
+					</div>
+					<div class="body flex w-[70%] flex-col gap-0.5 p-1">
+						<p class="uppercase">Aleppo Sweets</p>
+						<div class="flex w-full flex-row justify-between">
+							<p>⭐</p>
+							<p>9.0/10.0</p>
+						</div>
+						<div class="flex w-full flex-row justify-between">
+							<p>🍝</p>
+							<p>Dish Name</p>
+						</div>
+						<div class="flex w-full flex-row justify-between">
+							<p>📍</p>
+							<p>Location</p>
+						</div>
+					</div>
+				</div>
 				<p class="body font-sans tracking-normal text-black">
 					THIS IS A TEXT PLACEHOLDER WITH THE SAME WIDTH
 				</p>

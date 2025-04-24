@@ -8,7 +8,6 @@
 	import { isVisible } from '$lib/components/utils/isVisible';
 	import { getRandomOffset } from '$lib/components/utils/getRandomOffset';
 	import { getCoords } from '$lib/components/utils/getCoords';
-	import { icons } from '$lib/stores';
 	import { geoOrthographic, geoPath, drag } from 'd3';
 	import { feature } from 'topojson-client';
 	import { onMount } from 'svelte';
@@ -98,21 +97,23 @@
 						{@const lngLat = getCoords(ingredient.country.coords)}
 						{@const coords = projection(lngLat)}
 						{@const visible = isVisible(lngLat, -rotation[0])}
-						{@const imageSrc =
-							icons[`/src/lib/assets/ingredient-icons/${ingredient.id}.svg`]?.default ?? 'null'}
 						<image
 							x={coords[0]}
 							y={coords[1]}
-							href={imageSrc}
+							href={`/icons/asafoetida.png`}
 							transform={getRandomOffset()}
-							class={['h-auto w-2 cursor-pointer lg:w-4', visible ? 'opacity-100' : 'opacity-0']}
+							class={['h-auto w-2 cursor-pointer lg:w-10', visible ? 'opacity-100' : 'opacity-0']}
 							role="presentation"
 							aria-describedby={`${ingredient.name} img`}
 							onmouseenter={() => {
-								hoveredIndex = i;
+								if (visible) {
+									hoveredIndex = i;
+								}
 							}}
 							onmouseleave={() => {
-								hoveredIndex = null;
+								if (visible) {
+									hoveredIndex = null;
+								}
 							}}
 							onclick={() => {
 								activeIndex = i;
@@ -126,7 +127,7 @@
 				</g>
 			</svg>
 		</div>
-		<div>
+		<div class="h-full w-1/2">
 			{#if activeIndex != null}
 				<!-- <RouteLabel route={ingredients[activeIndex].route} {projectionFn} /> -->
 				<InfoTooltip

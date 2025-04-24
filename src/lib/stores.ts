@@ -7,13 +7,6 @@ import Device from 'svelte-device-info';
 
 export const countryData = writable(countries);
 
-export const icons = import.meta.glob<{ default: string }>(
-	'/src/lib/assets/ingredient-icons/*.svg',
-	{
-		eager: true
-	}
-);
-
 // CODE FROM THE DATAFACE
 type Viewport = {
 	width: number;

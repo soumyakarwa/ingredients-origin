@@ -17,7 +17,7 @@
 <!-- style={`left:${coords[0]}px; top:${coords[1]}px;`} -->
 <div
 	class={[
-		'glass-bg flex h-full w-sm items-start justify-center overflow-y-auto rounded-none border-1 border-yellow-100 bg-blue-100 px-3 py-3 transition-all duration-300 ease-linear'
+		'glass-bg flex h-full w-full items-start justify-center overflow-y-auto rounded-none border-1 border-yellow-100 bg-blue-100 px-3 py-3 transition-all duration-300 ease-linear'
 	]}
 	transition:fade={{ duration: 300, delay: 100, easing: linear }}
 >

@@ -60,7 +60,7 @@
 		const speed = 0.05;
 
 		const update = () => {
-			if (!hoveredIndex || !activeIndex) {
+			if (!activeIndex) {
 				rotation[0] += speed;
 			}
 
@@ -100,29 +100,33 @@
 						<image
 							x={coords[0]}
 							y={coords[1]}
-							href={`/icons/asafoetida.png`}
+							href={`/icons/${ingredient.id}.png`}
 							transform={getRandomOffset()}
-							class={['h-auto w-2 cursor-pointer lg:w-10', visible ? 'opacity-100' : 'opacity-0']}
+							class={[
+								'h-auto origin-center cursor-pointer stroke-black stroke-1 transition-[width] duration-300 ease-linear',
+								'drop-shadow-[0_0_0_2px_black]',
+								visible ? 'opacity-100' : 'opacity-0',
+								activeIndex == i ? 'w-5 lg:w-15' : 'w-2 lg:w-10'
+							]}
 							role="presentation"
 							aria-describedby={`${ingredient.name} img`}
-							onmouseenter={() => {
-								if (visible) {
-									hoveredIndex = i;
-								}
-							}}
-							onmouseleave={() => {
-								if (visible) {
-									hoveredIndex = null;
-								}
+							onerror={(e) => {
+								const img = e.target as SVGImageElement;
+								img.setAttribute('href', '/icons/asafoetida.png');
 							}}
 							onclick={() => {
-								activeIndex = i;
+								if (activeIndex == i) {
+									activeIndex = null;
+								} else {
+									activeIndex = i;
+								}
+
 								// isHovering = false; [this prevents another ingredient to be clicked while one's info is already open]
 							}}
 						/>
-						{#if hoveredIndex === i}
+						<!-- {#if hoveredIndex === i}
 							<HoverTooltip name={ingredient.name} country={ingredient.country.label} {coords} />
-						{/if}
+						{/if} -->
 					{/each}
 				</g>
 			</svg>

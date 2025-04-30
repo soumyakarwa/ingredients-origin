@@ -105,8 +105,8 @@
 							class={[
 								'h-auto origin-center cursor-pointer stroke-black stroke-1 transition-[width] duration-300 ease-linear',
 								'drop-shadow-[0_0_0_2px_black]',
-								visible ? 'opacity-100' : 'opacity-0',
-								activeIndex == i ? 'w-5 lg:w-15' : 'w-2 lg:w-10'
+								visible ? 'pointer-events-auto opacity-100' : 'pointer-events-none opacity-0',
+								activeIndex == i ? 'w-5 lg:w-20' : 'w-2 lg:w-10'
 							]}
 							role="presentation"
 							aria-describedby={`${ingredient.name} img`}
@@ -115,10 +115,12 @@
 								img.setAttribute('href', '/icons/asafoetida.png');
 							}}
 							onclick={() => {
-								if (activeIndex == i) {
-									activeIndex = null;
-								} else {
-									activeIndex = i;
+								if (visible) {
+									if (activeIndex == i) {
+										activeIndex = null;
+									} else {
+										activeIndex = i;
+									}
 								}
 
 								// isHovering = false; [this prevents another ingredient to be clicked while one's info is already open]

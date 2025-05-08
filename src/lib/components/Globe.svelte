@@ -2,15 +2,19 @@
 	// CODE FOR DRAGGABLE GLOBE BUILT ON https://svelte.dev/playground/9617e79b67fb4f48a0f744f6714b62a3?version=4.1.1
 	import countries from '$lib/data/map.topojson.json';
 	import ingredients from '$lib/data/ingredients.json';
-	import HoverTooltip from './HoverTooltip.svelte';
+	import RouteLabel from '$lib/components/RouteLabel.svelte';
 	import InfoTooltip from '$lib/components/InfoTooltip.svelte';
+	import IngredientIcon from '$lib/components/IngredientIcon.svelte';
 	import NumberFlow, { continuous } from '@number-flow/svelte';
 	import { isVisible } from '$lib/components/utils/isVisible';
 	import { getRandomOffset } from '$lib/components/utils/getRandomOffset';
 	import { getCoords } from '$lib/components/utils/getCoords';
-	import { geoOrthographic, geoPath, drag } from 'd3';
+	import { createPath3D } from '$lib/components/utils/circlePath';
+	import { geoOrthographic, geoPath, drag, select } from 'd3';
 	import { feature } from 'topojson-client';
 	import { onMount } from 'svelte';
+	import { fly, fade } from 'svelte/transition';
+	import { linear } from 'svelte/easing';
 
 	// CONSTANTS AND STATE VARIABLES
 	const earthRotation = 11.75;
@@ -18,8 +22,9 @@
 	let heightProportion = 1;
 	let height = $derived(width * heightProportion);
 	let rotation: [number, number, number] = $state([0, 0, earthRotation]);
-	let globe = $state();
-	let animationFrame = $state();
+	let globe: Element | null = $state();
+	let animationFrame: number = $state();
+	let isDragging = $state(false);
 	let margin = { top: 20, left: 20, right: 20, bottom: 20 };
 	let innerWidth = $derived(width - margin.right - margin.left);
 	let innerHeight = $derived(width - margin.bottom - margin.top);
@@ -52,18 +57,25 @@
 		projection.rotate(rotation);
 	};
 
-	const dragHandler = drag().on('drag', (event) => {
-		dragged({ dx: event.dx, dy: event.dy });
-	});
+	const dragHandler = drag()
+		.on('drag', (event) => {
+			isDragging = true;
+			cancelAnimationFrame(animationFrame);
+			dragged({ dx: event.dx, dy: event.dy });
+		})
+		.on('end', () => {
+			// isDragging = false;
+			if (activeIndex == null) autoRotate();
+		});
 
 	const autoRotate = () => {
 		const speed = 0.05;
 
 		const update = () => {
-			if (!activeIndex) {
+			if (!activeIndex && !isDragging) {
 				rotation[0] += speed;
+				projection.rotate(rotation);
 			}
-
 			animationFrame = requestAnimationFrame(update);
 		};
 
@@ -71,25 +83,19 @@
 	};
 
 	onMount(() => {
+		// isDragging = false;
 		autoRotate();
-		// dragHandler(globe);
+		select(globe).call(dragHandler); // <== bind drag to SVG element
 		return () => {
 			cancelAnimationFrame(animationFrame);
 		};
-	});
-
-	// $inspect(hoveredIndex);
-	$effect(() => {
-		// if (hoveredIndex == null) {
-		// 	autoRotate();
-		// }
 	});
 </script>
 
 <div class="flex h-full w-full items-center justify-center">
 	<div class="flex w-full flex-row gap-2">
 		<div class="relative h-full w-1/2" bind:clientWidth={width}>
-			<svg {width} {height} preserveAspectRatio="xMidYMid meet">
+			<svg bind:this={globe} {width} {height} preserveAspectRatio="xMidYMid meet">
 				<g class="origin-center" transform={`translate(${margin.left}, ${margin.top})`}>
 					<path bind:this={globe} d={path({ type: 'Sphere' })} fill="#9eeef1" stroke="#000" />
 					<path d={path(land)} fill="#fff6d8" stroke="#000" />
@@ -97,24 +103,16 @@
 						{@const lngLat = getCoords(ingredient.country.coords)}
 						{@const coords = projection(lngLat)}
 						{@const visible = isVisible(lngLat, -rotation[0])}
-						<image
+						<!-- {#if ingredient.id == 'aleppo-pepper'} -->
+						<!-- {#if activeIndex == null} -->
+						<IngredientIcon
 							x={coords[0]}
 							y={coords[1]}
-							href={`/icons/${ingredient.id}.png`}
-							transform={getRandomOffset()}
-							class={[
-								'h-auto origin-center cursor-pointer stroke-black stroke-1 transition-[width] duration-300 ease-linear',
-								'drop-shadow-[0_0_0_2px_black]',
-								visible ? 'pointer-events-auto opacity-100' : 'pointer-events-none opacity-0',
-								activeIndex == i ? 'w-5 lg:w-20' : 'w-2 lg:w-10'
-							]}
-							role="presentation"
-							aria-describedby={`${ingredient.name} img`}
-							onerror={(e) => {
-								const img = e.target as SVGImageElement;
-								img.setAttribute('href', '/icons/asafoetida.png');
-							}}
-							onclick={() => {
+							{visible}
+							isActive={activeIndex == i}
+							name={ingredient.name}
+							id={ingredient.id}
+							onClickFn={() => {
 								if (visible) {
 									if (activeIndex == i) {
 										activeIndex = null;
@@ -122,10 +120,33 @@
 										activeIndex = i;
 									}
 								}
-
-								// isHovering = false; [this prevents another ingredient to be clicked while one's info is already open]
 							}}
 						/>
+						<!-- {/if} -->
+						<!-- {#if activeIndex != null}
+							{@const routeCoords = ingredients[activeIndex].route.map((country) =>
+								projection(getCoords(country))
+							)}
+
+							{#if routeCoords.length > 1}
+								<path
+									d={createPath3D(ingredients[activeIndex].route.map(getCoords), projection)}
+									class="animate-dash fill-none stroke-black stroke-[0.25] lg:stroke-1"
+									style="stroke-dasharray: 1000; stroke-dashoffset: 1000;"
+									filter="url(#routeNoise)"
+								/>
+							{/if}
+							{#each routeCoords as [x, y], i}
+								<circle
+									cx={x}
+									cy={y}
+									r={3}
+									class="fill-red-100"
+									in:fade={{ duration: 300, delay: i * 10000, easing: linear }}
+								/>
+							{/each}
+						{/if} -->
+
 						<!-- {#if hoveredIndex === i}
 							<HoverTooltip name={ingredient.name} country={ingredient.country.label} {coords} />
 						{/if} -->
@@ -135,7 +156,7 @@
 		</div>
 		<div class="h-full w-1/2">
 			{#if activeIndex != null}
-				<!-- <RouteLabel route={ingredients[activeIndex].route} {projectionFn} /> -->
+				<!-- <RouteLabel route={ingredients[activeIndex].route} {projection} /> -->
 				<InfoTooltip
 					ingredient={ingredients[activeIndex]}
 					bind:activeIndex

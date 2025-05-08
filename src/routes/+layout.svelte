@@ -3,6 +3,6 @@
 	let { children } = $props();
 </script>
 
-<section class="flex min-h-screen w-full">
+<section class="flex min-h-screen w-full bg-yellow-100">
 	{@render children()}
 </section>

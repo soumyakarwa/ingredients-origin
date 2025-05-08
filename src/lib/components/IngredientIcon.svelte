@@ -1,56 +1,35 @@
 <script lang="ts">
-	import HoverTooltip from '$lib/components/HoverTooltip.svelte';
-	import { icons } from '$lib/stores';
-	import { fade } from 'svelte/transition';
-	import { linear } from 'svelte/easing';
+	import { getRandomOffset } from '$lib/components/utils/getRandomOffset';
 
 	interface Props {
-		ingredient: Ingredient;
-		coords: number[];
-		i: number;
-		activeIndex: number | null;
+		x: number;
+		y: number;
+		visible: boolean;
+		isActive: boolean;
+		name: string;
+		id: string;
+		onClickFn: () => void;
 	}
 
-	let { ingredient, coords, i, activeIndex = $bindable() }: Props = $props();
-	let isHovering = $state(false);
-
-	const imageSrc =
-		icons[`/src/lib/assets/ingredient-icons/${ingredient.id}.svg`]?.default ?? 'null';
-
-	const getRandomOffset = () => {
-		const offsetRange = 10; // adjust this value as needed
-		const x = Math.floor(Math.random() * offsetRange * 2 - offsetRange); // -10 to +10
-		const y = Math.floor(Math.random() * offsetRange * 2 - offsetRange);
-		return `translate(${x}px, ${y}px)`;
-	};
-
-	let randomTranslate = getRandomOffset();
+	let { x, y, visible, isActive, name, id, onClickFn }: Props = $props();
 </script>
 
-{#if activeIndex == null || activeIndex == i}
-	<div
-		class="absolute"
-		style={`left:${coords[0]}px; top:${coords[1]}px; transform: ${randomTranslate}`}
-		transition:fade={{ duration: 300, delay: 100, easing: linear }}
-	>
-		<img
-			src={imageSrc}
-			alt={`${ingredient.name} img`}
-			class={['h-auto w-2 cursor-pointer lg:w-4']}
-			role="presentation"
-			onmouseenter={() => {
-				isHovering = true;
-			}}
-			onmouseleave={() => {
-				isHovering = false;
-			}}
-			onclick={() => {
-				activeIndex = i;
-				// isHovering = false; [this prevents another ingredient to be clicked while one's info is already open]
-			}}
-		/>
-	</div>
-	{#if isHovering}
-		<HoverTooltip name={ingredient.name} country={ingredient.country.label} {coords} />
-	{/if}
-{/if}
+<image
+	{x}
+	{y}
+	href={`/icons/${id}.png`}
+	transform={getRandomOffset()}
+	class={[
+		'h-auto origin-center cursor-pointer stroke-black stroke-1 transition-[width] duration-300 ease-linear',
+		'drop-shadow-[0_0_0_2px_black]',
+		visible ? 'pointer-events-auto opacity-100' : 'pointer-events-none opacity-0',
+		isActive ? 'w-5 lg:w-20' : 'w-2 lg:w-8'
+	]}
+	role="presentation"
+	aria-describedby={`${name} img`}
+	onerror={(e) => {
+		const img = e.target as SVGImageElement;
+		img.setAttribute('href', '/icons/asafoetida.png');
+	}}
+	onclick={() => onClickFn()}
+/>

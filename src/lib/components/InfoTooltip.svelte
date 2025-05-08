@@ -7,10 +7,9 @@
 		ingredient: Ingredient;
 		activeIndex: number | null;
 		value: 'active' | 'inactive';
-		coords: [number, number];
 	}
 
-	let { ingredient, coords, activeIndex = $bindable(), value = $bindable() }: Props = $props();
+	let { ingredient, activeIndex = $bindable(), value = $bindable() }: Props = $props();
 
 	let storyActive = $state(true);
 </script>
@@ -18,8 +17,7 @@
 <!-- style={`left:${coords[0]}px; top:${coords[1]}px;`} -->
 <div
 	class={[
-		'glass-bg absolute top-0 flex max-h-[80%] w-sm items-start justify-center overflow-y-auto rounded-none border-1 border-yellow-100 px-3 py-3 transition-all duration-300 ease-linear',
-		coords[0] < window.innerWidth / 2 ? 'right-0' : 'left-0'
+		'glass-bg flex h-full w-full items-start justify-center overflow-y-auto rounded-none border-1 border-yellow-100 bg-blue-100 px-3 py-3 transition-all duration-300 ease-linear'
 	]}
 	transition:fade={{ duration: 300, delay: 100, easing: linear }}
 >

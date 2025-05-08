@@ -2,7 +2,7 @@
 	import topojsonData from '$lib/data/map-geometric.topojson.json';
 	import ingredients from '$lib/data/ingredients.json';
 	import InfoTooltip from '$lib/components/InfoTooltip.svelte';
-	import IngredientIcon from '$lib/components/IngredientIcon.svelte';
+	// import IngredientIcon from '$lib/components/IngredientIcon.svelte';
 	import RouteLabel from '$lib/components/RouteLabel.svelte';
 	import { feature, merge } from 'topojson-client';
 	import {
@@ -83,10 +83,10 @@
 		{/key}
 	</svg>
 
-	{#each ingredients as ingredient, i}
+	<!-- {#each ingredients as ingredient, i}
 		{@const coords = projectionFn(getCoords(ingredient.country.coords))}
 		<IngredientIcon {ingredient} {coords} {i} bind:activeIndex />
-	{/each}
+	{/each} -->
 
 	{#if activeIndex != null}
 		{@const coords = projectionFn(getCoords(ingredients[activeIndex].country.coords))}

@@ -7,10 +7,9 @@
 	import IngredientIcon from '$lib/components/IngredientIcon.svelte';
 	import NumberFlow, { continuous } from '@number-flow/svelte';
 	import { isVisible } from '$lib/components/utils/isVisible';
-	import { getRandomOffset } from '$lib/components/utils/getRandomOffset';
 	import { getCoords } from '$lib/components/utils/getCoords';
-	import { createPath3D } from '$lib/components/utils/circlePath';
-	import { geoOrthographic, geoPath, drag, select } from 'd3';
+	import { getArcSegment } from '$lib/components/utils/routeHelper';
+	import { geoOrthographic, geoPath, drag, select, geoInterpolate, range } from 'd3';
 	import { feature } from 'topojson-client';
 	import { onMount } from 'svelte';
 	import { fly, fade } from 'svelte/transition';
@@ -18,6 +17,9 @@
 
 	// CONSTANTS AND STATE VARIABLES
 	const earthRotation = 11.75;
+	const usa = [-98.5795, 39.8283]; // Center USA
+	const india = [78.9629, 20.5937];
+	const london = [-0.1276, 51.5072];
 	let width = $state(1000);
 	let heightProportion = 1;
 	let height = $derived(width * heightProportion);
@@ -39,6 +41,26 @@
 		geoOrthographic().fitSize([innerWidth, innerHeight], countriesGeojson).rotate(rotation)
 	);
 	let path = $derived(geoPath().projection(projection));
+
+	const routeCoords = $derived(
+		activeIndex != null ? ingredients[activeIndex].route.map((country) => getCoords(country)) : null
+	);
+	const arcCoords = $derived.by(() => {
+		if (routeCoords && routeCoords.length > 1) {
+			let arc: [number, number][] = [];
+
+			for (let i = 0; i < routeCoords.length - 1; i++) {
+				arc.push(...getArcSegment(routeCoords[i], routeCoords[i + 1]));
+			}
+			return arc;
+		}
+		return null;
+	});
+
+	const arcLine = $derived({
+		type: 'LineString',
+		coordinates: arcCoords
+	});
 
 	// HELPER FUNCTIONS
 	const dragged = (event) => {
@@ -83,19 +105,33 @@
 	};
 
 	onMount(() => {
-		// isDragging = false;
 		autoRotate();
-		select(globe).call(dragHandler); // <== bind drag to SVG element
+		select(globe).call(dragHandler);
 		return () => {
 			cancelAnimationFrame(animationFrame);
 		};
 	});
+
+	$inspect(activeIndex, routeCoords, arcCoords);
 </script>
 
 <div class="flex h-full w-full items-center justify-center">
 	<div class="flex w-full flex-row gap-2">
 		<div class="relative h-full w-1/2" bind:clientWidth={width}>
 			<svg bind:this={globe} {width} {height} preserveAspectRatio="xMidYMid meet">
+				<defs>
+					<marker
+						id="arrow"
+						viewBox="0 -5 10 10"
+						refX="5"
+						refY="0"
+						markerWidth="6"
+						markerHeight="6"
+						orient="auto"
+					>
+						<path d="M0,-5L10,0L0,5" fill="red" />
+					</marker>
+				</defs>
 				<g class="origin-center" transform={`translate(${margin.left}, ${margin.top})`}>
 					<path bind:this={globe} d={path({ type: 'Sphere' })} fill="#9eeef1" stroke="#000" />
 					<path d={path(land)} fill="#fff6d8" stroke="#000" />
@@ -103,8 +139,6 @@
 						{@const lngLat = getCoords(ingredient.country.coords)}
 						{@const coords = projection(lngLat)}
 						{@const visible = isVisible(lngLat, -rotation[0])}
-						<!-- {#if ingredient.id == 'aleppo-pepper'} -->
-						<!-- {#if activeIndex == null} -->
 						<IngredientIcon
 							x={coords[0]}
 							y={coords[1]}
@@ -122,30 +156,28 @@
 								}
 							}}
 						/>
-						<!-- {/if} -->
-						<!-- {#if activeIndex != null}
-							{@const routeCoords = ingredients[activeIndex].route.map((country) =>
-								projection(getCoords(country))
-							)}
 
-							{#if routeCoords.length > 1}
-								<path
-									d={createPath3D(ingredients[activeIndex].route.map(getCoords), projection)}
-									class="animate-dash fill-none stroke-black stroke-[0.25] lg:stroke-1"
-									style="stroke-dasharray: 1000; stroke-dashoffset: 1000;"
-									filter="url(#routeNoise)"
-								/>
-							{/if}
-							{#each routeCoords as [x, y], i}
-								<circle
-									cx={x}
-									cy={y}
-									r={3}
-									class="fill-red-100"
-									in:fade={{ duration: 300, delay: i * 10000, easing: linear }}
-								/>
+						{#if arcCoords}
+							<path
+								d={path(arcLine)}
+								class="animate-dash fill-none stroke-black stroke-[0.25] lg:stroke-1"
+								style="stroke-dasharray: 1000; stroke-dashoffset: 1000;"
+							/>
+							<!-- marker-end="url(#arrow)" -->
+							{#each routeCoords as coords, i}
+								{@const visible = isVisible(coords, -rotation[0])}
+								{#if visible}
+									{@const [x, y] = projection(coords)}
+									<circle
+										cx={x}
+										cy={y}
+										r={3}
+										class="fill-red-100"
+										in:fade={{ duration: 300, delay: i * 10000, easing: linear }}
+									/>
+								{/if}
 							{/each}
-						{/if} -->
+						{/if}
 
 						<!-- {#if hoveredIndex === i}
 							<HoverTooltip name={ingredient.name} country={ingredient.country.label} {coords} />

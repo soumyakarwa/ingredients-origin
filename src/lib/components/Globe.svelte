@@ -2,24 +2,26 @@
 	// CODE FOR DRAGGABLE GLOBE BUILT ON https://svelte.dev/playground/9617e79b67fb4f48a0f744f6714b62a3?version=4.1.1
 	import countries from '$lib/data/map.topojson.json';
 	import ingredients from '$lib/data/ingredients.json';
-	import RouteLabel from '$lib/components/RouteLabel.svelte';
 	import InfoTooltip from '$lib/components/InfoTooltip.svelte';
 	import IngredientIcon from '$lib/components/IngredientIcon.svelte';
-	import NumberFlow, { continuous } from '@number-flow/svelte';
+	import MyButton from '$lib/components/MyButton.svelte';
 	import { isVisible } from '$lib/components/utils/isVisible';
 	import { getCoords } from '$lib/components/utils/getCoords';
 	import { getArcSegment } from '$lib/components/utils/routeHelper';
-	import { geoOrthographic, geoPath, drag, select, geoInterpolate, range } from 'd3';
+	import { geoOrthographic, geoPath, drag, select } from 'd3';
 	import { feature } from 'topojson-client';
 	import { onMount } from 'svelte';
-	import { fly, fade } from 'svelte/transition';
+	import { fade } from 'svelte/transition';
 	import { linear } from 'svelte/easing';
+
+	interface Props {
+		ingredientId: string;
+	}
+
+	let { ingredientId = $bindable() }: Props = $props();
 
 	// CONSTANTS AND STATE VARIABLES
 	const earthRotation = 11.75;
-	const usa = [-98.5795, 39.8283]; // Center USA
-	const india = [78.9629, 20.5937];
-	const london = [-0.1276, 51.5072];
 	let width = $state(1000);
 	let heightProportion = 1;
 	let height = $derived(width * heightProportion);
@@ -27,6 +29,7 @@
 	let globe: Element | null = $state();
 	let animationFrame: number = $state();
 	let isDragging = $state(false);
+	let letRotate = $state(true);
 	let margin = { top: 20, left: 20, right: 20, bottom: 20 };
 	let innerWidth = $derived(width - margin.right - margin.left);
 	let innerHeight = $derived(width - margin.bottom - margin.top);
@@ -78,23 +81,24 @@
 
 		projection.rotate(rotation);
 	};
-
 	const dragHandler = drag()
 		.on('drag', (event) => {
 			isDragging = true;
+			letRotate = false;
 			cancelAnimationFrame(animationFrame);
 			dragged({ dx: event.dx, dy: event.dy });
 		})
 		.on('end', () => {
-			// isDragging = false;
-			if (activeIndex == null) autoRotate();
+			if (activeIndex == null) {
+				autoRotate();
+			}
 		});
 
 	const autoRotate = () => {
 		const speed = 0.05;
 
 		const update = () => {
-			if (!activeIndex && !isDragging) {
+			if (letRotate) {
 				rotation[0] += speed;
 				projection.rotate(rotation);
 			}
@@ -112,7 +116,9 @@
 		};
 	});
 
-	$inspect(activeIndex, routeCoords, arcCoords);
+	$effect(() => {
+		ingredientId = activeIndex ? ingredients[activeIndex].id : '';
+	});
 </script>
 
 <div class="flex h-full w-full items-center justify-center">
@@ -120,21 +126,32 @@
 		<div class="relative h-full w-1/2" bind:clientWidth={width}>
 			<svg bind:this={globe} {width} {height} preserveAspectRatio="xMidYMid meet">
 				<defs>
-					<marker
-						id="arrow"
-						viewBox="0 -5 10 10"
-						refX="5"
-						refY="0"
-						markerWidth="6"
-						markerHeight="6"
-						orient="auto"
-					>
-						<path d="M0,-5L10,0L0,5" fill="red" />
-					</marker>
+					<filter id="noiseFilter" x="-20%" y="-20%" width="140%" height="140%">
+						<!-- generate a noise pattern -->
+						<feTurbulence
+							type="fractalNoise"
+							baseFrequency="0.02 0.02"
+							numOctaves="2"
+							result="noise"
+						/>
+						<!-- push your graphic through the noise field -->
+						<feDisplacementMap
+							in="SourceGraphic"
+							in2="noise"
+							scale="2"
+							xChannelSelector="R"
+							yChannelSelector="G"
+						/>
+					</filter>
 				</defs>
 				<g class="origin-center" transform={`translate(${margin.left}, ${margin.top})`}>
-					<path bind:this={globe} d={path({ type: 'Sphere' })} fill="#9eeef1" stroke="#000" />
-					<path d={path(land)} fill="#fff6d8" stroke="#000" />
+					<path
+						bind:this={globe}
+						d={path({ type: 'Sphere' })}
+						fill="var(--color-blue-100)"
+						stroke="#000"
+					/>
+					<path d={path(land)} fill="var(--color-green-100)" stroke="#000" stroke-width={'0.5'} />
 					{#each ingredients as ingredient, i}
 						{@const lngLat = getCoords(ingredient.country.coords)}
 						{@const coords = projection(lngLat)}
@@ -150,45 +167,64 @@
 								if (visible) {
 									if (activeIndex == i) {
 										activeIndex = null;
+										letRotate = true;
 									} else {
 										activeIndex = i;
+										letRotate = false;
 									}
 								}
 							}}
 						/>
-
-						{#if arcCoords}
-							<path
-								d={path(arcLine)}
-								class="animate-dash fill-none stroke-black stroke-[0.25] lg:stroke-1"
-								style="stroke-dasharray: 1000; stroke-dashoffset: 1000;"
+					{/each}
+					{#if arcCoords}
+						<path
+							d={path(arcLine)}
+							class="animate-dash fill-none stroke-black stroke-[0.25] lg:stroke-1"
+							style="stroke-dasharray: 1000; stroke-dashoffset: 1000;"
+							filter="url(#noiseFilter)"
+						/>
+					{/if}
+					{#each routeCoords as coords, i}
+						{@const visible = isVisible(coords, -rotation[0])}
+						{#if visible}
+							{@const [x, y] = projection(coords)}
+							<circle
+								cx={x}
+								cy={y}
+								r={3}
+								fill="var(--color-yellow-100)"
+								transition:fade={{ duration: 300, delay: i * 10000, easing: linear }}
 							/>
-							<!-- marker-end="url(#arrow)" -->
-							{#each routeCoords as coords, i}
-								{@const visible = isVisible(coords, -rotation[0])}
-								{#if visible}
-									{@const [x, y] = projection(coords)}
-									<circle
-										cx={x}
-										cy={y}
-										r={3}
-										class="fill-red-100"
-										in:fade={{ duration: 300, delay: i * 10000, easing: linear }}
-									/>
-								{/if}
-							{/each}
+							<text
+								{x}
+								{y}
+								transform={`translate(${5}, ${0})`}
+								class="heading-2 font-semibold uppercase"
+								stroke="var(--color-black)"
+								stroke-width={0.4}
+								fill="var(--color-white)"
+								transition:fade={{ duration: 300, delay: i * 10000, easing: linear }}
+								style="pointer-events: none;">{ingredients[activeIndex].route[i]}</text
+							>
 						{/if}
-
-						<!-- {#if hoveredIndex === i}
-							<HoverTooltip name={ingredient.name} country={ingredient.country.label} {coords} />
-						{/if} -->
 					{/each}
 				</g>
 			</svg>
+			<div class="absolute bottom-0 left-0">
+				<MyButton
+					label={'Rotate'}
+					state={!letRotate ? 'default' : 'active'}
+					aria-label={'button to drag and rotate'}
+					onClickFn={() => {
+						if (activeIndex == null) {
+							letRotate = true;
+						}
+					}}
+				></MyButton>
+			</div>
 		</div>
 		<div class="h-full w-1/2">
 			{#if activeIndex != null}
-				<!-- <RouteLabel route={ingredients[activeIndex].route} {projection} /> -->
 				<InfoTooltip
 					ingredient={ingredients[activeIndex]}
 					bind:activeIndex

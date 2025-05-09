@@ -11,12 +11,12 @@
 
 <button
 	class={[
-		'heading-2 transition-[bg, border] cursor-pointer p-1 leading-[80%] duration-300 ease-linear',
+		'heading-2 transition-[bg, border] p-1 leading-[80%] duration-300 ease-linear',
 		state == 'default'
-			? 'border-1 border-yellow-100 bg-transparent'
+			? 'cursor-pointer border-1 border-green-100 bg-transparent text-black'
 			: state == 'hover'
-				? 'border-1 border-black bg-transparent'
-				: 'border-1 border-black bg-yellow-100'
+				? 'cursor-pointer border-1 border-black bg-green-100 text-white'
+				: 'cursor-default border-1 border-black bg-green-100 text-white'
 	]}
 	onmouseenter={() => {
 		if (state != 'active') {

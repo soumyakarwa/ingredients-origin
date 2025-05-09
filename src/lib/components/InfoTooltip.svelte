@@ -1,7 +1,9 @@
 <script lang="ts">
 	import Button from '$lib/components/MyButton.svelte';
+	import NumberFlow, { continuous } from '@number-flow/svelte';
 	import { fade, slide } from 'svelte/transition';
 	import { linear } from 'svelte/easing';
+	import { utcYear } from 'd3';
 
 	interface Props {
 		ingredient: Ingredient;
@@ -14,16 +16,15 @@
 	let storyActive = $state(true);
 </script>
 
-<!-- style={`left:${coords[0]}px; top:${coords[1]}px;`} -->
 <div
 	class={[
-		'glass-bg flex h-full w-full items-start justify-center overflow-y-auto rounded-none border-1 border-yellow-100 bg-blue-100 px-3 py-3 transition-all duration-300 ease-linear'
+		'flex max-h-full w-full items-start justify-center overflow-y-auto rounded-none border-1 border-black px-3 py-3 shadow-sm transition-all duration-300 ease-linear'
 	]}
 	transition:fade={{ duration: 300, delay: 100, easing: linear }}
 >
 	<div class="relative flex w-full flex-col items-start gap-6">
 		<button
-			class="heading-2 absolute top-0 right-0 cursor-pointer text-yellow-100"
+			class="heading-2 absolute top-0 right-0 cursor-pointer text-black"
 			onclick={() => {
 				value = 'inactive';
 				activeIndex = null;
@@ -32,9 +33,25 @@
 		>
 			X
 		</button>
+		<!-- <div class="title absolute top-0 right-0 text-green-100">
+			<NumberFlow
+				plugins={[continuous]}
+				value={activeIndex != null ? ingredient.year.label : '2025'}
+				format={{ notation: 'standard', useGrouping: false }}
+				suffix={activeIndex != null ? ingredient.year.suffix : ''}
+			/>
+		</div> -->
 		<div class="flex w-full flex-col items-start">
-			<p class="heading-1">{ingredient.name}</p>
-			<p class="heading-2 leading-[80%]">{ingredient.country.label}</p>
+			<p class="title">{ingredient.name}</p>
+			<p class="heading-1">
+				{ingredient.country.label} ~ <NumberFlow
+					plugins={[continuous]}
+					value={activeIndex != null ? ingredient.year.label : '2025'}
+					format={{ notation: 'standard', useGrouping: false }}
+					suffix={activeIndex != null ? ingredient.year.suffix : ''}
+				/>
+			</p>
+			<!-- <p class="heading-1"></p> -->
 		</div>
 		<div class="flex w-full flex-row items-center gap-4">
 			<Button
@@ -52,9 +69,11 @@
 		</div>
 		<div class="flex flex-col gap-3">
 			{#if storyActive}
-				{#each ingredient.text as t}
-					<p class="body font-sans tracking-normal text-black">{t}</p>
-				{/each}
+				<div class="body columns-2 gap-x-8 font-sans tracking-normal text-black">
+					{#each ingredient.text as t}
+						{t}<br /><br />
+					{/each}
+				</div>
 			{:else}
 				<div class="grid w-full grid-cols-1 lg:grid-cols-2">
 					<div class="body flex w-[70%] flex-col gap-0.5 p-1">

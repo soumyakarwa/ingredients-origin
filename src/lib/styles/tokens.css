@@ -4,6 +4,7 @@
 	--color-black: #000000;
 	--color-white: #ffffff;
 	--color-yellow-100: #fff6d8;
+	--color-green-100: #187c4b;
 	/* --color-yellow-100: #7a5e0 */
 	--color-blue-100: #9eeef1;
 	--color-red-100: #ff0000;
@@ -18,7 +19,7 @@
 	font-size: 3rem;
 	font-weight: 600;
 	text-transform: uppercase;
-	line-height: 50%;
+	line-height: 90%;
 }
 
 @utility heading-1 {

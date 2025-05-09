@@ -169,20 +169,6 @@
 		}
 	},
 	{
-		"id": "tofu",
-		"name": "Bean Curd",
-		"country": {
-			"label": "China",
-			"coords": "Xinjiang"
-		},
-		"text": ["txt tba"],
-		"route": ["China"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
 		"id": "bean-sprout",
 		"name": "Bean Sprout",
 		"country": {

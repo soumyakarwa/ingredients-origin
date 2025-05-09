@@ -7,12 +7,14 @@
 			"coords": "Syria"
 		},
 		"text": [
-			"Aleppo pepper is a type of black pepper that is native to Syria. It is known for its unique flavor and aroma, which is described as smoky and slightly spicy. The peppercorn is small and has a dark brown color, and it is often used in Middle Eastern cuisine."
+			"Aleppo pepper, known locally as pul biber in Turkey and piment d’Alep in French, is a spice that carries the essence of its namesake city, Aleppo, Syria. This deep red, coarsely ground chili pepper is renowned for its rich, fruity flavor with subtle notes of cumin and a moderate heat level of around 10,000 Scoville Heat Units. Its preparation involves sun-drying the Halaby pepper, de-seeding, and coarsely grinding it, then mixing with salt and olive oil to create a moist, flavorful condiment.",
+			"The particular conditions of Aleppo, Syria, with its fertile soil and dry, hot climate, allowed this variety of chili to flourish. Over centuries, local farmers in the region began selecting peppers with unique characteristics, such as a moderate heat level and complex, fruity flavors, differentiating them from other varieties. This careful cultivation and adaptation to the environment contributed to the emergence of the distinct Aleppo pepper, which became intertwined with the region's culinary and cultural identity.",
+			"The journey of Aleppo pepper mirrors the historical spread of chili peppers themselves. Native to the Americas, chili peppers were introduced to Europe by Christopher Columbus in the late 15th century. From there, they traveled across the Mediterranean and into the Middle East, where the fertile lands of Aleppo provided ideal conditions for cultivating a unique variety of Capsicum annuum. Aleppo's strategic location along the Silk Road further facilitated the spread and integration of this spice into regional cuisines."
 		],
 		"route": ["Mexico", "Portugal", "Spain", "Morocco", "Syria"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
+			"label": "1490",
+			"suffix": "s"
 		}
 	},
 	{
@@ -48,8 +50,8 @@
 		],
 		"route": ["Mexico"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
+			"label": "5000",
+			"suffix": "B.C."
 		}
 	},
 	{
@@ -60,13 +62,14 @@
 			"coords": "California"
 		},
 		"text": [
-			"The avocado tree, Persea americana, belongs to the laurel family, making it a distant cousin of cinnamon, bay leaf, and sassafras. Alongside corn, beans, and chili peppers, avocados were a staple in the pre-Columbian Mesoamerican diet. Archaeological findings suggest that wild avocados first emerged in South-Central Mexico and were being cultivated across Mexico, Central America, and parts of South America as far back as 7,000 years ago.",
-			"The first recorded mention of the avocado in Western literature dates to 1518, when Spanish conquistador Martín Fernández de Enciso wrote about eating the fruit in Colombia. A year later, when Hernán Cortés arrived in the grand Aztec capital of Tenochtitlan (modern-day Mexico City), he encountered avocados as part of the refined cuisine served to Emperor Montezuma. One notable preparation was ahuaca-mulli, a vibrant mash of avocado, tomato, and onion.",
-			"The Aztecs called the fruit ahuacatl, which also meant \"testicle,\" a nod to its shape and reputation as an aphrodisiac believed to enhance male vitality. According to food historian Sophie Coe, avocados played a crucial role in the primarily low-fat Mesoamerican diet, offering a rich source of nutrition with an oil content reaching up to 30%."
+			"Avocados, native to Mesoamerica, have a rich history that spans thousands of years. In the United States, their journey from a regional curiosity to a national staple is a tale of horticultural innovation, cultural exchange, and evolving consumer preferences.",
+			"The avocado (Persea americana) has ancient roots, with evidence suggesting its cultivation in the Tehuacán Valley of central Mexico as early as 5,000 years ago . Spanish conquistadors introduced the fruit to Europe in the 16th century, but it wasn't until the 19th century that avocados made their way to the United States. In 1833, horticulturist Henry Perrine planted avocados in Florida, and by 1856, California saw its first avocado trees.",
+			"Despite early introductions, avocados remained a niche crop in the U.S. until the 20th century. In 1926, a pivotal moment occurred when postal worker Rudolph Hass planted a seed that would lead to the creation of the now-dominant Hass avocado . This variety, patented in 1935, offered a creamy texture and year-round harvest, making it more appealing to consumers and growers alike.",
+			"The mid-20th century saw avocados gaining popularity, particularly in California, Florida, and Hawaii. However, it wasn't until the 1980s that the fruit began to gain broader acceptance across the U.S., driven by health trends and increased awareness of its nutritional benefits . The 1990s further fueled this growth, with the introduction of the North American Free Trade Agreement (NAFTA) in 1994, which allowed for increased avocado imports from Mexico ."
 		],
 		"route": ["Mexico", "California"],
 		"year": {
-			"label": "2025",
+			"label": "1833",
 			"suffix": ""
 		}
 	},
@@ -77,25 +80,16 @@
 			"label": "China",
 			"coords": "Shanghai"
 		},
-		"text": ["txt tba"],
+		"text": [
+			"Bok choy, also known as pak choi or Chinese cabbage, is a leafy green vegetable that has been integral to Chinese cuisine for centuries. Its history traces back over 5,000 years to the Yangtze River Delta, one of China's oldest and most fertile agricultural regions. The name \"bok choy\" comes from the Cantonese words \"bok\" (white) and \"choy\" (vegetable), reflecting its pale stalks and green leaves.",
+			"Bok choy belongs to the Brassica rapa species and is part of the Chinensis group, which includes other Asian greens like gai lan and choy sum. Unlike its European relatives, bok choy does not form a head but instead grows in loose clusters, making it distinct in appearance and texture.",
+			"The vegetable's significance extends beyond its culinary uses; it has been utilized in traditional Chinese medicine for its purported health benefits, including aiding digestion and promoting longevity.",
+			"In the 19th century, Chinese immigrants introduced bok choy to North America, particularly to California, where it became a staple in Chinese-American cuisine. Today, bok choy is widely cultivated and enjoyed globally, appreciated for its crisp texture and mild flavor that complements a variety of dishes."
+		],
 		"route": ["China"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "bamboo-shoots",
-		"name": "Bamboo Shoot",
-		"country": {
-			"label": "Thailand",
-			"coords": "Thailand"
-		},
-		"text": ["txt tba"],
-		"route": ["Thailand"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
+			"label": "3025",
+			"suffix": "B.C."
 		}
 	},
 	{
@@ -105,25 +99,14 @@
 			"label": "Italy",
 			"coords": "Italy"
 		},
-		"text": ["txt tba"],
-		"route": ["Italy"],
+		"text": [
+			"This versatile herb with an intense aroma and innumerable uses in the kitchen began to be cultivated about 5000 years ago in South East Asia , and in particular in India and tropical Asia, although some written evidence from 807 AD suggests that the sweet basil, at that time, was already used in the Chinese region of Hunan. From Asia the plant would then travel around the world, first migrating to the Middle East thanks to the spice traders, in countries with an ideal climate such as Iran and Egypt, then around 350 BC in Greece and Italy, thanks probably to the army of Charlemagne who moved east with scholars in tow, and finally after the sixteenth century in England and America. The fascinating history and diffusion of basil is characterized by different uses in different cultures, not only as food but also as a healing plant or with the most disparate properties, which often resulted in superstitions and folkloristic elements. Also basil eventually migrated westward as whole plants as it could be grown easily indoors and away from exposure to cold climates and frost.",
+			"Basil became an integral seasoning in Italian cuisine, and in fact Italians had such appreciation for this herb, that it became a symbol of love. It is said that if an Italian woman placed a sprig of basil on her balcony, it was a message to her beau that he could call that evening."
+		],
+		"route": ["China", "India", "Iran", "Egypt", "Greece", "Italy"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "basil",
-		"name": "Basil",
-		"country": {
-			"label": "Morocco",
-			"coords": "Morocco"
-		},
-		"text": ["txt tba"],
-		"route": ["Morocco"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
+			"label": "305",
+			"suffix": "B.C."
 		}
 	},
 	{
@@ -133,11 +116,16 @@
 			"label": "Thailand",
 			"coords": "Thailand"
 		},
-		"text": ["txt tba"],
+		"text": [
+			"Thai basil (Ocimum basilicum var. thyrsiflora), known as horapha in Thai, is indigenous to Southeast Asia, particularly Thailand, Vietnam, and Laos. Its cultivation dates back approximately 5,000 years, with early use in both culinary and medicinal practices. The exact origin within Southeast Asia is debated, but it's widely acknowledged that Thai basil spread through the region via ancient trade routes.",
+			"Historically, Thailand has been a central hub in the Southeast Asian spice trade, with merchants from India, Persia, China, and even Portugal introducing various spices and herbs. These trade routes facilitated the exchange of not only goods but also agricultural knowledge and plant species, including Thai basil. As a result, Thai basil became a staple in Thai cuisine, featured in dishes like pad kra pao (stir-fried basil with meat), green curry, and tom yum soup.",
+			"In Thai cooking, Thai basil is more than just a flavoring agent; it embodies the balance and complexity that define the cuisine. Its inclusion in dishes such as pad kra pao (stir-fried meat with basil) and green curry adds depth and a distinctive aromatic quality. The herb's ability to withstand high cooking temperatures without losing its flavor makes it ideal for stir-fries and curries.",
+			"Beyond its culinary uses, Thai basil holds cultural significance in Southeast Asia. It is often used in religious ceremonies and traditional medicine, symbolizing love and protection in certain cultures. This multifaceted role underscores the herb's deep-rooted presence in the region's heritage."
+		],
 		"route": ["Thailand"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
+			"label": "3000",
+			"suffix": "B.C."
 		}
 	},
 	{
@@ -147,24 +135,36 @@
 			"label": "Italy",
 			"coords": "Italy"
 		},
-		"text": ["txt tba"],
+		"text": [
+			"Pesto alla Genovese is a quintessential Italian sauce that originated in Genoa, the capital of Liguria, in the 19th century. The name \"pesto\" derives from the Italian verb pestare, meaning \"to pound\" or \"to crush,\" reflecting the traditional method of preparation using a mortar and pestle.",
+			"The earliest documented recipe for pesto was published in 1863 by Giovanni Battista Ratto in his book La Cuciniera Genovese. This version included garlic, basil (referred to as baxaicò in the Ligurian dialect), marjoram, parsley, Dutch cheese, Parmesan, butter, and olive oil, used to season pasta dishes like lasagna and gnocchi.",
+			"The evolution of pesto is influenced by historical culinary practices. In ancient Rome, a similar condiment called moretum was made by pounding herbs with cheese and oil. During the Middle Ages, the Genovese prepared agliata, a sauce made from mashed garlic and walnuts, which is considered an ancestor of pesto",
+			"Pesto's significance in Italian cuisine lies in its embodiment of Ligurian culinary traditions. The region's abundant production of basil, particularly the Genoese variety, and its access to pine nuts and olive oil, are reflected in the sauce's ingredients. Pesto is traditionally used to dress pasta dishes such as trofie al pesto and trenette al pesto, and it has become a symbol of Ligurian gastronomy.",
+			"Today, pesto alla Genovese is recognized as a traditional Italian food product and is celebrated worldwide for its fresh, aromatic flavor and its representation of Italian culinary heritage."
+		],
 		"route": ["Italy"],
 		"year": {
-			"label": "2025",
+			"label": "1300",
 			"suffix": ""
 		}
 	},
 	{
 		"id": "pesto",
-		"name": "Pesto",
+		"name": "Chermoula",
 		"country": {
 			"label": "Morocco",
 			"coords": "Morocco"
 		},
-		"text": ["txt tba"],
+		"text": [
+			"Chermoula is believed to have originated in North Africa, specifically in Morocco, where it remains a key element of Moroccan cuisine. Its roots can be traced back to the region's Berber and Arab influences, reflecting a long history of cultural exchanges. The name \"chermoula\" is derived from the Arabic verb charmal, which means \"to rub\" or \"to massage,\" referring to the method of massaging or rubbing the marinade into fish, meat, or vegetables.",
+
+			"Historically, the Berber people, the indigenous inhabitants of North Africa, are thought to have developed the basic concept of chermoula as a way to preserve and enhance the flavor of food in the harsh climate. Over time, as Arab traders and other cultures moved through North Africa, chermoula evolved, incorporating additional ingredients like garlic, lemon, and various spices that reflect the region's rich trade routes and culinary exchanges.",
+
+			"Chermoula has become especially important in Moroccan cuisine, though it is also widely used in Tunisia, Algeria, and other North African countries. Its versatility and vibrant, herbaceous flavor make it a staple in these regions, often used to season seafood, meats, couscous, and vegetables."
+		],
 		"route": ["Morocco"],
 		"year": {
-			"label": "2025",
+			"label": "7500s",
 			"suffix": ""
 		}
 	},
@@ -175,11 +175,16 @@
 			"label": "Malaysia",
 			"coords": "Malaysia"
 		},
-		"text": ["txt tba"],
-		"route": ["Malaysia"],
+		"text": [
+			"Bean sprouts, especially mung bean sprouts, have been an important part of Malaysian cuisine for centuries. Originally from the Indian subcontinent, mung beans have been grown for over 5,000 years, and their sprouts have spread throughout Asia, including Malaysia.",
+			"Bean sprouts are significant in Malaysian cuisine because they embody both the country’s agricultural history and the fusion of cultures that have shaped its food. They are easy to grow, nutritious, and versatile, making them a staple ingredient in many traditional dishes. In places like Ipoh, where the local bean sprouts are particularly prized for their crunchy texture and sweetness, they have become an iconic part of the region's food culture.",
+			"The significance of bean sprouts goes beyond just being a healthy and tasty ingredient. They represent the simplicity and resourcefulness of Malaysian cooking, where fresh, local ingredients are used to create balanced, flavorful meals. In dishes like Ayam Tauge, the bean sprouts add a refreshing contrast to the savory flavors of the chicken, while in Char Kway Teow, they provide texture and freshness to complement the stir-fried noodles.",
+			"Ultimately, bean sprouts are significant because they are a symbol of Malaysia’s connection to its land and its ability to blend indigenous and external influences into unique, beloved culinary traditions."
+		],
+		"route": ["India", "Malaysia"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
+			"label": "3000",
+			"suffix": "B.C."
 		}
 	},
 	{
@@ -189,10 +194,14 @@
 			"label": "India",
 			"coords": "Delhi"
 		},
-		"text": ["txt tba"],
-		"route": ["India"],
+		"text": [
+			"Bell peppers, or capsicum, weren’t originally a part of Indian cuisine. They made their way into the country much later, after being introduced by Portuguese explorers in the 15th and 16th centuries. The Portuguese had been traveling to various parts of the world and, along with many other crops, brought the bell pepper to India from South America, where it is native.",
+			"At first, bell peppers weren’t widely used in India. However, as time went on, they slowly became a part of Indian cooking, especially in urban areas. Over the years, bell peppers began to appear in curries, stir-fries, and stuffed vegetable dishes, adding color and sweetness to the often-spicy Indian food. They also found a place in chaats (snack foods) and vegetable kebabs, where they helped balance out the heat from the chilies and other spices.",
+			"Packed with vitamin C and antioxidants, they became an important part of the diet, especially in vegetarian dishes, which are common in Indian cuisine. Over time, bell peppers became so popular that they were included in everyday dishes across the country."
+		],
+		"route": ["Mexico", "Portugal", "India"],
 		"year": {
-			"label": "2025",
+			"label": "1550",
 			"suffix": ""
 		}
 	},
@@ -203,10 +212,13 @@
 			"label": "Thailand",
 			"coords": "Thailand"
 		},
-		"text": ["txt tba"],
-		"route": ["Thailand"],
+		"text": [
+			"Bell peppers, like many other ingredients in Thai food, have an interesting history. They weren’t originally native to Thailand but were introduced to the region much later. The bell pepper comes from South America, where it was first cultivated by indigenous people in places like Mexico and Peru. When European explorers, especially the Portuguese and Spanish, began trading and traveling around the world, they brought back many new foods, including the bell pepper.",
+			"By the time the bell pepper made its way to Southeast Asia, it started to blend into the local cuisine. In Thailand, the bell pepper was embraced for its vibrant color and mild, sweet flavor, which offered a nice balance to the strong, spicy flavors that are characteristic of Thai food. While chilies were already a big part of Thai cooking, the bell pepper was used to add texture, color, and a little sweetness to the dishes without the intense heat of the chili."
+		],
+		"route": ["Mexico", "Portugal", "Spain", "Thailand"],
 		"year": {
-			"label": "2025",
+			"label": "1700",
 			"suffix": ""
 		}
 	},
@@ -217,11 +229,15 @@
 			"label": "India",
 			"coords": "India"
 		},
-		"text": ["txt tba"],
-		"route": ["India"],
+		"text": [
+			"Lentils are believed to have been cultivated in India since ancient times, possibly as far back as the Indus Valley Civilization, around 4,000 to 5,000 years ago.",
+			"Lentils originally come from the Middle East and Central Asia, where they were first cultivated. They spread to India through early trade routes and migration. By the time the Vedic period (around 1500 BCE) arrived, lentils had already become a common food source in the Indian subcontinent. They were easy to grow, nutritious, and could be stored for long periods, making them a perfect food for the region’s varying climates and agricultural practices.",
+			"In Indian cuisine, lentils are used in many forms—dal (a dish made with cooked lentils) is one of the most popular, and is eaten almost daily in households across the country. There are countless varieties of lentils, and each one adds a different texture and flavor to the food. They can be used in soups, curries, stews, or even snacks like dal fritters. The word \"dal\" itself refers to both the lentils and the dishes made from them."
+		],
+		"route": ["Turkey", "Iran", "India"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
+			"label": "2000",
+			"suffix": "B.C."
 		}
 	},
 	{
@@ -231,10 +247,14 @@
 			"label": "United States",
 			"coords": "Louisiana"
 		},
-		"text": ["txt tba"],
-		"route": ["United Statesn"],
+		"text": [
+			"The story of black beans begins in Central and South America, where they were originally cultivated by ancient civilizations like the Maya and Aztecs. These early cultures recognized the nutritional value of black beans, using them as a major source of protein. The beans were often combined with corn, forming a balanced diet that sustained these societies for centuries.",
+			"In the United States, black beans became increasingly popular in the Southwest, Texas, and California, where they became a fundamental part of Mexican and Tex-Mex cuisine. As immigration from Latin America and the Caribbean grew, black beans found their way into everyday meals like burritos, tacos, and rice and beans, often alongside other staples like corn and tortillas.",
+			"The significance of black beans in American food lies in their versatility and nutritional value. They are high in protein, fiber, and iron, making them an essential part of many diets. In the Southern United States, particularly in Louisiana, black beans became part of Creole and Cajun dishes, adding depth and richness to soups, stews, and gumbos."
+		],
+		"route": ["United States"],
 		"year": {
-			"label": "2025",
+			"label": "1600",
 			"suffix": ""
 		}
 	},

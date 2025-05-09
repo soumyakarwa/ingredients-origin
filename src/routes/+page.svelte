@@ -6,8 +6,12 @@
 </script>
 
 <div class="content-well relative flex flex-col items-start">
-	<div class="absolute top-0 left-0">
-		<Sketch {ingredientId} />
-	</div>
-	<Globe {ingredientId} />
+	{#if ingredientId !== ''}
+		{#key ingredientId}
+			<div class="absolute top-0 left-0">
+				<Sketch {ingredientId} />
+			</div>
+		{/key}
+	{/if}
+	<Globe bind:ingredientId />
 </div>

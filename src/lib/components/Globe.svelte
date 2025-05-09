@@ -224,13 +224,15 @@
 			</div>
 		</div>
 		<div class="h-full w-1/2">
-			{#if activeIndex != null}
-				<InfoTooltip
-					ingredient={ingredients[activeIndex]}
-					bind:activeIndex
-					bind:value={infoTooltipState}
-				/>
-			{/if}
+			<!-- {#if activeIndex != null} -->
+			<InfoTooltip
+				ingredient={ingredients[activeIndex]}
+				bind:activeIndex
+				bind:value={infoTooltipState}
+			/>
+			<!-- {:else}
+				
+			{/if} -->
 		</div>
 	</div>
 </div>

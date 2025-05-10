@@ -90,12 +90,12 @@
 					onClickFn={() => (storyActive = true)}
 					ariaLabel={'Show Origin Story'}
 				/>
-				<Button
+				<!-- <Button
 					label={'MY EXPERIENCES'}
 					state={storyActive ? 'default' : 'active'}
 					onClickFn={() => (storyActive = false)}
 					ariaLabel={'Show My Experiences'}
-				/>
+				/> -->
 			</div>
 			<div class="flex flex-col gap-3">
 				{#if storyActive}

@@ -223,7 +223,7 @@
 				></MyButton>
 			</div>
 		</div>
-		<div class="h-full w-1/2">
+		<div class="h-full w-1/2 self-center">
 			<!-- {#if activeIndex != null} -->
 			<InfoTooltip
 				ingredient={ingredients[activeIndex]}

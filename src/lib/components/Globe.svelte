@@ -11,7 +11,7 @@
 	import { geoOrthographic, geoPath, drag, select } from 'd3';
 	import { feature } from 'topojson-client';
 	import { onMount } from 'svelte';
-	import { fade } from 'svelte/transition';
+	import { fade, fly } from 'svelte/transition';
 	import { linear } from 'svelte/easing';
 
 	interface Props {
@@ -121,118 +121,112 @@
 	});
 </script>
 
-<div class="flex h-full w-full items-center justify-center">
-	<div class="flex w-full flex-row gap-2">
-		<div class="relative h-full w-1/2" bind:clientWidth={width}>
-			<svg bind:this={globe} {width} {height} preserveAspectRatio="xMidYMid meet">
-				<defs>
-					<filter id="noiseFilter" x="-20%" y="-20%" width="140%" height="140%">
-						<!-- generate a noise pattern -->
-						<feTurbulence
-							type="fractalNoise"
-							baseFrequency="0.02 0.02"
-							numOctaves="2"
-							result="noise"
-						/>
-						<!-- push your graphic through the noise field -->
-						<feDisplacementMap
-							in="SourceGraphic"
-							in2="noise"
-							scale="2"
-							xChannelSelector="R"
-							yChannelSelector="G"
-						/>
-					</filter>
-				</defs>
-				<g class="origin-center" transform={`translate(${margin.left}, ${margin.top})`}>
-					<path
-						bind:this={globe}
-						d={path({ type: 'Sphere' })}
-						fill="var(--color-blue-100)"
-						stroke="#000"
+<div class="flex w-full flex-row gap-2">
+	<div class="relative h-full w-1/2" bind:clientWidth={width}>
+		<svg bind:this={globe} {width} {height} preserveAspectRatio="xMidYMid meet">
+			<defs>
+				<filter id="noiseFilter" x="-20%" y="-20%" width="140%" height="140%">
+					<!-- generate a noise pattern -->
+					<feTurbulence
+						type="fractalNoise"
+						baseFrequency="0.02 0.02"
+						numOctaves="2"
+						result="noise"
 					/>
-					<path d={path(land)} fill="var(--color-green-100)" stroke="#000" stroke-width={'0.5'} />
-					{#each ingredients as ingredient, i}
-						{@const lngLat = getCoords(ingredient.country.coords)}
-						{@const coords = projection(lngLat)}
-						{@const visible = isVisible(lngLat, -rotation[0])}
-						<IngredientIcon
-							x={coords[0]}
-							y={coords[1]}
-							{visible}
-							isActive={activeIndex == i}
-							name={ingredient.name}
-							id={ingredient.id}
-							onClickFn={() => {
-								if (visible) {
-									if (activeIndex == i) {
-										activeIndex = null;
-										letRotate = true;
-									} else {
-										activeIndex = i;
-										letRotate = false;
-									}
+					<!-- push your graphic through the noise field -->
+					<feDisplacementMap
+						in="SourceGraphic"
+						in2="noise"
+						scale="2"
+						xChannelSelector="R"
+						yChannelSelector="G"
+					/>
+				</filter>
+			</defs>
+			<g class="origin-center" transform={`translate(${margin.left}, ${margin.top})`}>
+				<path
+					bind:this={globe}
+					d={path({ type: 'Sphere' })}
+					fill="var(--color-blue-100)"
+					stroke="#000"
+				/>
+				<path d={path(land)} fill="var(--color-green-100)" stroke="#000" stroke-width={'0.5'} />
+				{#each ingredients as ingredient, i}
+					{@const lngLat = getCoords(ingredient.country.coords)}
+					{@const coords = projection(lngLat)}
+					{@const visible = isVisible(lngLat, -rotation[0])}
+					<IngredientIcon
+						x={coords[0]}
+						y={coords[1]}
+						{visible}
+						isActive={activeIndex == i}
+						name={ingredient.name}
+						id={ingredient.id}
+						onClickFn={() => {
+							if (visible) {
+								if (activeIndex == i) {
+									activeIndex = null;
+									letRotate = true;
+								} else {
+									activeIndex = i;
+									letRotate = false;
 								}
-							}}
+							}
+						}}
+					/>
+				{/each}
+				{#if arcCoords}
+					<path
+						d={path(arcLine)}
+						class="animate-dash fill-none stroke-black stroke-[0.25] lg:stroke-1"
+						style="stroke-dasharray: 1000; stroke-dashoffset: 1000;"
+						filter="url(#noiseFilter)"
+					/>
+				{/if}
+				{#each routeCoords as coords, i}
+					{@const visible = isVisible(coords, -rotation[0])}
+					{#if visible}
+						{@const [x, y] = projection(coords)}
+						<circle
+							cx={x}
+							cy={y}
+							r={3}
+							fill="var(--color-yellow-100)"
+							transition:fade={{ duration: 300, delay: i * 10000, easing: linear }}
 						/>
-					{/each}
-					{#if arcCoords}
-						<path
-							d={path(arcLine)}
-							class="animate-dash fill-none stroke-black stroke-[0.25] lg:stroke-1"
-							style="stroke-dasharray: 1000; stroke-dashoffset: 1000;"
-							filter="url(#noiseFilter)"
-						/>
+						<text
+							{x}
+							{y}
+							transform={`translate(${5}, ${0})`}
+							class="heading-2 font-semibold uppercase"
+							stroke="var(--color-black)"
+							stroke-width={0.4}
+							fill="var(--color-white)"
+							transition:fade={{ duration: 300, delay: i * 10000, easing: linear }}
+							style="pointer-events: none;">{ingredients[activeIndex].route[i]}</text
+						>
 					{/if}
-					{#each routeCoords as coords, i}
-						{@const visible = isVisible(coords, -rotation[0])}
-						{#if visible}
-							{@const [x, y] = projection(coords)}
-							<circle
-								cx={x}
-								cy={y}
-								r={3}
-								fill="var(--color-yellow-100)"
-								transition:fade={{ duration: 300, delay: i * 10000, easing: linear }}
-							/>
-							<text
-								{x}
-								{y}
-								transform={`translate(${5}, ${0})`}
-								class="heading-2 font-semibold uppercase"
-								stroke="var(--color-black)"
-								stroke-width={0.4}
-								fill="var(--color-white)"
-								transition:fade={{ duration: 300, delay: i * 10000, easing: linear }}
-								style="pointer-events: none;">{ingredients[activeIndex].route[i]}</text
-							>
-						{/if}
-					{/each}
-				</g>
-			</svg>
-			<div class="absolute bottom-0 left-0">
-				<MyButton
-					label={'Rotate'}
-					state={!letRotate ? 'default' : 'active'}
-					aria-label={'button to drag and rotate'}
-					onClickFn={() => {
-						if (activeIndex == null) {
-							letRotate = true;
-						}
-					}}
-				></MyButton>
-			</div>
+				{/each}
+			</g>
+		</svg>
+		<div class="absolute bottom-0 left-0">
+			<MyButton
+				label={'Rotate'}
+				state={!letRotate ? 'default' : 'active'}
+				aria-label={'button to drag and rotate'}
+				onClickFn={() => {
+					if (activeIndex == null) {
+						letRotate = true;
+					}
+				}}
+			></MyButton>
 		</div>
-		<div class="h-full w-1/2 self-center">
-			<!-- {#if activeIndex != null} -->
-			<InfoTooltip
-				ingredient={ingredients[activeIndex]}
-				bind:activeIndex
-				bind:value={infoTooltipState}
-			/>
-			<!-- {:else}
-				
-			{/if} -->
-		</div>
+	</div>
+	<div class="h-full w-1/2 self-center">
+		<InfoTooltip
+			ingredient={ingredients[activeIndex]}
+			bind:activeIndex
+			bind:value={infoTooltipState}
+		/>
 	</div>
 </div>

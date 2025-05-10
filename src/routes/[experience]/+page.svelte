@@ -1,9 +1,11 @@
 <script lang="ts">
-	import Intro from '$lib/components/Intro.svelte';
-	import { scale, fade, fly } from 'svelte/transition';
+	import Globe from '$lib/components/Globe.svelte';
+	import Sketch from '$lib/components/Sketch.svelte';
+	import { fade, fly } from 'svelte/transition';
 	import { cubicInOut } from 'svelte/easing';
 	import { onMount, tick } from 'svelte';
 
+	let ingredientId = $state('');
 	let mounted = $state(false);
 
 	onMount(async () => {
@@ -16,8 +18,15 @@
 	<div
 		in:fly={{ y: 500, duration: 300, opacity: 100, easing: cubicInOut }}
 		out:fly={{ y: -500, duration: 300, opacity: 0, easing: cubicInOut }}
-		class="margin-auto flex items-center justify-center"
+		class="h-full w-full"
 	>
-		<Intro />
+		{#if ingredientId !== ''}
+			{#key ingredientId}
+				<div class="absolute top-0 left-0">
+					<Sketch {ingredientId} />
+				</div>
+			{/key}
+		{/if}
+		<Globe bind:ingredientId />
 	</div>
 {/if}

@@ -2,21 +2,27 @@
 	import P5 from 'p5-svelte';
 
 	interface Props {
-		ingredientId: string;
+		ingredientId: string[];
+		bezier?: {
+			startPos: { x: number; y: number };
+			endPos: { x: number; y: number };
+			control1: { x: number; y: number };
+			control2: { x: number; y: number };
+		};
 	}
 
-	let { ingredientId }: Props = $props();
+	let { ingredientId, bezier }: Props = $props();
 
 	let width = $state(0);
 	let height = $state(0);
 
-	let img = $state();
+	let img = $state([]);
 	let imagePositions: { x: number; y: number }[] = $state([]);
-	let maxSteps; // Number of images to place along the curve
+	let maxSteps;
 	let stepDelay = 100;
 	let startX, startY, controlX1, controlX2, controlY1, controlY2, endX, endY;
-	let lastTime = 0; // To track the time between frames
-	let currentStep = 0; // To keep track of which image we are on
+	let lastTime = 0;
+	let currentStep = 0;
 
 	const sketch = (p5) => {
 		const estimateBezierLength = (
@@ -47,21 +53,20 @@
 		};
 
 		p5.setup = async () => {
-			img = await p5.loadImage(`/icons/${ingredientId}.png`);
+			ingredientId.forEach(async (imageId, i) => {
+				img[i] = await p5.loadImage(`/icons/${imageId}.png`);
+			});
+
 			p5.createCanvas(width, height);
 
-			// Randomly choose start and end points along the edges
-			startX = p5.random(0, p5.width); // Random start point on the top edge
-			startY = 0; // Top edge
-			endX = p5.random(0, p5.width); // Random end point on the bottom edge
-			endY = p5.height; // Bottom edge
-
-			// Control points are now more randomly placed across the canvas
-			controlX1 = p5.random(p5.width * 0.5, p5.width); // Control point 1 x position on the right half
-			controlY1 = p5.random(0, p5.height); // Control point 1 y position (can still be anywhere on the y-axis)
-
-			controlX2 = p5.random(p5.width * 0.5, p5.width); // Control point 2 x position on the right half
-			controlY2 = p5.random(0, p5.height);
+			startX = bezier ? bezier.startPos.x * p5.width : p5.random(0, p5.width);
+			startY = bezier ? bezier.startPos.y * p5.height : 0;
+			endX = bezier ? bezier.endPos.x * p5.width : p5.random(0, p5.width);
+			endY = bezier ? bezier.endPos.y * p5.height : p5.height;
+			controlX1 = bezier ? bezier.control1.x * p5.width : p5.random(p5.width * 0.5, p5.width);
+			controlY1 = bezier ? bezier.control1.y * p5.height : p5.random(0, p5.height);
+			controlX2 = bezier ? bezier.control2.x * p5.width : p5.random(p5.width * 0.5, p5.width);
+			controlY2 = bezier ? bezier.control2.y * p5.height : p5.random(0, p5.height);
 
 			const curveLength = estimateBezierLength(
 				startX,
@@ -75,40 +80,36 @@
 				25
 			);
 
-			// Set maxSteps based on the length of the curve
-			maxSteps = Math.floor(curveLength / 20); // Adjust divisor to control step density
-
+			maxSteps = Math.floor(curveLength / 20);
 			for (let i = 0; i <= maxSteps; i++) {
-				const t = i / maxSteps; // Parameter t goes from 0 to 1
+				const t = i / maxSteps;
 				const x = p5.bezierPoint(startX, controlX1, controlX2, endX, t);
 				const y = p5.bezierPoint(startY, controlY1, controlY2, endY, t);
-				imagePositions[i] = { x, y }; // Store the position of each image
+				imagePositions[i] = { x, y };
 			}
 		};
 
 		p5.windowResized = () => {
-			// Update canvas size when window is resized
 			p5.resizeCanvas(width, height);
 			p5.redraw();
 		};
 
 		p5.draw = () => {
-			const currentTime = p5.millis(); // Get the current time in milliseconds
-
-			// Only proceed if enough time has passed to animate the next image
+			const currentTime = p5.millis();
 			if (currentTime - lastTime >= stepDelay && currentStep <= maxSteps) {
 				const { x, y } = imagePositions[currentStep];
 				p5.noStroke();
 				p5.noFill();
-				p5.image(img, x - 25, y - 25, 50, 50); // Draw the image at the stored position
+				const index = currentStep % img.length;
+				p5.image(img[index], x - 25, y - 25, 50, 50);
 
-				currentStep++; // Move to the next image
+				currentStep++;
 
-				lastTime = currentTime; // Update the last time the image was drawn
+				lastTime = currentTime;
 			}
 
 			if (currentStep > maxSteps) {
-				p5.noLoop(); // Stops the loop after all images are drawn
+				p5.noLoop();
 			}
 		};
 	};

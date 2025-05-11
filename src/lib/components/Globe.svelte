@@ -180,8 +180,8 @@
 						d={path(arcLine)}
 						class="animate-dash fill-none stroke-black stroke-[0.25] lg:stroke-1"
 						style="stroke-dasharray: 1000; stroke-dashoffset: 1000;"
-						filter="url(#noiseFilter)"
 					/>
+					<!-- filter="url(#noiseFilter)" -->
 				{/if}
 				{#each routeCoords as coords, i}
 					{@const visible = isVisible(coords, -rotation[0])}
@@ -222,7 +222,7 @@
 			></MyButton>
 		</div>
 	</div>
-	<div class="h-full w-1/2 self-center">
+	<div class="h-full w-1/2 self-center" style:height={`${height}px`}>
 		<InfoTooltip
 			ingredient={ingredients[activeIndex]}
 			bind:activeIndex

@@ -18,12 +18,12 @@
 	<div
 		in:fly={{ y: 500, duration: 300, opacity: 100, easing: cubicInOut }}
 		out:fly={{ y: -500, duration: 300, opacity: 0, easing: cubicInOut }}
-		class="h-full w-full"
+		class="h-full w-full self-center"
 	>
 		{#if ingredientId !== ''}
 			{#key ingredientId}
 				<div class="absolute top-0 left-0">
-					<Sketch {ingredientId} />
+					<Sketch ingredientId={[ingredientId]} />
 				</div>
 			{/key}
 		{/if}

@@ -34,11 +34,24 @@
 			]}
 		>
 			<div class="flex flex-col">
-				<div class="title">[INGREDIENT]</div>
+				<div class="title">Tatva</div>
 				<div class="heading-1">Choose An Ingredient</div>
 			</div>
-			<div class="body columns-2 gap-x-8 font-sans tracking-normal text-black">
-				Choose an Ingredient
+			<div class="body font-sans tracking-normal text-black">
+				If we look back in history, there are many moments we could point to and say, “Ah, yes, this
+				is why it happened.” For instance, the immediate cause of the First World War was the
+				assassination of Archduke Franz Ferdinand, heir to the Austro-Hungarian throne3. Of course,
+				there were prior years of tension, bloodshed, and political espionage between the nation
+				states, yet we point to this event and say, “This is where it all unravelled.” Similarly, I
+				believe that the food of a cuisine, and by inference ingredients, has a story behind it– a
+				reason for it to one day become inseparable and institutionalized in a people’s history.<br
+				/><br />
+				I believe an ingredient would only be accepted in a culture because it can take on a role or
+				fill a void. For instance, when tomatoes arrived, spaghetti became an integral cultural piece
+				in Italy. Originally from across the Atlantic, the tomato was rejected in other parts of Europe
+				and North America but readily accepted in Italy. Why? What was it about the sour fruit and about
+				Italy at that time that made the ingredient and the culture click together? What other secrets
+				lie hidden in the intertwined history of food and culture?
 			</div>
 		</div>
 	{:else}

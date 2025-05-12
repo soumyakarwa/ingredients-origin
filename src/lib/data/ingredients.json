@@ -638,10 +638,14 @@
 			"label": "United States",
 			"coords": "United States"
 		},
-		"text": ["txt tba"],
-		"route": ["United States"],
+		"text": [
+			"Corn, or maize (Zea mays), is indigenous to the Americas, with its domestication beginning over 9,000 years ago in southern Mexico from the wild grass teosinte. It spread across North and South America, becoming a staple crop for many Indigenous cultures. In North America, Native American tribes cultivated various corn varieties, adapting them to different climates and regions. The \"Three Sisters\" agricultural method—planting corn alongside beans and squash—was widely practiced, promoting sustainable farming through complementary planting.",
+			"In the United States, corn became integral to the diet, featured in dishes like cornbread, grits, and hominy. The publication of American Cookery in 1796 marked a significant moment in American culinary history, incorporating cornmeal into traditional recipes and reflecting the nation's agricultural heritage.",
+			"Corn's significance extends beyond cuisine. It played a crucial role in African American food traditions, especially in the Southern United States. Dishes such as cornbread and grits became staples in African American households, symbolizing resilience and cultural identity. These corn-based foods continue to be celebrated in cultural events like Juneteenth, highlighting their enduring legacy in American food culture."
+		],
+		"route": ["Mexico", "United States"],
 		"year": {
-			"label": "2025",
+			"label": "",
 			"suffix": ""
 		}
 	},
@@ -652,10 +656,14 @@
 			"label": "China",
 			"coords": "China"
 		},
-		"text": ["txt tba"],
-		"route": ["China"],
+		"text": [
+			"Corn (Zea mays), indigenous to the Americas, was introduced to China during the late Ming Dynasty (16th century). While some early Chinese texts reference maize, it was not widely adopted until the Qing Dynasty (1644–1912). The crop likely entered China through maritime trade routes via the Philippines and Macau, which were under Spanish and Portuguese control, respectively.",
+			"In Chinese cuisine, corn is utilized in various forms, including fresh kernels, cornmeal, and cornstarch. It is featured in dishes such as corn crab soup (蟹肉玉米汤), a creamy soup combining corn, crab meat, and egg whites . Corn is also used in the preparation of wotou (窝头), a steamed cornmeal bread traditionally consumed in northern China.",
+			"The significance of corn in Chinese food culture is evident in its widespread use across various regions. In northern China, corn serves as a staple food, often replacing rice due to its adaptability to the local climate . Additionally, sweet corn (甜玉米), symbolizing growth and increase, is commonly consumed during Chinese New Year celebrations . Over time, corn has become an integral component of Chinese cuisine, reflecting the country's agricultural diversity and culinary adaptability."
+		],
+		"route": ["Mexico", "Philippines", "China"],
 		"year": {
-			"label": "2025",
+			"label": "1590",
 			"suffix": ""
 		}
 	},
@@ -666,11 +674,15 @@
 			"label": "Guatemala",
 			"coords": "Guatemala"
 		},
-		"text": ["txt tba"],
+		"text": [
+			"Corn (maíz) is indigenous to Mesoamerica, with evidence of its cultivation dating back over 9,000 years in regions that include present-day Guatemala. It was domesticated from the wild grass teosinte by ancient civilizations, including the Maya. In Mayan mythology, humans were created from maize, underscoring its sacred status. This reverence persists today; in some Guatemalan communities, farmers conduct ceremonies before planting corn, offering prayers and thanks to the earth, sun, and rain for a successful harvest.",
+			"Corn remains central to Guatemalan cuisine, featured in dishes such as tortillas, tamales, and atol de elote (a warm corn-based beverage). Tamales, made from nixtamalized corn dough (masa), are wrapped in banana or corn leaves and steamed. They come in various forms, including the sweet tamal de elote, which is made from fresh corn kernels and flavored with sugar, cinnamon, and vanilla . Another variation is the chuchito, a firmer tamale often served with tomato-based sauce and meat fillings.",
+			"In the Ixil region of Guatemala, corn holds profound cultural significance. The Ixil people refer to themselves as \"men of corn,\" a term rooted in their belief that the first humans were created from maize. Their diet predominantly consists of corn-based foods, such as tamalitos (small corn dumplings) and tukun-ik (a corn, egg, and chili soup), reflecting the enduring legacy of maize in their culinary traditions."
+		],
 		"route": ["Guatemala"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
+			"label": "7000",
+			"suffix": "B.C."
 		}
 	},
 	{
@@ -680,24 +692,13 @@
 			"label": "Portugal",
 			"coords": "Portugal"
 		},
-		"text": ["txt tba"],
-		"route": ["Portugal"],
+		"text": [
+			"Corn, or maize, holds a significant place in Portuguese cuisine, primarily introduced following the Columbian Exchange in the late 15th to early 16th centuries. The Portuguese played a pivotal role in disseminating maize across Europe and beyond, introducing it to regions such as Cape Verde and São Tomé in West Africa, and later to India and China . This dissemination was part of a broader pattern of introducing New World crops to Europe, which also included potatoes, tomatoes, and beans.",
+			"In Portugal, maize became integral to various traditional dishes. Broa de milho, a dense and slightly sweet cornbread, is a staple in northern Portugal, often accompanying soups like caldo verde or stews such as feijoada . In the Algarve, dishes like xarém—a cornmeal porridge with clams or grilled meats—highlight the versatility of maize in regional cooking . Additionally, milho frito, or fried cornmeal squares, are a popular snack or side dish in Madeira."
+		],
+		"route": ["Guatemala", "Portugal"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "corn",
-		"name": "Corn",
-		"country": {
-			"label": "China",
-			"coords": "Sichuan"
-		},
-		"text": ["txt tba"],
-		"route": ["China"],
-		"year": {
-			"label": "2025",
+			"label": "1600",
 			"suffix": ""
 		}
 	},
@@ -708,8 +709,11 @@
 			"label": "Turkey",
 			"coords": "Turkey"
 		},
-		"text": ["txt tba"],
-		"route": ["Turkey"],
+		"text": [
+			"Za’atar is a traditional spice blend integral to Turkish cuisine, especially in regions like Antakya and Kilis. Its roots trace back to the Levant, encompassing parts of modern-day Syria, Lebanon, and Palestine. The name \"za’atar\" is derived from the Arabic word for thyme, and the blend typically includes dried thyme, oregano, marjoram, sesame seeds, sumac, and salt. In Turkey, particularly in the southern provinces, za’atar is locally known as \"zahter\" and is often mixed with olive oil to create a paste used as a dip or spread.",
+			"In Turkish cuisine, zahter is commonly enjoyed with breakfast, served alongside bread and cheese. In Antakya, a city with strong Levantine influences, zahter is spread on flatbreads like katıklı ekmek and used as a topping for lahmacun, a Turkish-style pizza. The blend's versatility extends to salads, meats, and vegetables, enhancing dishes with its aromatic and tangy profile. The use of zahter reflects the region's rich cultural exchanges and the integration of Levantine culinary practices into Turkish food traditions."
+		],
+		"route": ["Syria", "Turkey"],
 		"year": {
 			"label": "2025",
 			"suffix": ""

@@ -164,7 +164,7 @@
 		],
 		"route": ["Morocco"],
 		"year": {
-			"label": "7500s",
+			"label": "7500",
 			"suffix": ""
 		}
 	},
@@ -265,10 +265,14 @@
 			"label": "Mexico",
 			"coords": "Mexico"
 		},
-		"text": ["txt tba"],
+		"text": [
+			"The story of black beans in Mexican cuisine begins with the ancient civilizations of Mesoamerica, particularly the Aztecs and the Mayans, who cultivated them alongside corn and squash—three crops known as the \"Three Sisters.\" These crops formed the foundation of their diet, and beans, including black beans, were especially valued for their high protein content.",
+			"It's believed that the indigenous peoples of Mexico were already cultivating and using black beans as a main food source for thousands of years. These beans were often prepared in simple stews, combined with corn and other vegetables, and were central to many meals due to their nutritional value.",
+			"When the Spanish arrived, they introduced new ingredients and cooking techniques, but the indigenous foods, including black beans, remained essential to the Mexican diet. Over time, black beans became not only a food source but also an important part of cultural identity. They were used in everything from soups and tacos to refried beans, and they continue to be one of the most popular beans in Mexican cuisine today."
+		],
 		"route": ["Mexico"],
 		"year": {
-			"label": "2025",
+			"label": "",
 			"suffix": ""
 		}
 	},
@@ -279,10 +283,14 @@
 			"label": "Italy",
 			"coords": "Italy"
 		},
-		"text": ["txt tba"],
+		"text": [
+			"Mozzarella has a deep-rooted history in Italian cuisine, one that dates back over 500 years. The cheese is believed to have originated in the southern regions of Italy, particularly in the areas of Campania and Puglia. It was likely first made from the milk of water buffaloes, which had been introduced to Italy during the 12th century by Norman settlers. The name \"mozzarella\" itself comes from the Italian word \"mozzare,\" which means \"to cut\" or \"to slice.\" This refers to the traditional method of making mozzarella, where the curd is sliced and then shaped by hand.",
+			"For many centuries, mozzarella was mostly a local delicacy, limited to the southern parts of Italy. It wasn't until the 18th and 19th centuries that mozzarella began to spread beyond its regional origins. A major factor in its rise in popularity was the growth of trade and the expanding Italian cities, particularly Naples, where mozzarella found its way into more everyday dishes.",
+			"Mozzarella's true rise to fame, however, came with the invention of pizza in the 19th century. As pizza began to gain popularity in Naples, mozzarella became its most important topping, offering a creamy texture and mild flavor that paired perfectly with the tangy tomato sauce. The creation of \"pizza margherita\" in 1889, supposedly in honor of Queen Margherita of Savoy, solidified mozzarella's place in Italian food culture. The dish, with its combination of mozzarella, tomatoes, and basil, symbolized the colors of the Italian flag and became a symbol of Italian identity."
+		],
 		"route": ["Italy"],
 		"year": {
-			"label": "2025",
+			"label": "1500",
 			"suffix": ""
 		}
 	},
@@ -293,8 +301,12 @@
 			"label": "Lebanon",
 			"coords": "Lebanon"
 		},
-		"text": ["txt tba"],
-		"route": ["Lebanon"],
+		"text": [
+			"The origins of bulgur date back to ancient Mesopotamia, which is now modern-day Iraq, and its use spread across the surrounding areas over time. By the time the Phoenicians, ancestors of the Lebanese people, were thriving around 1000 BCE, bulgur had already been embraced in their culinary traditions. It was an ideal food for ancient peoples, especially those living in the mountainous regions of Lebanon, because it was easy to store, inexpensive, and long-lasting.",
+			"In Lebanese culture, bulgur became an important part of the food system for both practical and cultural reasons. It was often used as a staple in daily meals, providing sustenance for families across generations. The grain's ability to be prepared in a variety of ways made it ideal for both everyday meals and festive dishes. It was often combined with olive oil, vegetables, meat, or legumes, making it both filling and nutritious. One of the most well-known Lebanese dishes featuring bulgur is kibbeh, a beloved national dish made from bulgur, lamb, and spices. It is enjoyed in many forms—raw, baked, or fried—and has been passed down through generations, signifying the importance of bulgur in Lebanese culinary heritage.",
+			"Bulgur’s popularity grew with the spread of Lebanese communities around the world, particularly during the late 19th and early 20th centuries as people migrated due to economic hardships. It became a symbol of Lebanese identity for many in the diaspora, a connection to their homeland. Its simplicity and nutritional benefits also made it appealing in diverse cultures, contributing to its widespread use in many Middle Eastern and Mediterranean countries."
+		],
+		"route": ["Iraq", "Lebanon"],
 		"year": {
 			"label": "2025",
 			"suffix": ""
@@ -307,10 +319,13 @@
 			"label": "Italy",
 			"coords": "Italy"
 		},
-		"text": ["txt tba"],
+		"text": [
+			"Burrata is a relatively young but deeply cherished cheese in Italian cuisine, one that has captured the hearts of food lovers around the world. Unlike mozzarella, which has ancient roots in southern Italy, burrata’s history is more recent, emerging in the early 20th century. Its creation is tied to the region of Apulia (Puglia) in southeastern Italy, a place known for its rich dairy traditions, particularly the production of mozzarella.",
+			"Burrata, which means \"buttered\" in Italian, was first made in 1956 in the town of Andria, in the province of Barletta-Andria-Trani, Apulia. It was created by a cheesemaker named Andria who was seeking a way to use up leftover mozzarella. Burrata is made by combining fresh mozzarella with cream, resulting in a soft, creamy interior encased in a smooth, delicate outer shell of mozzarella. The cream-filled center gives burrata its rich, luxurious texture and flavor, which is both sweet and slightly tangy. The cheese is traditionally made from cow's milk, though some variations are made with buffalo milk, particularly in areas where buffalo mozzarella is also a local specialty."
+		],
 		"route": ["Italy"],
 		"year": {
-			"label": "2025",
+			"label": "1956",
 			"suffix": ""
 		}
 	},
@@ -321,10 +336,14 @@
 			"label": "India",
 			"coords": "Delhi"
 		},
-		"text": ["txt tba"],
-		"route": ["India"],
+		"text": [
+			"Walnuts have a long and fascinating history in Indian cuisine, though they are not native to the subcontinent. The story of walnuts in India begins with the ancient trade routes that connected India to Central Asia, Persia (modern-day Iran), and beyond. It’s believed that walnuts were first introduced to India by traders along the Silk Road, which linked the East and West. The walnut tree, known for its large, nutrient-packed nuts, was originally native to regions around the Caspian Sea, in areas like modern-day Iran, and from there it spread to parts of Asia and Europe.",
+			"In India, walnuts found a particularly favorable environment in the Kashmir Valley, an area known for its fertile soil and moderate climate. Kashmir’s connection to walnuts became so strong that today, Kashmiri walnuts are considered some of the best in the world. It’s believed that walnuts began being cultivated in Kashmir around the 15th century, though they may have been present in smaller quantities even earlier, as trade from Central Asia brought not only goods but also new agricultural practices. Over time, walnuts were integrated into the local food culture, eventually becoming a significant ingredient in both sweet and savory dishes.",
+			"Walnuts are highly prized in Indian cuisine for their health benefits and versatility. They are used in many different forms: raw, roasted, ground into powder, or even as an oil. In their whole form, walnuts are commonly used in desserts, such as mithai (Indian sweets) or in traditional dishes like phirni (a creamy rice pudding), where their rich, slightly bitter flavor adds depth and texture. They are also used in savory dishes, particularly in Kashmiri cuisine, where walnuts are blended with spices to make rich gravies and sauces, such as in the famous dish rogan josh. Additionally, walnuts are often sprinkled on top of salads, curries, and stews, adding a crunch and a unique nutty flavor."
+		],
+		"route": ["Iran", "India"],
 		"year": {
-			"label": "2025",
+			"label": "1500",
 			"suffix": ""
 		}
 	},
@@ -333,40 +352,15 @@
 		"name": "Walnuts",
 		"country": {
 			"label": "United States",
-			"coords": "New York"
+			"coords": "United States"
 		},
-		"text": ["txt tba"],
-		"route": ["United States"],
+		"text": [
+			"Walnuts have been a part of American cuisine for centuries, though their origins in the Americas are quite different from those in many other parts of the world. While walnuts are not native to the United States, they have become deeply embedded in the country's culinary traditions. The story of walnuts in American food begins with the arrival of European settlers and the introduction of walnut trees to the continent.",
+			"Walnuts are believed to have originated in regions stretching from Central Asia to the Mediterranean, with the English walnut, the most commonly consumed variety in the U.S., being native to areas in Asia and Europe. European settlers brought walnut seeds with them when they colonized the Americas in the 1600s. The trees flourished in the temperate climates of the U.S., particularly in California, which is now the leading producer of walnuts in the country. The Black walnut, a native variety to North America, has also been historically used, though it is less common in modern culinary applications compared to the English walnut."
+		],
+		"route": ["Iran", "United Kingdom", "United States"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "walnut",
-		"name": "Walnuts",
-		"country": {
-			"label": "India",
-			"coords": "India"
-		},
-		"text": ["txt tba"],
-		"route": ["India"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "walnut",
-		"name": "Walnuts",
-		"country": {
-			"label": "Italy",
-			"coords": "Italy"
-		},
-		"text": ["txt tba"],
-		"route": ["Italy"],
-		"year": {
-			"label": "2025",
+			"label": "1600",
 			"suffix": ""
 		}
 	},
@@ -377,10 +371,14 @@
 			"label": "Morocco",
 			"coords": "Morocco"
 		},
-		"text": ["txt tba"],
-		"route": ["Morocco"],
+		"text": [
+			"Carrots have a rich and significant history in Moroccan cuisine, though they are not native to Morocco. The journey of carrots into Moroccan food is tied to the broader story of the spice and trade routes that have shaped North African culinary traditions over centuries. Originally, carrots were cultivated in Persia (modern-day Iran) and other parts of Central Asia long before making their way into the kitchens of Morocco.",
+			"Carrots were first introduced to the Mediterranean region during the spread of trade and agricultural knowledge from the Middle East around the 9th century. By the time the Moors, who were known for their advanced agricultural techniques, ruled over parts of Spain and North Africa in the 8th century, carrots had begun to spread throughout Morocco. Over time, they became integrated into the region’s agricultural landscape, adapting to the local climate and soil, thriving in Morocco’s diverse terrains.",
+			"In Morocco, carrots were initially used in simpler forms, like stews and soups, where their sweet flavor complemented the more savory, spicy elements of the food. They soon became a staple in Moroccan cuisine, prized for their versatility and ability to pair well with a wide range of spices such as cumin, cinnamon, and saffron. Carrots were also used in salads, pickled, or incorporated into tagines—the slow-cooked, flavorful stews that are iconic to Moroccan cooking."
+		],
+		"route": ["Iran", "Morocco"],
 		"year": {
-			"label": "2025",
+			"label": "900",
 			"suffix": ""
 		}
 	},
@@ -391,52 +389,14 @@
 			"label": "Singapore",
 			"coords": "Singapore"
 		},
-		"text": ["txt tba"],
-		"route": ["Singapore"],
+		"text": [
+			"Carrots have a long history in Singaporean cuisine, though they are not native to the region. Originally cultivated in Persia (modern-day Iran), carrots spread through trade routes to Central Asia, the Middle East, and India. By the 15th and 16th centuries, they had made their way to Southeast Asia, including Singapore, through traders from India, Persia, and Arabia.",
+			"In Singapore, carrots were embraced by various ethnic groups—Chinese, Malay, Indian, and Peranakan—integrating seamlessly into local dishes. They are used in savory dishes like chai tow kway (a savory Chinese dish made with radish and carrots), popiah (spring rolls with grated carrots), and soups like bak kut teh. Carrots add flavor, color, and texture to both everyday meals and festive dishes.",
+			"Carrots became more significant in Singaporean cuisine in the 20th century, especially as the nation became more health-conscious. Rich in vitamins and antioxidants, carrots became valued not just for their flavor but also for their health benefits, often appearing in juices, salads, and soups. Today, carrots are an essential ingredient in Singaporean food, symbolizing both nutritional value and the cultural fusion that defines the nation’s cuisine."
+		],
+		"route": ["Iran", "India", "Singapore"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "carrot",
-		"name": "Carrot",
-		"country": {
-			"label": "Thailand",
-			"coords": "Thailand"
-		},
-		"text": ["txt tba"],
-		"route": ["Thailand"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "carrot",
-		"name": "Carrot",
-		"country": {
-			"label": "Thailand",
-			"coords": "Thailand"
-		},
-		"text": ["txt tba"],
-		"route": ["Thailand"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "tomato",
-		"name": "Tomato",
-		"country": {
-			"label": "United States",
-			"coords": "North Carolina"
-		},
-		"text": ["txt tba"],
-		"route": ["United States"],
-		"year": {
-			"label": "2025",
+			"label": "1550",
 			"suffix": ""
 		}
 	},
@@ -447,10 +407,13 @@
 			"label": "Guatemala",
 			"coords": "Guatemala"
 		},
-		"text": ["txt tba"],
-		"route": ["Guatemala"],
+		"text": [
+			"Tomatoes have become a staple in Guatemalan cuisine, but they are not native to the region. The tomato originates from western South America, specifically the Andes mountains, in areas now part of modern-day Peru, Ecuador, and northern Chile. Indigenous people in these regions were cultivating and using tomatoes long before Spanish colonization. When the Spanish arrived in the early 16th century, they encountered the tomato and brought it back to Europe.",
+			"Through trade and migration, tomatoes made their way into Central America. By the 17th century, tomatoes had been incorporated into the cooking of many Latin American countries, including Guatemala. They adapted well to the tropical climate, making them a common ingredient in local gardens."
+		],
+		"route": ["Peru", "Guatemala"],
 		"year": {
-			"label": "2025",
+			"label": "1700",
 			"suffix": ""
 		}
 	},
@@ -461,10 +424,14 @@
 			"label": "India",
 			"coords": "Mumbai"
 		},
-		"text": ["txt tba"],
-		"route": ["India"],
+		"text": [
+			"Tomatoes, though now a key ingredient in Indian cuisine, were not originally native to the Indian subcontinent. They originated in the Andes region of South America, specifically in modern-day Peru, Ecuador, and northern Chile. The indigenous peoples of this region cultivated tomatoes long before they were introduced to the rest of the world. After the Spanish colonization of parts of the Americas in the 16th century, tomatoes were brought back to Europe, where they were initially met with skepticism.",
+			"From Europe, tomatoes slowly spread across the globe, making their way to India by the early 18th century, likely through trade routes. The Portuguese, who had established a presence in India by the 1500s, played a significant role in introducing tomatoes to Indian kitchens. Over time, the tomato adapted to India’s diverse climates and became integrated into the country’s food culture.",
+			"In Indian cuisine, tomatoes are used in a wide range of ways, from curries and dals to chutneys and salads. They are often cooked down into a base for curries, providing both acidity and sweetness that balance out the spices and heat in the dish. Tomatoes also feature in popular dishes like paneer butter masala, aloo tamatar ki sabzi, and rasam, a tangy South Indian soup. They are also used in salsas, pickles, and as a key component in the preparation of masalas, which are the essential spice blends in many Indian dishes."
+		],
+		"route": ["Peru", "Spain", "India"],
 		"year": {
-			"label": "2025",
+			"label": "1500",
 			"suffix": ""
 		}
 	},
@@ -475,10 +442,14 @@
 			"label": "Israel",
 			"coords": "Israel"
 		},
-		"text": ["txt tba"],
-		"route": ["Israel"],
+		"text": [
+			"Tomatoes have become a central ingredient in Israeli cuisine, but they are not native to the region. Tomatoes originated in the Andes region of South America, particularly in modern-day Peru, Ecuador, and northern Chile. Indigenous peoples of this region cultivated tomatoes long before they were introduced to the rest of the world. After the Spanish colonization of the Americas in the 16th century, tomatoes were brought to Europe, where they slowly spread across the Mediterranean and other parts of the world.",
+			"Tomatoes arrived in the Middle East via trade routes, and by the 18th century, they had made their way to the Levant, which includes modern-day Israel, Palestine, Lebanon, and Syria. The introduction of tomatoes to this region likely came through European influence, particularly the Ottoman Empire, which controlled much of the Middle East at the time. By the 19th century, tomatoes had become widely cultivated in the region, adapting to the warm, Mediterranean climate.",
+			"In Israeli cuisine, tomatoes are used in a variety of ways. They are a key ingredient in dishes like shakshuka, a popular breakfast dish of poached eggs in a spiced tomato sauce, and salatim, a variety of vegetable salads often featuring fresh tomatoes. Tomatoes are also used in stews like chulent (a slow-cooked Sabbath dish) and are essential in making hummus, where they are blended with other ingredients to create a rich dip. Additionally, tomatoes are often featured in tabbouleh, a refreshing salad made with parsley, tomatoes, and bulgur wheat."
+		],
+		"route": ["Peru", "Spain", "Israel"],
 		"year": {
-			"label": "2025",
+			"label": "1800",
 			"suffix": ""
 		}
 	},
@@ -489,8 +460,13 @@
 			"label": "Italy",
 			"coords": "Italy"
 		},
-		"text": ["txt tba"],
-		"route": ["Italy"],
+		"text": [
+			"Tomatoes have become one of the most iconic ingredients in Italian cuisine, but they are not native to Italy. Tomatoes originated in the Andes region of South America, particularly in modern-day Peru, Ecuador, and northern Chile. The indigenous peoples of these areas had cultivated tomatoes long before they were introduced to Europe.",
+			"After the Spanish colonization of the Americas in the 16th century, tomatoes were brought to Europe, where they were initially met with some skepticism. It was believed by some that they were poisonous due to their similarity to other members of the nightshade family. However, by the 18th century, tomatoes had spread through Europe, making their way to Italy, where they would soon become a central part of the country’s culinary culture.",
+			"In Italy, tomatoes adapted beautifully to the Mediterranean climate, and by the 18th century, they were being cultivated in southern Italy, particularly in the regions of Campania and Sicily. The tomatoes from these areas became renowned for their flavor and quality. Tomatoes were initially used in a variety of dishes, particularly as a garnish or in soups, but their true significance in Italian food emerged in the 19th century with the rise of pizza and pasta.",
+			"The significance of tomatoes in Italian cuisine is immense.The simplicity and freshness of Italian tomato-based dishes reflect the Italian approach to cooking—focusing on high-quality, fresh ingredients prepared with minimal fuss. Over time, tomatoes became deeply integrated into Italian culture, especially in southern Italy, where they were used in everything from sauces to stews, and even desserts like crostata."
+		],
+		"route": ["Peru", "Spain", "Italy"],
 		"year": {
 			"label": "2025",
 			"suffix": ""
@@ -503,24 +479,14 @@
 			"label": "Japan",
 			"coords": "Japan"
 		},
-		"text": ["txt tba"],
-		"route": ["Japan"],
+		"text": [
+			"Tomatoes are not native to Japan, but they have become an important part of the cuisine over the past century. Originally from the Andes region of South America, tomatoes were introduced to Europe in the 16th century by Spanish colonizers. From there, they spread to Asia through trade routes. Tomatoes were first brought to Japan in the late 19th century, during the Meiji Restoration when Japan opened up to the West.",
+			"Initially, tomatoes were used primarily as a garnish or in salads. Over time, they gained popularity in Japanese cooking, particularly in Western-inspired dishes like pasta, soups, and stews. In the 20th century, tomatoes became more widely cultivated in Japan, and they began to appear in traditional Japanese dishes, such as tamago sushi (omelette with tomato) and in fusion dishes like Japanese curry with tomato-based sauces.",
+			"Tomatoes gained significance in Japan due to their versatility and health benefits. Rich in vitamins and antioxidants, they became a popular ingredient in everyday cooking. Today, tomatoes are used in a variety of Japanese dishes, from fresh salads and side dishes to sauces and soups, reflecting Japan’s adaptation of global ingredients into its own culinary traditions."
+		],
+		"route": ["Peru", "Spain", "Japan"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "tomato",
-		"name": "Tomato",
-		"country": {
-			"label": "Lebanon",
-			"coords": "Lebanon"
-		},
-		"text": ["txt tba"],
-		"route": ["Lebanon"],
-		"year": {
-			"label": "2025",
+			"label": "1900",
 			"suffix": ""
 		}
 	},
@@ -531,52 +497,14 @@
 			"label": "Spain",
 			"coords": "Spain"
 		},
-		"text": ["txt tba"],
-		"route": ["Spain"],
+		"text": [
+			"Tomatoes are not native to Spain but have become essential in Spanish cuisine. They originated in the Andes region of South America, in present-day Peru, Ecuador, and northern Chile. After the Spanish conquest of the Americas in the 16th century, tomatoes were brought back to Europe. They spread through the Mediterranean and were introduced to Spain by the 17th century.",
+			"Initially, tomatoes were used in Spain as a decorative plant, but by the 18th century, they started being incorporated into cooking. They became central to Spanish dishes, particularly in the southern regions, where they were used in sauces, stews, and soups. One of the most iconic dishes featuring tomatoes is gazpacho, a cold vegetable soup, and tomatoes also play a key role in paella and various tapas.",
+			"Tomatoes became significant in Spanish food due to their ability to add flavor, color, and acidity to dishes. By the 19th and 20th centuries, they were firmly established in everyday Spanish cooking, and today, they are essential in both traditional and modern Spanish cuisine."
+		],
+		"route": ["Peru", "Spain"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "tomato",
-		"name": "Tomato",
-		"country": {
-			"label": "Portugal",
-			"coords": "Portugal"
-		},
-		"text": ["txt tba"],
-		"route": ["Portugal"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "tomato",
-		"name": "Tomato",
-		"country": {
-			"label": "Thailand",
-			"coords": "Thailand"
-		},
-		"text": ["txt tba"],
-		"route": ["Thailand"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "chickpea",
-		"name": "Chickpea",
-		"country": {
-			"label": "France",
-			"coords": "France"
-		},
-		"text": ["txt tba"],
-		"route": ["France"],
-		"year": {
-			"label": "2025",
+			"label": "1600",
 			"suffix": ""
 		}
 	},
@@ -587,179 +515,15 @@
 			"label": "India",
 			"coords": "India"
 		},
-		"text": ["txt tba"],
-		"route": ["India"],
+		"text": [
+			"Chickpeas are native to the Middle East, specifically modern-day Turkey and Iran, where they were first cultivated around 7,000 years ago. They spread throughout the Mediterranean and South Asia via trade routes, reaching India by around 2000 BCE.",
+			"In India, chickpeas are a staple in both North and South Indian cuisines. They are used in various forms: whole, split, or ground into flour (besan), which is central to dishes like chickpea curry (chole), pakoras (fried fritters), and bhajis (savory snacks). Ground chickpeas are also used in sweets like besan ladoo.",
+			"Chickpeas became significant in Indian food due to their high protein content, making them a crucial part of the vegetarian diet. They were fully integrated into the cuisine by the time of the Mughal period (16th century) and remain essential in Indian cooking today. Their versatility and nutritional benefits have made them a key ingredient in a wide range of everyday and festive dishes."
+		],
+		"route": ["Turkey", "Afghanistan", "India"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "chickpea",
-		"name": "Chickpea",
-		"country": {
-			"label": "Indonesia",
-			"coords": "Indonesia"
-		},
-		"text": ["txt tba"],
-		"route": ["Indonesia"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "chickpea",
-		"name": "Chickpea",
-		"country": {
-			"label": "Israel",
-			"coords": "Israel"
-		},
-		"text": ["txt tba"],
-		"route": ["Israel"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "chive",
-		"name": "Chive",
-		"country": {
-			"label": "United States",
-			"coords": "United States"
-		},
-		"text": ["txt tba"],
-		"route": ["United States"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "chive",
-		"name": "Chive",
-		"country": {
-			"label": "Austria",
-			"coords": "Austria"
-		},
-		"text": ["txt tba"],
-		"route": ["Austria"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "chive",
-		"name": "Chive",
-		"country": {
-			"label": "China",
-			"coords": "China"
-		},
-		"text": ["txt tba"],
-		"route": ["China"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "chive",
-		"name": "Chive",
-		"country": {
-			"label": "France",
-			"coords": "France"
-		},
-		"text": ["txt tba"],
-		"route": ["France"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "chive",
-		"name": "Chive",
-		"country": {
-			"label": "Italy",
-			"coords": "Italy"
-		},
-		"text": ["txt tba"],
-		"route": ["Italy"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "chive",
-		"name": "Chive",
-		"country": {
-			"label": "Singapore",
-			"coords": "Singapore"
-		},
-		"text": ["txt tba"],
-		"route": ["Singapore"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "chive",
-		"name": "Chive",
-		"country": {
-			"label": "Thailand",
-			"coords": "Thailand"
-		},
-		"text": ["txt tba"],
-		"route": ["Thailand"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "cilantro",
-		"name": "Cilantro",
-		"country": {
-			"label": "Portugal",
-			"coords": "Portugal"
-		},
-		"text": ["txt tba"],
-		"route": ["Portugal"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "cilantro",
-		"name": "Cilantro",
-		"country": {
-			"label": "Guatemala",
-			"coords": "Guatemala"
-		},
-		"text": ["txt tba"],
-		"route": ["Guatemala"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "cilantro",
-		"name": "Cilantro",
-		"country": {
-			"label": "Thailand",
-			"coords": "Thailand"
-		},
-		"text": ["txt tba"],
-		"route": ["Thailand"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
+			"label": "2000",
+			"suffix": "B.C."
 		}
 	},
 	{
@@ -769,11 +533,14 @@
 			"label": "India",
 			"coords": "India"
 		},
-		"text": ["txt tba"],
+		"text": [
+			"Coconuts are native to the Indo-Malay region, likely originating in the areas around Southeast Asia and the Pacific Islands. They spread across tropical regions through trade routes, with early evidence of coconuts in India dating back to ancient times, possibly by 1000 BCE.",
+			"In Indian cuisine, coconuts are used in many forms: fresh, dried, grated, as coconut milk, or as coconut oil. They appear in curries, chutneys, desserts like ladoos and payasam, and are used to garnish various dishes. Coconut oil is also a common cooking fat, especially in South Indian cuisine. They became especially prominent in the southern coastal regions of India, like Kerala and Tamil Nadu, where the plant thrived. Over time, coconut became a staple in many Indian dishes and continues to be essential in the cooking of the southern and coastal parts of India today."
+		],
 		"route": ["India"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
+			"label": "1000",
+			"suffix": "B.C."
 		}
 	},
 	{
@@ -783,11 +550,14 @@
 			"label": "Thailand",
 			"coords": "Thailand"
 		},
-		"text": ["txt tba"],
-		"route": ["Thailand"],
+		"text": [
+			"Coconuts are believed to have originated in the Indo-Malay region, and they spread across the tropics through trade and migration. By the 1st millennium CE, they reached Southeast Asia, including Thailand, via maritime trade routes from India, Persia, and the Malay Archipelago. Coconuts became essential in Thai cooking, particularly in curries and desserts, where coconut milk replaced dairy products to create rich, creamy textures. The use of coconut milk in Thai curries, like green curry and Massaman, traces back to Indian influence, while other dishes like khao soi reflect Burmese and Yunnanese traditions.",
+			"Coconuts are used in many forms in Thai cuisine, including fresh, grated, and as coconut milk. The milk is made by extracting the liquid from grated coconut meat, and this creamy liquid is crucial for making curries, soups, and sweets. Coconut is so integral to Thai food that it's used in almost every meal, especially in southern and central Thailand. One iconic dish, Massaman curry, reflects Persian influence and is rich with coconut milk and spices like cinnamon and nutmeg. The fruit's significance also extends beyond the kitchen—coconuts symbolize prosperity and are used in religious offerings. The coconut's deep cultural role, alongside its culinary importance, makes it a defining ingredient in Thai food."
+		],
+		"route": ["India", "Malaysia", "Thailand"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
+			"label": "1000",
+			"suffix": "C.E."
 		}
 	},
 	{
@@ -797,25 +567,14 @@
 			"label": "India",
 			"coords": "India"
 		},
-		"text": ["txt tba"],
-		"route": ["India"],
+		"text": [
+			"Cilantro (also known as coriander) is native to the Mediterranean and Western Asia, with evidence of its use dating back over 8,000 years in regions like ancient Israel and Egypt. The plant was cultivated and traded along the Silk Road, spreading to Persia (modern-day Iran), India, and beyond. In ancient Egypt, coriander was found in the tombs of pharaohs, indicating its cultural and medicinal significance. The Persian Empire, situated along major trade routes, played a pivotal role in disseminating coriander to neighboring regions, including India.",
+			"In Indian cuisine, both the fresh leaves (known as dhania) and dried seeds are integral. The seeds are commonly used in spice blends like garam masala and curry powders, providing a warm, citrusy note to dishes. The leaves are often used as a garnish or in chutneys, adding a fresh, aromatic element. Coriander's versatility and ability to enhance flavors have made it a staple in Indian cooking. Its significance in Indian cuisine is a result of centuries of trade and cultural exchange, particularly through Persian influence."
+		],
+		"route": ["Israel", "Iran", "India"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "cucumber",
-		"name": "Cucumber",
-		"country": {
-			"label": "United States",
-			"coords": "New York"
-		},
-		"text": ["txt tba"],
-		"route": ["United States"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
+			"label": "6000",
+			"suffix": "B.C."
 		}
 	},
 	{
@@ -825,39 +584,15 @@
 			"label": "China",
 			"coords": "Xinjiang"
 		},
-		"text": ["txt tba"],
-		"route": ["China"],
+		"text": [
+			"Cucumbers (Cucumis sativus) originated in the Himalayan foothills of northern India and Nepal over 5,000 years ago. From there, they spread eastward into China and westward through Central Asia, reaching the Mediterranean and Europe. By the Han Dynasty (circa 100 BCE), cucumbers were introduced to China via the Silk Road, where they were initially known as \"hu gua\" (foreign melon) and later as \"huang gua\" (yellow melon).",
+			"In Chinese cuisine, cucumbers are valued for their refreshing crunch and versatility. A popular preparation is the \"smashed cucumber salad\" (pai huang gua), where cucumbers are lightly crushed to enhance flavor absorption, then dressed with garlic, chili, soy sauce, vinegar, and sesame oil. This dish exemplifies the Chinese culinary principles of balancing textures and flavors. Cucumbers are also commonly pickled, often served as a side dish or appetizer.",
+			"Beyond their culinary use, cucumbers hold significance in Traditional Chinese Medicine (TCM), where they are considered \"cooling\" foods that help balance internal heat and promote hydration. This medicinal perspective has further integrated cucumbers into Chinese cultural practices, reflecting a holistic approach to diet and health."
+		],
+		"route": ["India", "Nepal", "China"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "cucumber",
-		"name": "Cucumber",
-		"country": {
-			"label": "Israel",
-			"coords": "Israel"
-		},
-		"text": ["txt tba"],
-		"route": ["Israel"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "cucumber",
-		"name": "Cucumber",
-		"country": {
-			"label": "Italy",
-			"coords": "Italy"
-		},
-		"text": ["txt tba"],
-		"route": ["Italy"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
+			"label": "100",
+			"suffix": "B.C"
 		}
 	},
 	{
@@ -867,38 +602,14 @@
 			"label": "Japan",
 			"coords": "Japan"
 		},
-		"text": ["txt tba"],
-		"route": ["Japan"],
+		"text": [
+			"Cucumbers are native to the Indian subcontinent, where they have been cultivated for over 3,000 years. They spread eastward into China and Japan by the 10th century, likely via the Silk Road. In Japan, cucumbers were introduced before the Edo period (1603–1867) and have since become integral to the cuisine.",
+			"Japanese cucumbers, known as kyūri, are prized for their crisp texture, minimal seeds, and thin, edible skin. They are commonly used in dishes such as sunomono (vinegar-based salads), kappamaki (cucumber sushi rolls), and tsukemono (pickled vegetables). The practice of pickling cucumbers, or kyūrizuke, enhances their crunch and flavor, making them a staple accompaniment to meals.",
+			"Cucumbers also feature in Japanese folklore, notably in the legend of the kappa, a mythical water creature said to have a fondness for cucumbers. This association is reflected in the naming of kappamaki and in cultural practices where cucumbers are offered to water spirits for protection ."
+		],
+		"route": ["India", "Nepal", "China", "Japan"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "cucumber",
-		"name": "Cucumber",
-		"country": {
-			"label": "Lebanon",
-			"coords": "Lebanon"
-		},
-		"text": ["txt tba"],
-		"route": ["Lebanon"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "cucumber",
-		"name": "Cucumber",
-		"country": {
-			"label": "Sichuan",
-			"coords": "Sichuan"
-		},
-		"text": ["txt tba"],
-		"route": ["Sichuan"],
-		"year": {
-			"label": "2025",
+			"label": "",
 			"suffix": ""
 		}
 	},
@@ -909,11 +620,15 @@
 			"label": "India",
 			"coords": "India"
 		},
-		"text": ["txt tba"],
+		"text": [
+			"Cucumbers (Cucumis sativus) are native to the northern plains of India, where wild varieties still grow today. They have been cultivated for over 3,000 years, making them one of the oldest vegetables in the region. From India, cucumbers spread eastward to China and westward through Persia to the Mediterranean and Europe. They were introduced to the New World by Columbus in 1494.",
+			"They are commonly used in dishes like kachumber (a chopped salad of cucumbers, tomatoes, onions, and spices), kosambari (a South Indian salad made with pulses and cucumbers), and raita (a yogurt-based side dish that often includes cucumbers to cool the palate). Cucumbers are also featured in various regional specialties, such as kakdi in Maharashtra and pinju vellarikka in Tamil Nadu, where they are used in salads and beverages.",
+			"Beyond their culinary uses, cucumbers hold cultural significance in India. For instance, during the Krishna Janmashtami festival, cucumbers are used as offerings to Lord Krishna and are part of the chappan bhog, a grand feast with 56 different dishes. Their role in both everyday meals and religious practices underscores their importance in Indian food culture."
+		],
 		"route": ["India"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
+			"label": "1000",
+			"suffix": "B.C."
 		}
 	},
 	{
@@ -1158,20 +873,6 @@
 		"id": "halloumi",
 		"name": "Halloumi",
 		"country": {
-			"label": "Italy",
-			"coords": "Italy"
-		},
-		"text": ["txt tba"],
-		"route": ["Italy"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "halloumi",
-		"name": "Halloumi",
-		"country": {
 			"label": "Morocco",
 			"coords": "Morocco"
 		},
@@ -1261,20 +962,6 @@
 		},
 		"text": ["txt tba"],
 		"route": ["China"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "lotus-root",
-		"name": "Lotus Root",
-		"country": {
-			"label": "Sichuan",
-			"coords": "Sichuan"
-		},
-		"text": ["txt tba"],
-		"route": ["Sichuan"],
 		"year": {
 			"label": "2025",
 			"suffix": ""
@@ -1396,34 +1083,6 @@
 		"id": "parsley",
 		"name": "Parsley",
 		"country": {
-			"label": "Austria",
-			"coords": "Austria"
-		},
-		"text": ["txt tba"],
-		"route": ["Austria"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "parsley",
-		"name": "Parsley",
-		"country": {
-			"label": "China",
-			"coords": "China"
-		},
-		"text": ["txt tba"],
-		"route": ["China"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "parsley",
-		"name": "Parsley",
-		"country": {
 			"label": "France",
 			"coords": "France"
 		},
@@ -1443,76 +1102,6 @@
 		},
 		"text": ["txt tba"],
 		"route": ["Italy"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "parsley",
-		"name": "Parsley",
-		"country": {
-			"label": "Singapore",
-			"coords": "Singapore"
-		},
-		"text": ["txt tba"],
-		"route": ["Singapore"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "parsley",
-		"name": "Parsley",
-		"country": {
-			"label": "Thailand",
-			"coords": "Thailand"
-		},
-		"text": ["txt tba"],
-		"route": ["Thailand"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "peanut",
-		"name": "Peanut",
-		"country": {
-			"label": "China",
-			"coords": "China"
-		},
-		"text": ["txt tba"],
-		"route": ["China"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "peanut",
-		"name": "Peanut",
-		"country": {
-			"label": "Japan",
-			"coords": "Japan"
-		},
-		"text": ["txt tba"],
-		"route": ["Japan"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "peanut",
-		"name": "Peanut",
-		"country": {
-			"label": "Thailand",
-			"coords": "Thailand"
-		},
-		"text": ["txt tba"],
-		"route": ["Thailand"],
 		"year": {
 			"label": "2025",
 			"suffix": ""
@@ -1620,20 +1209,6 @@
 		"id": "potato",
 		"name": "Potato",
 		"country": {
-			"label": "Mexico",
-			"coords": "Mexico"
-		},
-		"text": ["txt tba"],
-		"route": ["Mexico"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "potato",
-		"name": "Potato",
-		"country": {
 			"label": "Spain",
 			"coords": "Spain"
 		},
@@ -1687,34 +1262,6 @@
 		}
 	},
 	{
-		"id": "radish",
-		"name": "Radish",
-		"country": {
-			"label": "Italy",
-			"coords": "Italy"
-		},
-		"text": ["txt tba"],
-		"route": ["Italy"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "sesame",
-		"name": "Sesame",
-		"country": {
-			"label": "China",
-			"coords": "China"
-		},
-		"text": ["txt tba"],
-		"route": ["China"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
 		"id": "sesame",
 		"name": "Sesame",
 		"country": {
@@ -1751,34 +1298,6 @@
 		},
 		"text": ["txt tba"],
 		"route": ["South Korea"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "sesame",
-		"name": "Sesame",
-		"country": {
-			"label": "Lebanon",
-			"coords": "Lebanon"
-		},
-		"text": ["txt tba"],
-		"route": ["Lebanon"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "sesame",
-		"name": "Sesame",
-		"country": {
-			"label": "Sichuan",
-			"coords": "Sichuan"
-		},
-		"text": ["txt tba"],
-		"route": ["Sichuan"],
 		"year": {
 			"label": "2025",
 			"suffix": ""
@@ -1858,20 +1377,6 @@
 		"id": "spinach",
 		"name": "Spinach",
 		"country": {
-			"label": "China",
-			"coords": "China"
-		},
-		"text": ["txt tba"],
-		"route": ["China"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "spinach",
-		"name": "Spinach",
-		"country": {
 			"label": "India",
 			"coords": "Kerala"
 		},
@@ -1933,48 +1438,6 @@
 		},
 		"text": ["txt tba"],
 		"route": ["Portugal"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "sumac",
-		"name": "Sumac",
-		"country": {
-			"label": "Greece",
-			"coords": "Greece"
-		},
-		"text": ["txt tba"],
-		"route": ["Greece"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "sumac",
-		"name": "Sumac",
-		"country": {
-			"label": "Lebanon",
-			"coords": "Lebanon"
-		},
-		"text": ["txt tba"],
-		"route": ["Lebanon"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "sumac",
-		"name": "Sumac",
-		"country": {
-			"label": "Turkey",
-			"coords": "Turkey"
-		},
-		"text": ["txt tba"],
-		"route": ["Turkey"],
 		"year": {
 			"label": "2025",
 			"suffix": ""

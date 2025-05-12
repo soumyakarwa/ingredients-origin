@@ -40,7 +40,7 @@
 			<div class="body font-sans tracking-normal text-black">
 				If we look back in history, there are many moments we could point to and say, “Ah, yes, this
 				is why it happened.” For instance, the immediate cause of the First World War was the
-				assassination of Archduke Franz Ferdinand, heir to the Austro-Hungarian throne3. Of course,
+				assassination of Archduke Franz Ferdinand, heir to the Austro-Hungarian throne. Of course,
 				there were prior years of tension, bloodshed, and political espionage between the nation
 				states, yet we point to this event and say, “This is where it all unravelled.” Similarly, I
 				believe that the food of a cuisine, and by inference ingredients, has a story behind it– a
@@ -68,14 +68,18 @@
 			</button> -->
 			<div class="h-max-content flex w-full flex-col items-start" bind:clientHeight={titleHeight}>
 				<p class="title">{ingredient.name}</p>
-				<p class="heading-1">
-					{ingredient.country.label} ~ <NumberFlow
-						plugins={[continuous]}
-						value={activeIndex != null ? ingredient.year.label : '2025'}
-						format={{ notation: 'standard', useGrouping: false }}
-						suffix={activeIndex != null ? ingredient.year.suffix : ''}
-					/>
-				</p>
+				{#if ingredient.year.label != ''}
+					<p class="heading-1">
+						{ingredient.country.label} ~ <NumberFlow
+							plugins={[continuous]}
+							value={activeIndex != null ? ingredient.year.label : '2025'}
+							format={{ notation: 'standard', useGrouping: false }}
+							suffix={activeIndex != null ? ingredient.year.suffix : ''}
+						/>
+					</p>
+				{:else}
+					<p class="heading-1">{ingredient.country.label} ~ YEAR UNKNOWN</p>
+				{/if}
 			</div>
 			<!-- <div class="h-max-content flex w-full flex-row items-center gap-4"> -->
 			<!-- <Button

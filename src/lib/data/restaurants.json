@@ -1,0 +1,1138 @@
+[
+	{
+		"businessId": 11416,
+		"name": "Ceremony",
+		"cuisines": ["Drinks", "Coffee", "Tea"],
+		"notes": "Tea leaves from China, Japan, Taiwan",
+		"dish": "",
+		"ingredients": [],
+		"country": []
+	},
+	{
+		"businessId": 36844,
+		"name": "Ellie's",
+		"cuisines": ["Cafe", "Coffee Shop", "French"],
+		"notes": "Inspired by parisian way of life",
+		"dish": "Quiche du Jour",
+		"ingredients": [
+			"Greens",
+			"Champagne Vinaigrette",
+			"Egg",
+			"Onion",
+			"Cheese",
+			"Olive Oil",
+			"Mushrooms"
+		],
+		"country": ["France"]
+	},
+	{
+		"businessId": 39423,
+		"name": "Madrid European Bakery and Patisserie",
+		"cuisines": ["Bakery"],
+		"notes": "Madrid. The Classic Almond Santiago originated in Spain in the Middle Ages. It is a simple combination of Almond Flour, Eggs, Sugar and natural flavor- making it naturally Gluten Free! We offer the Classic Almond Santiago as well as variations created by Sergio.",
+		"dish": "Tarta De Santiago",
+		"ingredients": ["Almond Flour", "Egg", "Cinnamon", "Lemon Zest"],
+		"country": []
+	},
+	{
+		"businessId": 39243,
+		"name": "Oberlin",
+		"cuisines": ["American"],
+		"notes": "Italian",
+		"dish": "Ricotta Gnudi",
+		"ingredients": ["Savoy Cabbage", "Sunchoke", "Chestnut", "Preserved Lemon"],
+		"country": ["United States", "Italy"]
+	},
+	{
+		"businessId": 4468,
+		"name": "Osteria 57",
+		"cuisines": ["Italian"],
+		"notes": "Italian (Fish & Vegetarian). The menu shows a clear intention behind the project. Traditional Italian seafood dishes are executed to perfection and north-Atlantic delicacies are paired with poetry. Whether working with a ripe tomato, only in the Summer, or with Lobsters, rigorously from Maine, or with gluten free homemade pasta crafted in the back room, Chef Orfino looks for that perfect balance between richness and acidity to exalt the essence of each flavor. His cousin is authentic and his produce knowledge is rare",
+		"dish": "Papparadelle Al Tartufo",
+		"ingredients": [
+			"Handmade Pappardelle",
+			"Truffle Sauce",
+			"Shaved Burgundy Truffle",
+			"Parmigiano Reggiano"
+		],
+		"country": ["Italy"]
+	},
+	{
+		"businessId": 1172,
+		"name": "Wayan",
+		"cuisines": ["French", "Indonesian", "Asian Fusion"],
+		"notes": "Wayan offers Indonesian cuisine with a modern French flair",
+		"dish": "Chickpea Satay",
+		"ingredients": ["Chickpea", "Shiitake", "Soy", "Seasame Seeds", "Lemon"],
+		"country": ["France", "Indonesia"]
+	},
+	{
+		"businessId": 4766,
+		"name": "Kimika",
+		"cuisines": ["Italian", "Japanese", "Asian Fusion"],
+		"notes": "Japanese\u2013Italian",
+		"dish": "Sticky Rice Arancini",
+		"ingredients": ["English Peas", "Mozzarella", "Ume", "Japanese Curry"],
+		"country": ["Japan", "Italy"]
+	},
+	{
+		"businessId": 1253,
+		"name": "Locanda Verde",
+		"cuisines": ["Italian"],
+		"notes": "Italian",
+		"dish": "Hand-Cut Potato Gnocchi",
+		"ingredients": ["Potato", "Gorgonzola", "Walnuts", "Parmiaggiano Reggiano"],
+		"country": ["Italy"]
+	},
+	{
+		"businessId": 321120,
+		"name": "Caf\u00e9 Chelsea",
+		"cuisines": ["French"],
+		"notes": "Seasonal, Urban Italian",
+		"dish": "",
+		"ingredients": [],
+		"country": ["France"]
+	},
+	{
+		"businessId": 960730,
+		"name": "Kanyakumari NYC",
+		"cuisines": ["South Indian", "Indian"],
+		"notes": "South Indian",
+		"dish": "From Mumbai\u2013 Samrat Vada Pav",
+		"ingredients": ["Spicy Potato", "Pav Bread", "Garlic", "Red Chillies", "Coriander Chutney", ""],
+		"country": ["India"]
+	},
+	{
+		"businessId": 168088,
+		"name": "PESHAWRI",
+		"cuisines": ["Indian"],
+		"notes": "North Indian (simmered overnight on slow charcoal fire and finished with cream served)",
+		"dish": "Dal Bukhara",
+		"ingredients": ["Black Lentils", "Tomatoes", "Ginger", "Garlic", "Unsalted Butter"],
+		"country": ["India"]
+	},
+	{
+		"businessId": 104780,
+		"name": "Zaytinya",
+		"cuisines": ["Greek", "Lebanese", "Mediterranean", "Turkish"],
+		"notes": "Turkish, Greek, Lebanese",
+		"dish": "Za'taar Pide",
+		"ingredients": ["Dried Za\u2019atar", "Sesame Seeds", "Sumac", "Kasar Cheese", "65\u00b0 Egg"],
+		"country": ["Greece", "Lebanon", "Turkey"]
+	},
+	{
+		"businessId": 5167,
+		"name": "Hangawi",
+		"cuisines": ["Korean", "Vegetarian", "Vegan"],
+		"notes": "Korean, Vegetarian (Um and Yang)",
+		"dish": "Spicy Kimchi Stone Bowl Rice",
+		"ingredients": ["Spicy Preserved Korean Cabbage", "Vegetables", "Mushrooms", "Kimchi"],
+		"country": ["South Korea"]
+	},
+	{
+		"businessId": 177103,
+		"name": "Gaylord Restaurant",
+		"cuisines": ["Indian"],
+		"notes": "North Indian, Established in the 1950s",
+		"dish": "Lasooni Palak",
+		"ingredients": ["Spinach", "Garlic", "Spices"],
+		"country": ["India"]
+	},
+	{
+		"businessId": 939,
+		"name": "Chinese Tuxedo",
+		"cuisines": ["Chinese", "Asian Fusion"],
+		"notes": "Reimagined Traditional Chinese Banquet Dishes",
+		"dish": "Tuxedo Style 'Dan Dan' Noodle",
+		"ingredients": [
+			"Eryngii Mushroom",
+			"Sesame Dressing",
+			"Soy Cured Yolk",
+			"Sichuan Peppercorns",
+			"Star Anise"
+		],
+		"country": ["China"]
+	},
+	{
+		"businessId": 909,
+		"name": "Shuka",
+		"cuisines": ["Mediterranean"],
+		"notes": "Middle Eastern",
+		"dish": "Shakshuka",
+		"ingredients": ["Eggs", "Spicy Tomato Sauce", "Roasted Cauliflower", "Feta", "Shatta", "Pita"],
+		"country": ["Israel"]
+	},
+	{
+		"businessId": 39420,
+		"name": "Amy's Place",
+		"cuisines": ["Breakfast"],
+		"notes": "Amy set out to create a neighborhood spot where locals and students could meet and grab coffee, breakfast or lunch in a fun space with an unpretentious vibe. With her sister Ari and a great staff helping to run things Amy\u2019s has become an East Side staple.",
+		"dish": "Hangover Breakfast Sandwich",
+		"ingredients": [
+			"Egg",
+			"Cheddar",
+			"Sauteed Onions",
+			"Guacamole",
+			"Spinach",
+			"Hot Sauce",
+			"Bolo",
+			"(Optional: Bacon)"
+		],
+		"country": ["United States"]
+	},
+	{
+		"businessId": 144662,
+		"name": "Bagel Gourmet Ole",
+		"cuisines": ["Bagels"],
+		"notes": "Relevance of bagels",
+		"dish": "Everything Bagel",
+		"ingredients": [],
+		"country": ["United States"]
+	},
+	{
+		"businessId": 69336,
+		"name": "Lindens",
+		"cuisines": ["American"],
+		"notes": "American, Breakfast",
+		"dish": "Honeynut Squash Ravioli",
+		"ingredients": [
+			"Pancetta",
+			"Brown Butter",
+			"5-year aged Banyuls Vinegar",
+			"Honeynut",
+			"Squash"
+		],
+		"country": ["United States"]
+	},
+	{
+		"businessId": 11644,
+		"name": "figidini",
+		"cuisines": ["Italian", "Pizza"],
+		"notes": "The decision to only have a wood fire oven and a wood fire grill as a cooking source allows the chefs to be creative but not to transform food into something that it shouldn\u2019t be. Sourcing from local farms, local seafood, quality meats and local poultry with the right amount of seasoning and the combination of the wood fire, the flavor is like no other!",
+		"dish": "Burrata Pizza",
+		"ingredients": [
+			"San Marzano Tomato",
+			"Burrata",
+			"Shaved Garlic",
+			"Calabrian Oregano",
+			"Olive Oil",
+			"(Optional: Salametto Picante)"
+		],
+		"country": ["Italy"]
+	},
+	{
+		"businessId": 4761,
+		"name": "Fiaschetteria \u201cPistoia\u201d",
+		"cuisines": ["Italian"],
+		"notes": "Tuscan",
+		"dish": "Pici Freschi Cacio e Pepe",
+		"ingredients": ["Hand-Roll Spaghetti", "Pecorino", "Black Pepper"],
+		"country": ["Italy"]
+	},
+	{
+		"businessId": 14243,
+		"name": "Piacere",
+		"cuisines": ["Italian", "Pizza"],
+		"notes": "Authentic Italian",
+		"dish": "Gnocchi Pomodoro e Basilico o Con Pesto",
+		"ingredients": ["Potato", "Tomato", "Basil Pesto"],
+		"country": ["Italy"]
+	},
+	{
+		"businessId": 8210,
+		"name": "Laut",
+		"cuisines": ["Malaysian", "Singaporean", "Southeast Asian"],
+		"notes": "Malaysian, Flavorful, Spicy",
+		"dish": "Spicy Night Market Noodles",
+		"ingredients": [
+			"Rice Noodle",
+			"Egg Round Noodle",
+			"Seasonal Greens",
+			"Bean Sprouts",
+			"Onion",
+			"Boiled Egg",
+			"Lime"
+		],
+		"country": ["Malaysia", "Singapore"]
+	},
+	{
+		"businessId": 1323,
+		"name": "Rubirosa",
+		"cuisines": ["Italian", "Pizza"],
+		"notes": "Joe & Pat's opens in Staten Island creating a unique thin crust pizza; a signature style to the family",
+		"dish": "The Tie Dye Pizza",
+		"ingredients": ["Vodka", "Tomato", "Pesto", "Fresh Mozzarella"],
+		"country": ["Italy"]
+	},
+	{
+		"businessId": 56515,
+		"name": "La Trattoria",
+		"cuisines": ["Italian"],
+		"notes": "An Oriental Italian",
+		"dish": "Penne Pesto (Vegetarian)",
+		"ingredients": ["Basil Pesto", "Marinated Tomatoes", "White Tomato Foam"],
+		"country": ["Italy"]
+	},
+	{
+		"businessId": 1152,
+		"name": "Bar Primi Bowery",
+		"cuisines": ["Italian"],
+		"notes": "Casual Italian Pasta Shop",
+		"dish": "Ricotta Crostini",
+		"ingredients": ["Ricotta", "Hazelnuts", "Truffle Honey"],
+		"country": ["Italy"]
+	},
+	{
+		"businessId": 1048131,
+		"name": "Din Tai Fung",
+		"cuisines": ["Taiwanese", "Chinese"],
+		"notes": "Chinese like Yautcha",
+		"dish": "Vegan Spicy Wontons",
+		"ingredients": [
+			"Spicy Sauce",
+			"Garlic",
+			"Green Onion",
+			"Handmade Wontons",
+			"Bean Curd",
+			"Baby Bok Choy",
+			"Shiitake Mushrooms",
+			"Wood Ear Mushrooms",
+			"Glass Noodles",
+			"Jicama",
+			"Spinach Juice"
+		],
+		"country": ["Taiwan", "China"]
+	},
+	{
+		"businessId": 7355,
+		"name": "M\u00e1L\u00e0 Project",
+		"cuisines": ["Chinese", "Szechuan"],
+		"notes": "Delivery Joy through Neo-Sichuanese Cuisine ",
+		"dish": "Mala Dry Pot",
+		"ingredients": [
+			"Spicy Sauce",
+			"Bok Choy",
+			"Lotus Root",
+			"Enoki Mushroom",
+			"Wood Ear Mushroom",
+			"Baby Corn",
+			"White Button Mushroom",
+			"Tofu Skin",
+			"Tofu Pocket"
+		],
+		"country": ["China"]
+	},
+	{
+		"businessId": 1272928,
+		"name": "Indigo Indian Restaurant & Bar",
+		"cuisines": ["Indian"],
+		"notes": "Authentic Indian cuisine ",
+		"dish": "Paneer Chili",
+		"ingredients": ["Paneer Stir-Fried", "Bell Peppers", "Onions", "Spicy Tangy Chili Sauce"],
+		"country": ["India"]
+	},
+	{
+		"businessId": 146557,
+		"name": "Koloman",
+		"cuisines": ["Austrian", "French"],
+		"notes": "European Cafe Culture",
+		"dish": "Kern\u00f6l",
+		"ingredients": [
+			"\u201cStyrian-Style\u201d Soft Scrambled Egg",
+			"Chives",
+			"Pumpkin Seed Oil",
+			"Mache"
+		],
+		"country": ["Austria", "France"]
+	},
+	{
+		"businessId": 647301,
+		"name": "Bangkok Supper Club",
+		"cuisines": ["Thai"],
+		"notes": "Delightful Emphasis on Thai Charcoal Grill Techniques",
+		"dish": "Grilled Mushroom Salad",
+		"ingredients": [
+			"Charred Little Gem Lettuce",
+			"King Oyster",
+			"Oyster Mushrooms",
+			"Chrysanthemum Shoots",
+			"Thai Basil",
+			"Coconut Chips",
+			"Coconut Cilantro Dressing"
+		],
+		"country": ["Thailand"]
+	},
+	{
+		"businessId": 9290,
+		"name": "Friedman's Hell's Kitchen",
+		"cuisines": ["American"],
+		"notes": "Our mantra is simple, \u201cEat good food\u201d and this is what we strive to deliver to our guests. For us, it has two meanings. Firstly, eat food that tastes good. Secondly, be proud of the food you serve. We know where our food comes from. We communicate regularly with our farmers and are proud to serve antibiotic free meats & local vegetables. Our mission is for you to love, respect, & enjoy, not only the food you serve, but also the team you work with.",
+		"dish": "Breakfast Buritto",
+		"ingredients": [
+			"Egg",
+			"Cheese",
+			"Rice",
+			"Beans",
+			"Lettuce",
+			"Avocado",
+			"Sour Cream",
+			"Pico de Gallo"
+		],
+		"country": ["United States"]
+	},
+	{
+		"businessId": 19441,
+		"name": "Valla Table",
+		"cuisines": ["Thai"],
+		"notes": "Unique and Authentic Thai flavors",
+		"dish": "Pad Kee Mao",
+		"ingredients": [
+			"Stir Fried Flat Rice Noodle",
+			"Bell Pepper",
+			"Thai Basil",
+			"Onion",
+			"Fresh Chillies",
+			"Vegetables"
+		],
+		"country": ["Thailand"]
+	},
+	{
+		"businessId": 190469,
+		"name": "Rosevale Kitchen",
+		"cuisines": ["American"],
+		"notes": "American, Breakfast",
+		"dish": "Buttermilk Pancakes",
+		"ingredients": [
+			"Cultured Butter",
+			"Warm Maple Syrup",
+			"Chocolate Chips",
+			"Strawberries",
+			"Blueberries",
+			"Whipped Cream",
+			"Nutella"
+		],
+		"country": ["United States"]
+	},
+	{
+		"businessId": 5056,
+		"name": "Maki Kosaka",
+		"cuisines": ["Japanese", "Sushi", "Omakase"],
+		"notes": "Japanese, Sushi",
+		"dish": "Temaki Roll",
+		"ingredients": ["Asparagus", "Avocado", "Cucumber", "Shittake"],
+		"country": ["Japan"]
+	},
+	{
+		"businessId": 85255,
+		"name": "Coletta",
+		"cuisines": ["Vegan", "Italian", "Vegetarian"],
+		"notes": "Coletta is an intimate vegan and kosher dining experience that offers a fresh culinary perspective to Italian cuisine.",
+		"dish": "Hot Honey Pizza",
+		"ingredients": [
+			"Mozzarella",
+			"Lemon Ricotta",
+			"Hot Cherry Peppers",
+			"Truffle Honey",
+			"Crema",
+			"Red Onion",
+			"Chives"
+		],
+		"country": ["Italy"]
+	},
+	{
+		"businessId": 492,
+		"name": "The Musket Room",
+		"cuisines": ["New Zealand", "Global"],
+		"notes": "Attea leads a culinary team that draws on their heritages, world travels and personal inclinations to create vivid flavors and inventive dishes that deftly cross borders and defy categorization. Cross Border",
+		"dish": "Seaweed Caviar, Avocado, Shiso",
+		"ingredients": ["Seaweed Caviar", "Avocado", "Shiso"]
+	},
+	{
+		"businessId": 9236,
+		"name": "Chito Gvrito",
+		"cuisines": ["Georgian"],
+		"notes": "We would like to think that Chito Gvrito represents the spirit of Georgia: sunny, generous, and eclectic. Where locals and travelers are received as friends and family as in tradition of true Georgian hospitality.",
+		"dish": "Imeruli Kachapuri",
+		"ingredients": ["Imeruli Cheese Curds", "Filled Bread"],
+		"country": ["Georgia"]
+	},
+	{
+		"businessId": 9655,
+		"name": "Boqueria Soho",
+		"cuisines": ["Spanish", "Tapas"],
+		"notes": "Spanish Tapas Bar",
+		"dish": "Pan Con Tomate",
+		"ingredients": ["Toasted Bread", "Tomato", "Garlic", "Olive Oil"],
+		"country": ["Spain"]
+	},
+	{
+		"businessId": 1190552,
+		"name": "Pura Vida Miami",
+		"cuisines": ["American", "Bakery", "Cafe"],
+		"notes": "Health",
+		"dish": "",
+		"ingredients": [],
+		"country": ["United States"]
+	},
+	{
+		"businessId": 415,
+		"name": "Caf\u00e9 China",
+		"cuisines": ["Chinese", "Szechuan", "Sichuan"],
+		"notes": "The restaurant\u2019s menu boasts new and longtime-favorite Sichuan dishes, as well as unique and traditional cuisine from other regions in China\u2014food for any occasion that we welcome you to enjoy in a space that\u2019s both elegant and warm, beautiful and inviting, intimate and vibrant.",
+		"dish": "Ma Po Tofu",
+		"ingredients": [
+			"Tofu",
+			"Leek",
+			"Chili Sauce",
+			"Sichuan Peppercorns",
+			"Ginger Garlic",
+			"Sesame Oil"
+		],
+		"country": ["China"]
+	},
+	{
+		"businessId": 166640,
+		"name": "Pranakhon",
+		"cuisines": ["Thai"],
+		"notes": "Pranakhon is the original name of the capital city of Thailand (see more detail from wikipedia). The capital city\u2019s name was changed to \u201cKrung Thep Maha Nakhon\" in 1971. Today people around the world know it as Bangkok.\n\nA \u201csoi\u201d is a small alley or side street. Walking along each different soi you will find unique types of cuisine that represent the lifestyles of the Thai people. In the city of Bangkok (Pranakhon) there are thousands of soi each with their own colorful food experience.",
+		"dish": "Kang Dang (Red Curry)",
+		"ingredients": [
+			"String Bean",
+			"Long Hot Pepper",
+			"Basil Leaf",
+			"Coconut Milk",
+			"Bamboo Shoots"
+		],
+		"country": ["Thailand"]
+	},
+	{
+		"businessId": 4472,
+		"name": "The Blue Dog",
+		"cuisines": ["American"],
+		"notes": "More about health and clean ingridients than the cuisine",
+		"dish": "Egg's Benedict",
+		"ingredients": [
+			"Poached Eggs",
+			"Hollandaise",
+			"English Muffin",
+			"Roasted Potatoes",
+			"Mixed Green"
+		],
+		"country": ["United States"]
+	},
+	{
+		"businessId": 191926,
+		"name": "Kala Ghoda Cafe",
+		"cuisines": ["Global", "Contemporary", "Cafe"],
+		"notes": "Nostagia, Mumbai",
+		"dish": "Cucumber Chutney Sandwich",
+		"ingredients": ["Mint Chutney", "Cucumber", "Cheese Slice", "White Bread"],
+		"country": []
+	},
+	{
+		"businessId": 686461,
+		"name": "Jazba",
+		"cuisines": ["Indian"],
+		"notes": "Jazba is a tribute and celebration of India's famous eateries. It is our take on some of the iconic dishes which are over a century old. Integral to India\u2019s culinary identity, these are diverse eateries of rich historical, cultural, and religious significance, that typically serve a single specialty dish until sold out for the day. (the most common street food available all over just by different names, aka pani puri or puchka)",
+		"dish": "Golgappa (Pani Puri or Puchka)",
+		"ingredients": [
+			"Semolina Puffs",
+			"Mint Leaves",
+			"Cumin Seeds",
+			"Mango Powder",
+			"Asafoetida",
+			"Chickpeas",
+			"Potatoes",
+			"Lemon"
+		],
+		"country": ["India"]
+	},
+	{
+		"businessId": 74,
+		"name": "Lucali",
+		"cuisines": ["Pizza"],
+		"notes": "Pizza",
+		"dish": "Large Pie with Basil",
+		"ingredients": [],
+		"country": ["Italy"]
+	},
+	{
+		"businessId": 17779,
+		"name": "Moustache Pitza",
+		"cuisines": ["Middle Eastern"],
+		"notes": "Inspired by street corner Lebanese bakeries known as the Furn, Moustache Restaurant opened in 1988 on Atlantic Avenue, providing an oasis.\n \nAnd there was the \u201cPitza\u201d, a type of pizza with toppings, and lahambajin, a delicious spiced ground lamb pie with onion and parsley.",
+		"dish": "Labne",
+		"ingredients": ["Strained Yogurt", "Olive Oil", "Za'taar"],
+		"country": ["Lebanon"]
+	},
+	{
+		"businessId": 7338,
+		"name": "Cafe Mogador",
+		"cuisines": ["Cafe", "Mediterranean", "Middle Eastern", "Moroccan"],
+		"notes": "Founded in 1983 in the East Village, Cafe Mogador was both an early pioneer in the NYC restaurant world and a downtown cultural hub. Serving up her signature Moroccan-inspired cuisine, founder Rivka embraced and celebrated the creative neighborhood she called home while pushing culinary boundaries. Throughout four decades and the addition of a second location in Williamsburg, Cafe Mogador gained tremendous recognition and solidified its place as a neighborhood institution and culinary destination. ",
+		"dish": "Halloumi Cheese",
+		"ingredients": ["Halloumi", "Roasted Vegetables", "Basil Pesto"],
+		"country": ["Morocco"]
+	},
+	{
+		"businessId": 4932,
+		"name": "Shoo Shoo Nolita",
+		"cuisines": ["Mediterranean", "Israeli", "Middle Eastern"],
+		"notes": "Channeling the energy of Tel Aviv's bohemian cafe culture through a New York lens, the restaurant was designed to foster the simple, timeless act of bringing people together around a common table.",
+		"dish": "Israeli Chopped Salad",
+		"ingredients": [
+			"Tomato",
+			"Persian Cucumber",
+			"Radishes",
+			"Onions",
+			"Herbs",
+			"Bulgur",
+			"Tahini"
+		],
+		"country": ["Israeli"]
+	},
+	{
+		"businessId": 11743,
+		"name": "Singapura",
+		"cuisines": ["Singaporean", "Southeast Asian"],
+		"notes": "Featuring a Singaporean-inspired drink and food menu, Singapura not only offers hawker food but also dishes from the Peranakan and Eurasian communities in Singapore. Peranakan cuisine or Nyonya cuisine comes from the Peranakans and is unique to Malaysia and Singapore. The Peranakans are descendants of early Chinese migrants who settled in Penang, Malacca, Singapore and Indonesia, inter-marrying with local Malays, beginning in the 15th century.",
+		"dish": "Singapore Noodles",
+		"ingredients": [
+			"Thin Rice Noodle",
+			"Curry Paste",
+			"Beansprout",
+			"Chive",
+			"Onion",
+			"Carrot",
+			"Egg",
+			"Tofu"
+		],
+		"country": ["Singapore"]
+	},
+	{
+		"businessId": 1472,
+		"name": "Alta",
+		"cuisines": ["Mediterranean"],
+		"notes": "We are a small plates restaurant, and in our food you can experience the influence of the culinary landscape surrounding the Mediterranean Sea. The small plates allow you to enjoy more of these flavors. They are a great way share a meal with all of your friends.",
+		"dish": "Ricotta Gnocchi",
+		"ingredients": ["Tomato Passata", "Basil", "Pistou", "Aleppo Pepper"],
+		"country": []
+	},
+	{
+		"businessId": 606,
+		"name": "Han Dynasty",
+		"cuisines": ["Chinese", "Sichuan"],
+		"notes": "Bringing Sichuan style food to America. Family Run, Many chains now",
+		"dish": "Spicy Crispy Cucumbers",
+		"ingredients": ["Cold Cucumbers", "Sweet Garlic Chili Sauce"],
+		"country": ["China"]
+	},
+	{
+		"businessId": 16672,
+		"name": "Planta Queen",
+		"cuisines": ["Vegan", "Sushi", "Japanese"],
+		"notes": "Vegan. Focus is not on the food but plant being plant based",
+		"dish": "Bang Bang Broccoli",
+		"ingredients": ["Sweet Chili", "Peanut Sauce", "Nuts", "Broccoli"],
+		"country": ["Japan"]
+	},
+	{
+		"businessId": 18959,
+		"name": "Heng Thai & Rotisserie",
+		"cuisines": ["Thai", "Gluten Free"],
+		"notes": "Street Thai Food",
+		"dish": "Som Tum Salad",
+		"ingredients": [
+			"Thai Style Green Papaya Salad",
+			"Green Beans",
+			"Tomato",
+			"Garlic",
+			"Peanut",
+			"(Optional: Shrimp)"
+		],
+		"country": ["Thailand"]
+	},
+	{
+		"businessId": 17416,
+		"name": "Massimo Ristorante",
+		"cuisines": ["Italian"],
+		"notes": "Offering a seasonal Italian menu inspired by the regional cuisines of Italy.",
+		"dish": "Ricotta Ravioli",
+		"ingredients": [
+			"San Marzano Marinara",
+			"Pomodorini Tomatoes",
+			"Garlic",
+			"Extra Virgin Olive Oil",
+			"Fresh Torn Basil"
+		],
+		"country": ["Italy"]
+	},
+	{
+		"businessId": 10444,
+		"name": "Brickway On Wickenden",
+		"cuisines": ["Breakfast"],
+		"notes": "American, Breakfast",
+		"dish": "Kalifornia Omelette",
+		"ingredients": ["Tomato", "Goat Cheese", "Avocado", "Eggs"],
+		"country": []
+	},
+	{
+		"businessId": 37548,
+		"name": "Aleppo Sweets",
+		"cuisines": ["Cafe", "Syrian"],
+		"notes": "A baklava bakery. Fatayer: served as a flatbread or pinched into the shape of a \u2018boat\u2019. Syrian Street Food.",
+		"dish": "Aleppo Pepper Fatayer",
+		"ingredients": ["Aleppo Pepper", "Olive Oil", "Softly Baked Bread"],
+		"country": ["Syria"]
+	},
+	{
+		"businessId": 17662,
+		"name": "Lan Larb Chiang Mai",
+		"cuisines": ["Thai"],
+		"notes": "Northern Thai. The goal is to bring the original yet unique flavor of his family\u2019s recipes to customers here at Lan Larb Chiangmai.",
+		"dish": "Khai Soi Chiangmai",
+		"ingredients": ["Northern Style Curry", "Hicken Leg Sour Mastard", "Spice Chili Oil"],
+		"country": ["Thailand"]
+	},
+	{
+		"businessId": 18644,
+		"name": "Den Den Caf\u00e9 Asiana",
+		"cuisines": ["Korean", "Japanese"],
+		"notes": "Korean Dishes",
+		"dish": "Hot Stone Bibimbap",
+		"ingredients": ["Korean Rice Dish", "Sesame", "Vegetables", "Fried Egg", "Tofu", "Mushrooms"],
+		"country": ["South Korea"]
+	},
+	{
+		"businessId": 11415,
+		"name": "Xaco Taco",
+		"cuisines": ["Taqueria", "Mexican"],
+		"notes": "Mexican street food with a modern twist in a relaxed and casual environment.",
+		"dish": "Wild Mushroom Tacos",
+		"ingredients": ["Mushrooms", "Rajas Poblanas", "Queso Fresco", "Arbol Frita"],
+		"country": ["Mexico"]
+	},
+	{
+		"businessId": 8127,
+		"name": "GupShup",
+		"cuisines": ["Indian"],
+		"notes": "Indian, Bombay cuisine?",
+		"dish": "Thatte Idli",
+		"ingredients": ["Idli", "Sambhar", "Spicy Tomato", "Coconut Chutney", "Milagai Podi"],
+		"country": ["India"]
+	},
+	{
+		"businessId": 999,
+		"name": "Cecconi's",
+		"cuisines": ["Italian"],
+		"notes": "Cecconi\u2019s Dumbo NYC serves hand-made pasta, seafood and dishes from Italy using the finest ingredients",
+		"dish": "Wood Oven Pizza",
+		"ingredients": ["Buffalo Mozzarella", "Tomato", "Basil"],
+		"country": ["Italy"]
+	},
+	{
+		"businessId": 1502,
+		"name": "ilili Restaurant",
+		"cuisines": ["Lebanese", "Mediterranean", "Middle Eastern"],
+		"notes": " ilili is a celebration of heritage, innovation, and the unforgettable tastes of Lebanon and the Middle East",
+		"dish": "Tabouleh Salad",
+		"ingredients": [
+			"Parsley",
+			"Mint",
+			"Tomato",
+			"Burghul",
+			"Lemon Juice",
+			"Cucumbers",
+			"Olive Oil"
+		],
+		"country": ["Lebanon"]
+	},
+	{
+		"businessId": 5068,
+		"name": "Lola Taverna",
+		"cuisines": ["Greek", "Mediterranean"],
+		"notes": "Greek",
+		"dish": "Kopanisti",
+		"ingredients": ["Whipped Spicy Feta", "Chili Oil"],
+		"country": ["Greece"]
+	},
+	{
+		"businessId": 5065,
+		"name": "RH Rooftop Restaurant at RH New York",
+		"cuisines": ["Brunch"],
+		"notes": "like not really history as much as vibes",
+		"dish": "",
+		"ingredients": [],
+		"country": []
+	},
+	{
+		"businessId": 4775,
+		"name": "Avant Garden",
+		"cuisines": ["American", "Cocktail Bar"],
+		"notes": "With an emphasis on fresh, natural vegetables and global flavors, Avant Garden is an essential plant-based restaurant in the NYC restaurant scene. ",
+		"dish": "Brussel",
+		"ingredients": ["Crispy Brussels", "Endive", "Arugula", "Fig Gastrique", "Candied Walnuts"],
+		"country": ["United States"]
+	},
+	{
+		"businessId": 10100,
+		"name": "Little Rascal",
+		"cuisines": ["Cafe", "Eastern European", "Middle Eastern", "Turkish"],
+		"notes": "Owners/Chefs from Adana, Turkey. ",
+		"dish": "Halloumi Croquettas",
+		"ingredients": ["Fried Halloumi", "Apple Butter", "Marcona Almond"],
+		"country": ["Turkey"]
+	},
+	{
+		"businessId": 1248,
+		"name": "12 Chairs Cafe",
+		"cuisines": ["Israeli", "Middle Eastern", "Mediterranean"],
+		"notes": "Tel Aviv",
+		"dish": "Falafel & Tahini",
+		"ingredients": ["Falafel (Ground Chickpeas)", "Tomato Tahini", "Garlic", "Parsley"],
+		"country": ["Israel"]
+	},
+	{
+		"businessId": 1161,
+		"name": "Loring Place",
+		"cuisines": ["American"],
+		"notes": "Homage to New York City",
+		"dish": "Crispy Brioche French Toast",
+		"ingredients": ["Maple Cranberries", "Cinnamon Cr\u00e8me Fraiche", "Eggs"],
+		"country": ["United States"]
+	},
+	{
+		"businessId": 477,
+		"name": "ilona",
+		"cuisines": ["Mediterranean"],
+		"notes": "Greek",
+		"dish": "Batata Harras",
+		"ingredients": ["Spicy Harissa", "Potato"],
+		"country": ["Greece"]
+	},
+	{
+		"businessId": 1250,
+		"name": "The Butcher's Daughter",
+		"cuisines": ["Brunch"],
+		"notes": "The traditional meat butcher \u2014 and his time-worn butcher shop \u2014 are becoming relics of the past. But his rebellious daughter is paving a new way\u2026 and she\u2019s really excited about vegetables.",
+		"dish": "The Best Egg Sandwich",
+		"ingredients": ["Eggs", "Kale", "Avocado", "Spicy Mayo", "Croissant"],
+		"country": []
+	},
+	{
+		"businessId": 908,
+		"name": "Jack's Wife Freda",
+		"cuisines": ["American", "Mediterranean", "Breakfast"],
+		"notes": "Israeli, South African, New York Jewish Culture.",
+		"dish": "Fried Zucchini Chips",
+		"ingredients": ["Zucchini", "Smoked Paprika Aioli", "Bread Batter"],
+		"country": ["United States"]
+	},
+	{
+		"businessId": 347,
+		"name": "Catch NYC",
+		"cuisines": ["American", "Seafood", "Sushi"],
+		"notes": "Japanese Inspired",
+		"dish": "Shishito Peppers",
+		"ingredients": ["Yuzu Chili Garlic", "Amazu Ponzu"],
+		"country": ["United States"]
+	},
+	{
+		"businessId": 95629,
+		"name": "Wasabi by Morimoto",
+		"cuisines": ["Japanese"],
+		"notes": "Japanese",
+		"dish": "Lotus Stem Robatayaki",
+		"ingredients": ["Lotus Stem"],
+		"country": ["Japan"]
+	},
+	{
+		"businessId": 1058488,
+		"name": "Otra",
+		"cuisines": ["Latin American"],
+		"notes": "Latin American",
+		"dish": "Chipotle Cauliflower Tacos",
+		"ingredients": ["Tempura Style", "Poblano 'Rancho'", "Chipotle Hot Sauce", "Marinated Cabbage"],
+		"country": []
+	},
+	{
+		"businessId": 264157,
+		"name": "Champa Thai + Lao Restaurant",
+		"cuisines": ["Thai", "Laotian"],
+		"notes": "Thai",
+		"dish": "Basil Fried Rice",
+		"ingredients": [
+			"Jasmine Rice",
+			"Eggs",
+			"Basil",
+			"Bell Peppers",
+			"Onion",
+			"Carrots",
+			"Peas",
+			"Sriracha Sauce"
+		],
+		"country": ["Thailand"]
+	},
+	{
+		"businessId": 968,
+		"name": "Cookshop",
+		"cuisines": ["American"],
+		"notes": "Cookshop came about through a longstanding desire to more fully incorporate the range of ingradients available in the northeast, whether it was farm animals, agricultural products, or the emerging artisanal cheese movement. To this day we continue tomake every effort to ensure that the beliefs and values that were an inspiration on opening day continue to be a part of every dish we create.",
+		"dish": "Huevos Rancheros",
+		"ingredients": [
+			"Black Beans",
+			"Ranchero Sauce",
+			"Monterey Jack Cheese",
+			"Cr\u00e8me Fraiche",
+			"Tortilla Chips",
+			"Pickled Jalapeno"
+		],
+		"country": ["United States"]
+	},
+	{
+		"businessId": 250002,
+		"name": "Torrisi",
+		"cuisines": ["Italian"],
+		"notes": "Italian cuisine with nyc ingridients",
+		"dish": "Tortellini Pomodoro",
+		"ingredients": ["Tomatoes", "Olive Oil", "Garlic", "Basil"],
+		"country": ["Italy"]
+	},
+	{
+		"businessId": 72810,
+		"name": "Casa Dani",
+		"cuisines": ["Spanish"],
+		"notes": "Andalusian cuisine.  Casa Dani is more than fine dining; it\u2019s a vibrant showcase of Spanish culture, making the experience fresh, easy, and enjoyable.",
+		"dish": "Verduras Paella",
+		"ingredients": ["Seasonal Vegetables", "Rice", "Saffron", "Paprika", "Parsley"],
+		"country": ["Spain"]
+	},
+	{
+		"businessId": 5142,
+		"name": "Sakagura",
+		"cuisines": ["Japanese"],
+		"notes": "sakes, authentic tapas-style Japanese dishes",
+		"dish": "Seaweed Salad",
+		"ingredients": ["Seaweed", "Avocado", "Tomato Sesame Dressing"],
+		"country": ["Japan"]
+	},
+	{
+		"businessId": 5568,
+		"name": "La Pecora Bianca SoHo",
+		"cuisines": ["Italian"],
+		"notes": "We take Italian food back to its roots as a local and seasonal cuisine, with a menu that centers around house-made pastas and modern takes on classic Italian fare. ",
+		"dish": "Tiramisu",
+		"ingredients": ["Mascarpone", "Espresso", "Rum", "Vanilla", "Cream"],
+		"country": ["Italy"]
+	},
+	{
+		"businessId": 32073,
+		"name": "Bacaro",
+		"cuisines": ["Italian", "Wine Bar"],
+		"notes": "Italian Providence",
+		"dish": "Pizza Arrabiata",
+		"ingredients": ["Spicy San Marzano Tomato Pomodoro", "Cheese", "Fresh Parsley"],
+		"country": ["Italy"]
+	},
+	{
+		"businessId": 191928,
+		"name": "Rue Du Liban",
+		"cuisines": ["Lebanese"],
+		"notes": "Levantine Cuisine. Levantine cuisine is a fine balance of rich flavours and modest ingredients.  ",
+		"dish": "Beetroot Mezze",
+		"ingredients": ["Roasted Beetroot", "Tahini", "Pistachio", "Olive Oil"],
+		"country": ["Lebanon"]
+	},
+	{
+		"businessId": 697852,
+		"name": "Cafe Fleur de Lis",
+		"cuisines": ["Brunch", "Southern", "American"],
+		"notes": "Southern American Cooking",
+		"dish": "Fried Grits",
+		"ingredients": ["Polenta", "Dried Corn", "Cream Cheese Spread"],
+		"country": ["United States"]
+	},
+	{
+		"businessId": 1714,
+		"name": "La Contenta Oeste",
+		"cuisines": ["Mexican"],
+		"notes": "Mexican cuisine with French accents",
+		"dish": "La Contenta Nachos",
+		"ingredients": [
+			"Tortilla Chips",
+			"Black Beans",
+			"Pico De Gallo",
+			"Pepper Jack",
+			"Oaxaca Cheese",
+			"Cheddar Cheese",
+			"Avocado Sauce",
+			"Sour Cream"
+		],
+		"country": ["Mexico"]
+	},
+	{
+		"businessId": 9406,
+		"name": "Desi Galli",
+		"cuisines": ["Indian"],
+		"notes": "[history of kathi rolls?]",
+		"dish": "Channa Kathi Roll",
+		"ingredients": ["Chickpeas", "Paratha", "Mint Chutney", "Garlic", "Ginger", "Pickled Onions"],
+		"country": ["India"]
+	},
+	{
+		"businessId": 62482,
+		"name": "Semma",
+		"cuisines": ["South Indian", "Indian"],
+		"notes": "Heritage South Indian",
+		"dish": "Paniyaram",
+		"ingredients": ["Rice", "Lentils", "Asafoetida", "Chutney"],
+		"country": ["India"]
+	},
+	{
+		"businessId": 1070,
+		"name": "Parm Mulberry Street",
+		"cuisines": ["American", "Italian"],
+		"notes": "Italian-American soul food",
+		"dish": "Garlic Bread",
+		"ingredients": ["Italian Bread", "Parsley Butter", "Garlic"],
+		"country": ["United States", "Italy"]
+	},
+	{
+		"businessId": 47682,
+		"name": "Ci Siamo",
+		"cuisines": ["Italian"],
+		"notes": "Italian-inflicted? (I think its Sicilian?)",
+		"dish": "Pizzete",
+		"ingredients": ["Tomato", "Italian Bread"],
+		"country": ["Italy"]
+	},
+	{
+		"businessId": 1194,
+		"name": "Ruby's Cafe - Murray Hill",
+		"cuisines": ["American", "Italian", "Brunch"],
+		"notes": "Australian Caf\u00e9",
+		"dish": "Crispy Rice Bowl",
+		"ingredients": [
+			"Puffed Wild Rice",
+			"Arugula",
+			"Cucumber",
+			"Pickled Red Onion",
+			"Tomato",
+			"Parsley",
+			"Scallions",
+			"Chives",
+			"Watermelon Radish",
+			"Halloumi",
+			"Sunny Side Egg",
+			"Spicy Aioli",
+			"Ginger Lemon Dressing"
+		],
+		"country": ["United States"]
+	},
+	{
+		"businessId": 55071,
+		"name": "Le Jardin Restaurant Marrakech Medina",
+		"cuisines": ["Moroccan"],
+		"notes": "Moroccan",
+		"dish": "Vegetarian Briouates",
+		"ingredients": ["Carrots", "Zucchini", "Fennel", "Celeriac"],
+		"country": ["Morocco"]
+	},
+	{
+		"businessId": 5232,
+		"name": "Mamo",
+		"cuisines": ["French", "Italian"],
+		"notes": "Inspired by the tradition and warmth of his Italian grandfather Angelo 'Mamo' Mammoliti and raised in the restaurant industry in the South of France with his father, Mike with the help of his partners Chef Salvatore Marcello and Steven Fruman brought a modern twist on Italian nostalgia by introducing MAMO.",
+		"dish": "Risotto al tartufo",
+		"ingredients": ["White Onion", "Rice", "Truffle", "Black Pepper"],
+		"country": ["France", "Italy"]
+	},
+	{
+		"businessId": 950,
+		"name": "Tacombi",
+		"cuisines": ["Mexican", "Taqueria", "Tacos"],
+		"notes": "Mexican",
+		"dish": "Black Bean & Sweet Potato Tacos",
+		"ingredients": ["Sweet Potatoes", "Cotija Cheese", "Tomatilo Salsa", "Black Beans"],
+		"country": ["Mexico"]
+	},
+	{
+		"businessId": 104382,
+		"name": "Aguardente",
+		"cuisines": ["Portuguese", "Guatemalan"],
+		"notes": "Portugal, Guatemala, and the Azores",
+		"dish": "Plaintain Cups",
+		"ingredients": [
+			"Zucchini",
+			"Squash",
+			"Fresh Corn",
+			"Tomato",
+			"Garlic",
+			"Red Onion",
+			"Cilantro",
+			"Avocado",
+			"Plaintain"
+		],
+		"country": ["Portugal", "Guatemala"]
+	},
+	{
+		"businessId": 1599,
+		"name": "Buddakan",
+		"cuisines": ["Chinese"],
+		"notes": "Pan Asian",
+		"dish": "Chilled Peanut Noodles",
+		"ingredients": ["Noodles", "Szechuan Dressing", "Cucumber", "Peanut", "Garlic", "Ginger"],
+		"country": ["China"]
+	},
+	{
+		"businessId": 416,
+		"name": "Junoon",
+		"cuisines": ["Indian", "Mughlai"],
+		"notes": "Native Indian?",
+		"dish": "Kala Chana Galouti",
+		"ingredients": [
+			"Chickpea",
+			"Walnut",
+			"Radish Chutney",
+			"Watermelon Radish",
+			"Pickled Red Onion"
+		],
+		"country": ["India"]
+	},
+	{
+		"businessId": 50318,
+		"name": "NAMI",
+		"cuisines": ["Japanese", "Sushi", "Omakase"],
+		"notes": "Japanese",
+		"dish": "Vegetable Tempura",
+		"ingredients": ["Lightly battered", "Fried Assortment of Vegetables", "Tempura"],
+		"country": ["Japan"]
+	},
+	{
+		"businessId": 13591,
+		"name": "Che Li Manhattan \u6d59\u91cc",
+		"cuisines": ["Chinese", "Shanghainese"],
+		"notes": "Song Dynasty, Shanghai",
+		"dish": "Sitr Fried String Bean",
+		"ingredients": ["String Beans", "Garlic"],
+		"country": ["China"]
+	},
+	{
+		"businessId": 45659,
+		"name": "Debajo",
+		"cuisines": ["Bar", "Tapas"],
+		"notes": "Spanish American",
+		"dish": "Croquetas",
+		"ingredients": ["Confit Garlic Aioli", "Of the Day", "Potato"],
+		"country": ["Spanish"]
+	},
+	{
+		"businessId": 1118,
+		"name": "Nai",
+		"cuisines": ["Spanish", "Tapas"],
+		"notes": "Galicia",
+		"dish": "Patatas Bravas",
+		"ingredients": ["Potatoes", "Spicy Tomato", "Chipotle Aioli"],
+		"country": ["Spain"]
+	}
+]

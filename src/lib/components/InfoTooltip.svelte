@@ -1,5 +1,8 @@
 <script lang="ts">
 	import Button from '$lib/components/MyButton.svelte';
+	import restaurants from '$lib/data/restaurants.json';
+	import rankings from '$lib/data/visitedBusinessesRanking.json';
+	import profiles from '$lib/data/businessProfiles.json';
 	import NumberFlow, { continuous } from '@number-flow/svelte';
 	import { fade } from 'svelte/transition';
 	import { linear } from 'svelte/easing';
@@ -10,6 +13,13 @@
 		value: 'active' | 'inactive';
 	}
 
+	interface RestInfo {
+		name: string;
+		dishName: string;
+		ranking: string;
+		location: string | null;
+	}
+
 	let { ingredient, activeIndex = $bindable(), value = $bindable() }: Props = $props();
 
 	let storyActive = $state(true);
@@ -17,6 +27,33 @@
 	let titleHeight = $state(0);
 
 	let colHeight = $derived(containerHeight - titleHeight);
+
+	let selectedRestaurants = $derived(
+		activeIndex != null
+			? restaurants.filter((d) => d.country?.includes(ingredient.country.label))
+			: null
+	);
+
+	let restaurantInformation: RestInfo[] = $state([]);
+
+	$effect(() => {
+		let currentInfo: RestInfo[] = [];
+		selectedRestaurants?.forEach((s) => {
+			const ranking = rankings.filter((d) => d.businessId == s.businessId)[0];
+			const business = profiles.filter((d) => d.businessId == s.businessId)[0];
+
+			currentInfo.push({
+				name: s.name,
+				dishName: s.dish,
+				ranking: `${ranking.score.toFixed(1)} / 10.0`,
+				location: business.city
+			});
+		});
+
+		restaurantInformation = currentInfo;
+	});
+
+	$inspect(restaurantInformation);
 </script>
 
 <div
@@ -81,67 +118,51 @@
 					<p class="heading-1">{ingredient.country.label} ~ YEAR UNKNOWN</p>
 				{/if}
 			</div>
-			<!-- <div class="h-max-content flex w-full flex-row items-center gap-4"> -->
-			<!-- <Button
-				label={'ORIGIN'}
-				state={storyActive ? 'active' : 'default'}
-				onClickFn={() => (storyActive = true)}
-				ariaLabel={'Show Origin Story'}
-			/> -->
-			<!-- <Button
+			<div class="h-max-content flex w-full flex-row items-center gap-4">
+				<Button
+					label={'ORIGIN'}
+					state={storyActive ? 'active' : 'default'}
+					onClickFn={() => (storyActive = true)}
+					ariaLabel={'Show Origin Story'}
+				/>
+				<Button
 					label={'MY EXPERIENCES'}
 					state={storyActive ? 'default' : 'active'}
 					onClickFn={() => (storyActive = false)}
 					ariaLabel={'Show My Experiences'}
-				/> -->
-			<!-- </div> -->
-			<!-- {#if storyActive} -->
-			<div
-				class="body columns-2 gap-x-8 font-sans tracking-normal text-black"
-				style:column-fill="auto"
-				style:height={`${colHeight - 40}px`}
-			>
-				{#each ingredient.text as t}
-					{t}<br /><br />
-				{/each}
+				/>
 			</div>
-			<!-- {:else}
-				<div class="grid w-full grid-cols-1 lg:grid-cols-2">
-					<div class="body flex w-[70%] flex-col gap-0.5 p-1">
-						<p class="w-full self-center uppercase">Aleppo Sweets</p>
-						<div class="flex w-full flex-row justify-between">
-							<p>⭐</p>
-							<p>9.0/10.0</p>
-						</div>
-						<div class="flex w-full flex-row justify-between">
-							<p>🍝</p>
-							<p>Dish Name</p>
-						</div>
-						<div class="flex w-full flex-row justify-between">
-							<p>📍</p>
-							<p>Location</p>
-						</div>
-					</div>
-					<div class="body flex w-[70%] flex-col gap-0.5 p-1">
-						<p class="uppercase">Aleppo Sweets</p>
-						<div class="flex w-full flex-row justify-between">
-							<p>⭐</p>
-							<p>9.0/10.0</p>
-						</div>
-						<div class="flex w-full flex-row justify-between">
-							<p>🍝</p>
-							<p>Dish Name</p>
-						</div>
-						<div class="flex w-full flex-row justify-between">
-							<p>📍</p>
-							<p>Location</p>
-						</div>
-					</div>
+			{#if storyActive}
+				<div
+					class="body columns-2 gap-x-8 font-sans tracking-normal text-black"
+					style:column-fill="auto"
+					style:height={`${colHeight - 40}px`}
+				>
+					{#each ingredient.text as t}
+						{t}<br /><br />
+					{/each}
 				</div>
-				<p class="body font-sans tracking-normal text-black">
-					THIS IS A TEXT PLACEHOLDER WITH THE SAME WIDTH
-				</p>
-			{/if} -->
+			{:else}
+				<div class="grid w-full grid-cols-1 gap-y-4 lg:grid-cols-3">
+					{#each restaurantInformation as rest, i}
+						<div class="body flex-grow flex-col gap-0.5 p-2">
+							<p class="w-full self-center uppercase">{rest.name}</p>
+							<div class="flex w-full flex-row justify-between">
+								<p>⭐</p>
+								<p>{rest.ranking}</p>
+							</div>
+							<div class="flex w-full flex-row justify-between">
+								<p>🍝</p>
+								<p>{rest.dishName}</p>
+							</div>
+							<div class="flex w-full flex-row justify-between">
+								<p>📍</p>
+								<p>{rest.location}</p>
+							</div>
+						</div>
+					{/each}
+				</div>
+			{/if}
 		</div>
 	{/if}
 </div>

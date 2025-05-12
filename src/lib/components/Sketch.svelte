@@ -19,7 +19,7 @@
 	let img = $state([]);
 	let imagePositions: { x: number; y: number }[] = $state([]);
 	let maxSteps;
-	let stepDelay = 100;
+	let stepDelay = 50;
 	let startX, startY, controlX1, controlX2, controlY1, controlY2, endX, endY;
 	let lastTime = 0;
 	let currentStep = 0;

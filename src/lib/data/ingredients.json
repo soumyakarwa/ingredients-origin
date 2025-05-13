@@ -726,24 +726,12 @@
 			"label": "Greece",
 			"coords": "Greece"
 		},
-		"text": ["txt tba"],
-		"route": ["Greece"],
+		"text": [
+			"Za’atar’s adoption into Greek cuisine can largely be attributed to the shared botanical and cultural landscapes of the Eastern Mediterranean. The herbs used in za’atar are similar to those already beloved in Greek cooking, such as oregano and thyme. Its rise in Greek food culture is tied to increased cultural contact through trade, migration, and especially the movement of populations between the Levant and Greece in the 19th and 20th centuries. Modern Greek cuisine has embraced za’atar for its bold, aromatic profile, using it in breads, salads, and as a seasoning for meats and vegetables. The blend complements the traditional emphasis on fresh, local herbs and olive oil in Greek food."
+		],
+		"route": ["Turkey", "Greece"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "zataar",
-		"name": "Za'Taar",
-		"country": {
-			"label": "Lebanon",
-			"coords": "Lebanon"
-		},
-		"text": ["txt tba"],
-		"route": ["Lebanon"],
-		"year": {
-			"label": "2025",
+			"label": "1950",
 			"suffix": ""
 		}
 	},
@@ -754,11 +742,15 @@
 			"label": "China",
 			"coords": "Xinjiang"
 		},
-		"text": ["txt tba"],
+		"text": [
+			"Mushrooms have played a central role in Chinese cuisine and traditional medicine for millennia. They symbolize longevity, prosperity, and health. Edible fungi like shiitake (Lentinula edodes), wood ear (Auricularia auricula-judae), enoki, and straw mushrooms have been staples since the Han Dynasty (206 BCE–220 CE), with some records suggesting cultivation as early as the Song Dynasty (960–1279 CE).",
+			"Mushrooms were largely native and cultivated domestically, but foreign fungal species (like truffles) and techniques were introduced through the Silk Road, which connected China to Central Asia, the Middle East, and Europe (Spengler, 2020; Van Wyk, 2014). The Silk Road was the major corridor where dried mushrooms were sometimes traded along with medicinal herbs and spices",
+			"Mushrooms became highly esteemed for their umami flavor and health benefits, integrating seamlessly into soups, braises, and stir-fries. As Chinese diaspora communities spread, mushroom consumption was carried globally"
+		],
 		"route": ["China"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
+			"label": "206",
+			"suffix": "B.C."
 		}
 	},
 	{
@@ -768,24 +760,13 @@
 			"label": "France",
 			"coords": "France"
 		},
-		"text": ["txt tba"],
-		"route": ["France"],
+		"text": [
+			"Mushrooms are a cornerstone of French gastronomy, admired for their texture, aroma, and ability to enhance sauces and meat dishes. They are prominently featured in dishes such as coq au vin, bœuf bourguignon, duxelles, and numerous sauces. French culinary culture elevates foraging and cultivating mushrooms into an art form. In fact, France was the first country to cultivate mushrooms commercially, with champignon de Paris (white button mushrooms) famously grown in the limestone quarries of Paris in the 17th century.",
+			"Wild mushrooms were foraged and consumed in France since ancient times. Roman culinary traditions (with influences from Greece and Asia Minor) brought awareness of their culinary value. However, the first formal cultivation of mushrooms occurred in France in the 1650s under Louis XIV’s gardener, La Quintinie."
+		],
+		"route": ["Italy", "Spain", "France", "Austria"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "mushroom",
-		"name": "Mushroom",
-		"country": {
-			"label": "South Korea",
-			"coords": "South Korea"
-		},
-		"text": ["txt tba"],
-		"route": ["South Korea"],
-		"year": {
-			"label": "2025",
+			"label": "1650",
 			"suffix": ""
 		}
 	},
@@ -796,10 +777,14 @@
 			"label": "Japan",
 			"coords": "Japan"
 		},
-		"text": ["txt tba"],
+		"text": [
+			"In Japan, mushrooms have long been revered. Ancient foragers prized matsutake and shiitake for their deep aroma and symbolic ties to longevity and purity . By the Edo period (1603–1868), dried mushrooms became popular in city markets like Edo (now Tokyo), and local cultivation of shiitake on oak logs began.",
+			"Japan’s mountainous landscape provided many edible fungi, so little international trade of mushrooms was needed. However, trade links with China and Korea (via the East Asian maritime routes) influenced early botanical exchanges and cultivation methods. Stops along this network included Shanghai, Busan, and Nagasaki, Japan’s main international port for centuries.",
+			"In modern times, Japan perfected controlled mushroom cultivation, especially of shiitake and enoki. Mushrooms became core to washoku, Japan’s traditional cuisine, valued for texture, umami, and nutritional benefits."
+		],
 		"route": ["Japan"],
 		"year": {
-			"label": "2025",
+			"label": "1603",
 			"suffix": ""
 		}
 	},
@@ -810,22 +795,11 @@
 			"label": "Mexico",
 			"coords": "Mexico"
 		},
-		"text": ["txt tba"],
+		"text": [
+			"Long before European contact, mushrooms were already deeply rooted in Mexican culture. Indigenous peoples like the Aztecs and Zapotecs foraged wild mushrooms, especially during the rainy season. They were eaten, used in rituals, and even depicted in pre-Columbian art. One unique fungus, huitlacoche (corn smut), was and still is prized in Mexico for its earthy, smoky flavor. While Europeans tried to eliminate it as a crop disease, Mexicans embraced it as a delicacy.",
+			"Most edible mushrooms in Mexico were locally harvested. There’s no strong evidence that mushrooms were traded into Mexico via international routes. The rich biodiversity of Mexican forests, especially in Oaxaca and Puebla, provided more than enough. However, after colonization, Spanish botanical knowledge and European mushroom cultivation techniques may have influenced some practices. Today, mushrooms in Mexican food reflect this blend of wild tradition and agricultural knowledge. They appear in tamales, soups, and tacos, continuing a legacy of both everyday use and cultural reverence."
+		],
 		"route": ["Mexico"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "mushroom",
-		"name": "Mushroom",
-		"country": {
-			"label": "Thailand",
-			"coords": "Thailand"
-		},
-		"text": ["txt tba"],
-		"route": ["Thailand"],
 		"year": {
 			"label": "2025",
 			"suffix": ""
@@ -838,11 +812,15 @@
 			"label": "Greece",
 			"coords": "Greece"
 		},
-		"text": ["txt tba"],
+		"text": [
+			"Feta is more than just cheese in Greece; it’s a symbol of tradition, identity, and survival. Its roots stretch back to ancient times. Historians believe that a form of brined white cheese, much like today’s feta, was already being crafted in Greece as early as the 8th century BCE. Homer even mentions a cheese that resembles feta in The Odyssey, where Polyphemus stores it in animal-skin bags.",
+			"The reason feta became central to Greek cuisine is simple: it fit perfectly into the rugged landscape and way of life. Greece’s rocky terrain was better suited to sheep and goats than cows, and feta is traditionally made from their milk. The saltiness and brine preservation meant it could endure the hot Mediterranean climate, making it a reliable food source in villages and islands where fresh food could be scarce.",
+			"As for trade, feta was rarely imported into Greece; instead, it was an export product. The technique of making brined cheeses may have traveled through the Eastern Mediterranean via ancient sea routes. Merchants sailing from Egypt, Phoenicia (modern Lebanon), and Crete brought knowledge of preserving foods in brine. However, feta as we know it became uniquely Greek. Once established in Greece, it traveled outward along Byzantine trade routes and later Ottoman caravan networks, carried in wooden barrels that spread its fame. Today, feta holds a protected designation of origin (PDO) status in the European Union, solidifying its place as a cornerstone of Greek culinary heritage."
+		],
 		"route": ["Greece"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
+			"label": "8",
+			"suffix": "B.C."
 		}
 	},
 	{
@@ -852,10 +830,14 @@
 			"label": "India",
 			"coords": "India"
 		},
-		"text": ["txt tba"],
-		"route": ["India"],
+		"text": [
+			"Chilies are now the fiery heart of Indian cuisine, but they’re surprisingly recent guests. Before chilies, Indian food relied on pepper, ginger, mustard seeds, and long pepper for heat. It wasn’t until the early 16th century, after the arrival of Portuguese traders on India’s western coast, that chilies entered the Indian kitchen. Vasco da Gama’s 1498 voyage to Calicut (now Kozhikode) opened the gateway.",
+			"Chilies came from the Americas, specifically from what is now Mexico and Central America. They journeyed across the Atlantic with Spanish and Portuguese explorers, who spread them to Africa and Asia. Portuguese ships brought them to the bustling spice markets of Goa and Kerala. From there, Indian traders, farmers, and cooks quickly adopted them. The reason? Chilies thrived in India’s hot climate, grew faster than native peppers, and packed intense flavor.",
+			"By the 17th century, chilies had spread through India along ancient inland trade routes, woven into curries, pickles, and chutneys. Their versatility and boldness matched the spirit of Indian cooking, and they became an essential ingredient in both royal kitchens and humble village meals. Today, chilies are indispensable in Indian cuisine, defining regional tastes from the searing heat of Rajasthani dishes to the bold flavors of Andhra curries."
+		],
+		"route": ["Mexico", "Portugal", "Spain", "India"],
 		"year": {
-			"label": "2025",
+			"label": "1498",
 			"suffix": ""
 		}
 	},
@@ -866,24 +848,14 @@
 			"label": "Thailand",
 			"coords": "Thailand"
 		},
-		"text": ["txt tba"],
-		"route": ["Thailand"],
+		"text": [
+			"Chilies are at the core of Thai cuisine’s bold, layered flavors, but they were not native to Thailand. Originally, Thai cooks used peppercorns and galangal for heat. That changed in the 16th and 17th centuries, when Portuguese traders brought chilies from the Americas, mainly from Mexico and Central America, through trade routes linking Goa (India), Malacca (Malaysia), and Ayutthaya, the Siamese capital at the time.",
+			"The fertile lands and humid climate of Thailand proved perfect for chili cultivation. Farmers embraced the plant for its resilience and productivity. Thai cooks quickly recognized how chilies could balance sweet, salty, sour, and bitter tastes—a cornerstone of Thai food philosophy. By the late Ayutthaya period (1600s–1700s), chilies were common in royal and street cooking alike.",
+			"From the searing heat of som tum (green papaya salad) to the complex depth of tom yum soup, chilies became the spark that defines Thai food’s vibrant intensity. They symbolize strength, excitement, and even good luck in Thai culture today."
+		],
+		"route": ["Mexico", "Portugal", "India", "Malaysia", "Thailand"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "halloumi",
-		"name": "Halloumi",
-		"country": {
-			"label": "Morocco",
-			"coords": "Morocco"
-		},
-		"text": ["txt tba"],
-		"route": ["Morocco"],
-		"year": {
-			"label": "2025",
+			"label": "1550",
 			"suffix": ""
 		}
 	},
@@ -894,10 +866,13 @@
 			"label": "Turkey",
 			"coords": "Turkey"
 		},
-		"text": ["txt tba"],
+		"text": [
+			"Halloumi, known as hellim in Turkish, holds a beloved spot especially in the cuisine of Turkish Cypriots and the Aegean coastal regions of Turkey. Its origins lie in Cyprus, where it has been made for centuries, possibly since the Byzantine era. The Ottoman Empire, which included Cyprus from 1571 to 1878, played a key role in introducing halloumi to Turkey. As Cypriots moved within the empire, they brought hellim with them. There was no complex trade route; it was more a movement of people and their food traditions across the eastern Mediterranean. The cheese traveled from Cyprus to Turkish ports like Antalya and Mersin, slowly becoming familiar in local markets.",
+			"In Turkey, hellim fits well with the culture of grilled and fresh foods. Its high melting point makes it ideal for grilling or frying, served with olives, tomatoes, and fresh bread. While not as historically central as beyaz peynir (white cheese), hellim has become a favorite for breakfasts and meze spreads along the Aegean and Mediterranean coasts. Today, it bridges cultures, reminding people of shared histories across the warm waters of the Mediterranean."
+		],
 		"route": ["Turkey"],
 		"year": {
-			"label": "2025",
+			"label": "1571",
 			"suffix": ""
 		}
 	},
@@ -908,38 +883,14 @@
 			"label": "Georgia",
 			"coords": "Georgia"
 		},
-		"text": ["txt tba"],
+		"text": [
+			"Imeruli cheese is a cornerstone of Georgian food, especially in the Imereti region from which it takes its name. Made from cow’s milk, this fresh, slightly salty cheese has been part of Georgian rural life for centuries. It likely dates back to ancient times when pastoral communities in the Caucasus Mountains relied on dairy for sustenance.",
+			"Imeruli wasn’t traded into Georgia; it was born from local needs and traditions. Georgia’s landscape, with its lush pastures and temperate climate, made it ideal for dairy farming. Villagers developed Imeruli as a simple, versatile cheese that could be eaten fresh, crumbled, or melted. Its production method—heating and stretching curds—was passed down through generations, deeply woven into the fabric of family and community life.",
+			"Imeruli found its place in Georgian cuisine primarily as the filling for imeruli khachapuri, a cheese-stuffed bread that’s now a national dish. The mild flavor of the cheese complements the rich, doughy bread, creating a comfort food cherished across the country. Today, Imeruli remains a symbol of Georgia’s agricultural heritage and its enduring village food culture."
+		],
 		"route": ["Georgia"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "jicama",
-		"name": "Jicama",
-		"country": {
-			"label": "China",
-			"coords": "China"
-		},
-		"text": ["txt tba"],
-		"route": ["China"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "jicama",
-		"name": "Jicama",
-		"country": {
-			"label": "Taiwan",
-			"coords": "Taiwan"
-		},
-		"text": ["txt tba"],
-		"route": ["Taiwan"],
-		"year": {
-			"label": "2025",
+			"label": "",
 			"suffix": ""
 		}
 	},
@@ -950,11 +901,15 @@
 			"label": "South Korea",
 			"coords": "South Korea"
 		},
-		"text": ["txt tba"],
+		"text": [
+			"Kimchi is the soul of Korean food. Its origins go back over 2,000 years, when early Koreans began fermenting vegetables with salt to preserve them through harsh winters. Originally, kimchi was simple: mostly radishes or cucumbers, with salt and little seasoning.",
+			"The major shift came after the 16th century, when Portuguese traders, by way of Japan and China, introduced chili peppers from the Americas to Korea. These chilies transformed kimchi into the spicy, vibrant dish known today. Chili peppers traveled from Mexico across the Pacific, through Manila (Philippines), and entered East Asia along the maritime Silk Road before making their way to the Korean peninsula.",
+			"Kimchi became central to Korean identity because it was practical and communal. Fermenting large batches brought families and neighbors together in the yearly tradition of gimjang. It provided essential nutrients in winter and symbolized resourcefulness and unity.Today, there are hundreds of regional and seasonal varieties, and kimchi remains a daily essential on Korean tables, recognized globally as Korea’s signature food."
+		],
 		"route": ["South Korea"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
+			"label": "1000",
+			"suffix": "B.C."
 		}
 	},
 	{
@@ -964,81 +919,16 @@
 			"label": "China",
 			"coords": "China"
 		},
-		"text": ["txt tba"],
+		"text": [
+			"The lotus root, or lián’ǒu (莲藕), holds a quiet but firm place in the heart of Chinese cuisine and culture. Its journey began thousands of years ago along the muddy banks of lakes and rivers in what is now central and eastern China. Archaeological evidence from the Neolithic period, particularly from the Hemudu and Liangzhu cultures (circa 5000–2000 BCE), shows the domestication of the lotus plant.",
+			"Unlike spices or silks that traveled the winding routes of the Silk Road, lotus root was not an exotic import. It is native to Asia, particularly China and India. However, cultural exchanges along the ancient trade routes did help spread cultivation techniques and the plant's symbolic meanings across Asia. There’s little evidence that the lotus root itself was traded into China; instead, it spread outward from China to Korea, Japan, and Southeast Asia.",
+			"The root's rise in Chinese cuisine is linked with its dual nature: practicality and philosophy. Its crisp texture and mild sweetness made it an excellent ingredient in soups, stir-fries, and desserts. Beyond food, its hollow structure, symbolizing openness and purity, and its ability to grow beautifully from the mud without being tainted, made it a powerful Buddhist and Confucian symbol. Ancient texts from the Han Dynasty (206 BCE – 220 CE) already mention the lotus in poetry and diet therapy.",
+			"Thus, lotus root became deeply woven into the culinary and spiritual fabric of China. It wasn’t an item of foreign trade, but rather an ancient native that became a staple through cultural reverence and practical nourishment."
+		],
 		"route": ["China"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "almond",
-		"name": "Almond",
-		"country": {
-			"label": "Turkey",
-			"coords": "Turkey"
-		},
-		"text": ["txt tba"],
-		"route": ["Turkey"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "mint",
-		"name": "Mint",
-		"country": {
-			"label": "India",
-			"coords": "India"
-		},
-		"text": ["txt tba"],
-		"route": ["India"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "mint",
-		"name": "Mint",
-		"country": {
-			"label": "Lebanon",
-			"coords": "Lebanon"
-		},
-		"text": ["txt tba"],
-		"route": ["Lebanon"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "mint",
-		"name": "Mint",
-		"country": {
-			"label": "Spain",
-			"coords": "Spain"
-		},
-		"text": ["txt tba"],
-		"route": ["Spain"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "mint",
-		"name": "Mint",
-		"country": {
-			"label": "Syria",
-			"coords": "Syria"
-		},
-		"text": ["txt tba"],
-		"route": ["Syria"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
+			"label": "4000",
+			"suffix": "B.C."
 		}
 	},
 	{
@@ -1048,8 +938,12 @@
 			"label": "India",
 			"coords": "India"
 		},
-		"text": ["txt tba"],
-		"route": ["India"],
+		"text": [
+			"Paneer, the fresh, non-melting cheese of India, has long been a quiet cornerstone of Indian vegetarian cooking. Its origins are debated, but most historians agree it likely arrived in India between the 12th and 16th centuries, brought by Persian and Afghan travelers and traders during the Delhi Sultanate and Mughal periods. The concept of curdling milk with acid (instead of fermenting it into yogurt) was foreign to ancient Indian dairying, suggesting that paneer’s method of preparation was introduced from Central Asia or Persia.",
+			"Paneer’s journey probably began in the Iranian plateau, where acid-set cheeses were common. It would have moved eastward along overland trade routes, including the famed Silk Road extensions and smaller caravan networks, passing through Persia, Afghanistan, and into northern India. There were no famous maritime stops; it traveled with armies, traders, and migrants.",
+			"Once in India, paneer found a natural home. Its soft, adaptable texture and mild taste suited the rich, spiced gravies of northern India, especially among vegetarian communities like Hindus and Jains who avoided animal rennet. Paneer became a protein substitute, earning its place in royal kitchens under the Mughals and later in home kitchens across Punjab and Bengal. Today, paneer symbolizes comfort and versatility in Indian cooking—from the royal shahi paneer to the humble paneer bhurji—its place secure as both a cultural and culinary mainstay."
+		],
+		"route": ["Iran", "Afghanistan", "India"],
 		"year": {
 			"label": "2025",
 			"suffix": ""
@@ -1062,80 +956,14 @@
 			"label": "Italy",
 			"coords": "Italy"
 		},
-		"text": ["txt tba"],
+		"text": [
+			"Parmesan, or Parmigiano Reggiano, is one of Italy’s proudest culinary creations. Its story began in the Middle Ages, around the 12th century, in the fertile Po Valley of northern Italy, particularly in the provinces of Parma, Reggio Emilia, Modena, and parts of Bologna and Mantua. Monks in Benedictine monasteries first crafted the cheese as a way to preserve surplus milk. They developed the hard, long-aging cheese we now know as parmesan.",
+			"Unlike ingredients carried into Italy from abroad, parmesan was born on Italian soil. It was never an import but became a highly valued export. Its durability and intense flavor made it perfect for trade. By the Renaissance, parmesan wheels were being transported along land and river routes across Europe, often traveling down the Po River and onto trading hubs like Venice and Genoa. From there, it reached France, Spain, and even England.",
+			"Parmesan became entwined with Italian culture because of its versatility and status. It was prized at noble banquets and in the kitchens of commoners alike. Its ability to enhance pasta, soups, and risottos gave it a permanent role in Italian cuisine. Writers like Boccaccio in the 14th century even referenced it, proof of its early cultural imprint. Today, strict regulations protect its name and production, keeping the tradition alive. Parmesan remains not just a cheese but a symbol of Italian culinary heritage."
+		],
 		"route": ["Italy"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "parsley",
-		"name": "Parsley",
-		"country": {
-			"label": "United States",
-			"coords": "New York"
-		},
-		"text": ["txt tba"],
-		"route": ["United States"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "parsley",
-		"name": "Parsley",
-		"country": {
-			"label": "France",
-			"coords": "France"
-		},
-		"text": ["txt tba"],
-		"route": ["France"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "parsley",
-		"name": "Parsley",
-		"country": {
-			"label": "Italy",
-			"coords": "Italy"
-		},
-		"text": ["txt tba"],
-		"route": ["Italy"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "pecorino",
-		"name": "Pecorino",
-		"country": {
-			"label": "Italy",
-			"coords": "Italy"
-		},
-		"text": ["txt tba"],
-		"route": ["Italy"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "plantain",
-		"name": "Plantain",
-		"country": {
-			"label": "Portugal",
-			"coords": "Portugal"
-		},
-		"text": ["txt tba"],
-		"route": ["Portugal"],
-		"year": {
-			"label": "2025",
+			"label": "1100",
 			"suffix": ""
 		}
 	},
@@ -1146,10 +974,14 @@
 			"label": "Guatemala",
 			"coords": "Guatemala"
 		},
-		"text": ["txt tba"],
-		"route": ["Guatemala"],
+		"text": [
+			"Plantains are a quiet staple in Guatemalan kitchens, showing up fried, boiled, mashed, or stuffed. But they didn’t start there. Plantains are native to Southeast Asia and made their way to Central America through complex trade routes. Spanish explorers and traders brought them across the Atlantic during the early days of colonization in the 1500s, likely stopping along the coasts of Africa, where plantains had already spread and become a dietary mainstay.",
+			"The transatlantic voyage turned plantains into a global traveler. Ships carrying supplies for colonies introduced them to the Caribbean and Mesoamerica, including the coasts of present-day Guatemala. Once planted, they thrived in the tropical lowlands of Guatemala, quickly becoming a reliable food source.",
+			"In Guatemalan cuisine, plantains found their place because of their versatility and nourishment. They became beloved in both indigenous and mestizo cooking. Dishes like rellenitos de plátano (sweet plantain stuffed with black beans) and fried plantains served with crema became household traditions. Their rich flavor and filling quality made them essential in times of scarcity and celebration alike. Today, plantains remain woven into daily life and festive meals, a symbol of adaptation and cultural blending in Guatemalan food history."
+		],
+		"route": ["Portugal", "Guatemala"],
 		"year": {
-			"label": "2025",
+			"label": "1500",
 			"suffix": ""
 		}
 	},
@@ -1160,164 +992,14 @@
 			"label": "United States",
 			"coords": "Louisiana"
 		},
-		"text": ["txt tba"],
-		"route": ["United States"],
+		"text": [
+			"Polenta, a dish of boiled cornmeal, holds a subtle but lasting place in American food, especially in regions influenced by Italian immigration. Its roots trace back to northern Italy, where it was originally made from grains like millet and spelt. After the arrival of maize from the Americas in the 16th century, Italians transformed polenta into the cornmeal dish known today.",
+			"The story came full circle when Italian immigrants brought polenta back to the U.S. in the late 19th and early 20th centuries. Many settled in cities like New York, Chicago, and San Francisco. They carried family recipes and traditions, making polenta a comforting, inexpensive staple in their new homes. There were no major “trade stops” for polenta itself; it was maize—native to the Americas—that had first traveled to Europe and returned in the form of this prepared dish.",
+			"In the American South, polenta found a cousin in grits, both sharing maize as their base. In modern American cuisine, especially in upscale dining and farm-to-table movements, polenta has gained fresh appreciation as a canvas for rich sauces, vegetables, and meats."
+		],
+		"route": ["Italy", "United States"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "potato",
-		"name": "Potato",
-		"country": {
-			"label": "United States",
-			"coords": "United States"
-		},
-		"text": ["txt tba"],
-		"route": ["United States"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "potato",
-		"name": "Potato",
-		"country": {
-			"label": "India",
-			"coords": "Mumbai"
-		},
-		"text": ["txt tba"],
-		"route": ["India"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "potato",
-		"name": "Potato",
-		"country": {
-			"label": "Italy",
-			"coords": "Italy"
-		},
-		"text": ["txt tba"],
-		"route": ["Italy"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "potato",
-		"name": "Potato",
-		"country": {
-			"label": "Spain",
-			"coords": "Spain"
-		},
-		"text": ["txt tba"],
-		"route": ["Spain"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "radish",
-		"name": "Radish",
-		"country": {
-			"label": "United States",
-			"coords": "United States"
-		},
-		"text": ["txt tba"],
-		"route": ["United States"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "radish",
-		"name": "Radish",
-		"country": {
-			"label": "India",
-			"coords": "India"
-		},
-		"text": ["txt tba"],
-		"route": ["India"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "radish",
-		"name": "Radish",
-		"country": {
-			"label": "Israel",
-			"coords": "Israel"
-		},
-		"text": ["txt tba"],
-		"route": ["Israel"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "sesame",
-		"name": "Sesame",
-		"country": {
-			"label": "Greece",
-			"coords": "Greece"
-		},
-		"text": ["txt tba"],
-		"route": ["Greece"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "sesame",
-		"name": "Sesame",
-		"country": {
-			"label": "Japan",
-			"coords": "Japan"
-		},
-		"text": ["txt tba"],
-		"route": ["Japan"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "sesame",
-		"name": "Sesame",
-		"country": {
-			"label": "South Korea",
-			"coords": "South Korea"
-		},
-		"text": ["txt tba"],
-		"route": ["South Korea"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "sesame",
-		"name": "Sesame",
-		"country": {
-			"label": "Turkey",
-			"coords": "Turkey"
-		},
-		"text": ["txt tba"],
-		"route": ["Turkey"],
-		"year": {
-			"label": "2025",
+			"label": "1500",
 			"suffix": ""
 		}
 	},
@@ -1328,11 +1010,15 @@
 			"label": "Japan",
 			"coords": "Japan"
 		},
-		"text": ["txt tba"],
+		"text": [
+			"Seaweed, or nori, kombu, and wakame, has been part of Japanese food and culture for over 1,000 years. Japan’s long coastline and island geography made seaweed an abundant, natural resource. Ancient records like the Nihon Shoki (compiled in 720 CE) mention seaweed as a valuable tribute item and food source.",
+			"Seaweed was never traded into Japan; it was native to its shores. Instead, the Japanese were among the first to develop methods for cultivating and drying seaweed for storage and cooking. By the Edo period (1603–1868), nori farming using bamboo racks became common in Edo (modern Tokyo), making it accessible to commoners.",
+			"Seaweed became deeply integrated into Japanese cuisine and culture because of its versatility and health benefits. Kombu was the base of dashi, the essential broth in many dishes. Nori wrapped sushi and rice balls, while wakame added texture to soups and salads. It was both a daily staple and a ceremonial food, appreciated for its umami flavor and nutritional value."
+		],
 		"route": ["Japan"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
+			"label": "720",
+			"suffix": "B.C."
 		}
 	},
 	{
@@ -1356,10 +1042,14 @@
 			"label": "Italy",
 			"coords": "Italy"
 		},
-		"text": ["txt tba"],
+		"text": [
+			"Truffles, the prized underground fungi, have held a revered place in Italian food for centuries. The earliest records of their use in Italy date back to Roman times, around the 1st century CE. Roman naturalists like Pliny the Elder wrote about truffles, though their true culinary fame blossomed much later in the regions of Piedmont, Umbria, and Tuscany.",
+			"Truffles were not traded into Italy; they are native to European forests. Growing near oak, hazel, and beech trees, they were foraged by locals long before they became a delicacy. No long trade routes or maritime journeys brought truffles to Italy; they were quietly harvested in rural areas and gradually became known across Europe.",
+			"Their intense, earthy aroma and rarity elevated truffles to luxury status, especially in the Renaissance courts. By the 18th and 19th centuries, Italian white truffles from Alba and black truffles from Norcia were prized at royal tables across Europe. Italian cuisine embraced truffles not as the centerpiece, but as a subtle enhancer—grated over pasta, risotto, and eggs."
+		],
 		"route": ["Italy"],
 		"year": {
-			"label": "2025",
+			"label": "100",
 			"suffix": ""
 		}
 	},
@@ -1370,39 +1060,15 @@
 			"label": "China",
 			"coords": "Sichuan"
 		},
-		"text": ["txt tba"],
+		"text": [
+			"Sichuan peppercorns, or huājiāo (花椒), are a cornerstone of Sichuan cuisine, famous for their unique numbing sensation known as má. Unlike black pepper or chili, they come from the husks of the prickly ash tree, native to China. Their use in Chinese cooking dates back over 2,000 years, with mentions in the ancient Classic of Poetry (Shijing).",
+			"Sichuan peppercorns were not traded into China. They grew wild in the mountainous regions of what is now Sichuan province and neighboring areas. Their spread was local, carried by farmers and cooks rather than international merchants.The peppercorns became integral to the Sichuan culinary philosophy of balancing flavors: hot, sour, sweet, bitter, salty, and numbing. When chili peppers arrived from the Americas in the 16th century via the maritime Silk Road, the fiery heat of chili paired perfectly with the má of Sichuan peppercorns, giving birth to the signature málà (numbing-spicy) taste.",
+			"Today, Sichuan peppercorns are inseparable from dishes like mapo tofu and kung pao chicken, embodying the bold, layered flavors that define Sichuan cooking."
+		],
 		"route": ["China"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "spinach",
-		"name": "Spinach",
-		"country": {
-			"label": "India",
-			"coords": "Kerala"
-		},
-		"text": ["txt tba"],
-		"route": ["India"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "spinach",
-		"name": "Spinach",
-		"country": {
-			"label": "Taiwan",
-			"coords": "Taiwan"
-		},
-		"text": ["txt tba"],
-		"route": ["Taiwan"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
+			"label": "1000",
+			"suffix": "B.C"
 		}
 	},
 	{
@@ -1412,95 +1078,16 @@
 			"label": "United States",
 			"coords": "United States"
 		},
-		"text": ["txt tba"],
-		"route": ["United States"],
+		"text": [
+			"Squash holds a deep-rooted place in American food history. Long before European settlers arrived, Indigenous peoples across the Americas cultivated squash as one of the \"Three Sisters\"—a trio of corn, beans, and squash that sustained entire civilizations. Archaeological evidence shows squash being grown in present-day Mexico over 8,000 years ago, making it one of the oldest known cultivated crops. From there, its use spread northward along ancient trade routes into what is now the United States.",
+			"By the time Europeans reached the Americas in the 15th and 16th centuries, squash had already become a dietary staple for many Native tribes, including the Iroquois, Cherokee, and Pueblo. Its nutritional value and versatility—ranging from tender summer varieties to hardy winter squashes—made it essential. When settlers arrived, Native Americans taught them how to grow and cook squash, integrating it into colonial diets. This act helped early colonists survive harsh winters.",
+			"Unlike some ingredients that were imported, squash was a native crop that became a gift from Indigenous agriculture to the wider world. However, after the Columbian Exchange began, seeds of American squash varieties traveled to Europe, Africa, and Asia. Squash took new forms abroad but remained firmly entrenched in American soil and tradition.",
+			"Today, squash is woven into American food culture: from butternut squash soups and pumpkin pies at Thanksgiving to roasted zucchini in summer barbecues. Its enduring presence is a testament to Native knowledge and resilience, and a quiet reminder of one of the first true American foods."
+		],
+		"route": ["Mexico", "United States"],
 		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "squash",
-		"name": "Squash",
-		"country": {
-			"label": "Guatemala",
-			"coords": "Guatemala"
-		},
-		"text": ["txt tba"],
-		"route": ["Guatemala"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "squash",
-		"name": "Squash",
-		"country": {
-			"label": "Portugal",
-			"coords": "Portugal"
-		},
-		"text": ["txt tba"],
-		"route": ["Portugal"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "tofu",
-		"name": "Tofu",
-		"country": {
-			"label": "China",
-			"coords": "Xinjiang"
-		},
-		"text": ["txt tba"],
-		"route": ["China"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "tofu",
-		"name": "Tofu",
-		"country": {
-			"label": "Japan",
-			"coords": "Japan"
-		},
-		"text": ["txt tba"],
-		"route": ["Japan"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "tofu",
-		"name": "Tofu",
-		"country": {
-			"label": "South Korea",
-			"coords": "South Korea"
-		},
-		"text": ["txt tba"],
-		"route": ["South Korea"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "tofu",
-		"name": "Tofu",
-		"country": {
-			"label": "Singapore",
-			"coords": "Singapore"
-		},
-		"text": ["txt tba"],
-		"route": ["Singapore"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
+			"label": "6000",
+			"suffix": "B.C."
 		}
 	},
 	{
@@ -1510,10 +1097,14 @@
 			"label": "Japan",
 			"coords": "Japan"
 		},
-		"text": ["txt tba"],
-		"route": ["Japan"],
+		"text": [
+			"Squash, known in Japan as kabocha, holds a special place in Japanese cooking, but it is not native to the islands. It arrived in Japan in the mid-1500s, during the Age of Exploration. Portuguese traders brought the squash from Cambodia (hence the name kabocha, a variation of \"Cambodia\") via their stops through India and Southeast Asia. The Portuguese made landfall at the port of Nagasaki, and with them came this curious, sweet-fleshed gourd.",
+			"The Japanese quickly embraced kabocha for its ability to store well through winter, its dense nutrition, and its rich, sweet flavor. It became an important ingredient in temple vegetarian cooking (shōjin ryōri), where monks valued its satisfying texture without the use of animal products. Over time, kabocha made its way into home kitchens and traditional dishes.",
+			"Today, kabocha features in stews like nimono (simmered vegetables), tempura, and seasonal soups. Its versatility and hearty nature also led it to symbolize good fortune and health, especially during the cold months. While kabocha came from abroad, Japan made it its own, weaving it tightly into its food traditions and seasonal celebrations."
+		],
+		"route": ["Cambodia", "India", "Japan"],
 		"year": {
-			"label": "2025",
+			"label": "1550",
 			"suffix": ""
 		}
 	}

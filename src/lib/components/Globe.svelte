@@ -221,6 +221,7 @@
 				}}
 			></MyButton>
 		</div>
+		<div class="absolute top-0 left-0"><p class="body">DRAG TO ROTATE</p></div>
 	</div>
 	<div class="h-full w-1/2 self-center" style:height={`${height}px`}>
 		<InfoTooltip

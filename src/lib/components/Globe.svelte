@@ -211,7 +211,7 @@
 		</svg>
 		<div class="absolute bottom-0 left-0">
 			<MyButton
-				label={'Rotate'}
+				label={'Auto Rotate'}
 				state={!letRotate ? 'default' : 'active'}
 				aria-label={'button to drag and rotate'}
 				onClickFn={() => {

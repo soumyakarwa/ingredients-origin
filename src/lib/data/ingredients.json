@@ -1025,20 +1025,6 @@
 		"id": "truffle",
 		"name": "Truffle",
 		"country": {
-			"label": "France",
-			"coords": "France"
-		},
-		"text": ["txt tba"],
-		"route": ["France"],
-		"year": {
-			"label": "2025",
-			"suffix": ""
-		}
-	},
-	{
-		"id": "truffle",
-		"name": "Truffle",
-		"country": {
 			"label": "Italy",
 			"coords": "Italy"
 		},
@@ -1086,7 +1072,7 @@
 		],
 		"route": ["Mexico", "United States"],
 		"year": {
-			"label": "6000",
+			"label": "",
 			"suffix": "B.C."
 		}
 	},

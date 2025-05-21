@@ -90,6 +90,7 @@
 		})
 		.on('end', () => {
 			if (activeIndex == null) {
+				// letRotate = true;
 				autoRotate();
 			}
 		});
@@ -118,7 +119,12 @@
 
 	$effect(() => {
 		ingredientId = activeIndex ? ingredients[activeIndex].id : '';
+		if (letRotate) {
+			autoRotate();
+		}
 	});
+
+	$inspect(letRotate);
 </script>
 
 <div class="flex w-full flex-row gap-2">

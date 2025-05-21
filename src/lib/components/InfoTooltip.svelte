@@ -23,10 +23,7 @@
 	let { ingredient, activeIndex = $bindable(), value = $bindable() }: Props = $props();
 
 	let storyActive = $state(true);
-	let containerHeight = $state(0);
-	let titleHeight = $state(0);
-
-	let colHeight = $derived(containerHeight - titleHeight);
+	let colHeight = $state(0);
 
 	let selectedRestaurants = $derived(
 		activeIndex != null
@@ -52,21 +49,18 @@
 
 		restaurantInformation = currentInfo;
 	});
-
-	$inspect(restaurantInformation);
 </script>
 
 <div
 	class={[
 		'border-back relative z-10 flex h-full w-full items-start justify-center rounded-none border-1 bg-yellow-100 px-3 py-3 shadow-sm'
 	]}
-	bind:clientHeight={containerHeight}
 	transition:fade={{ duration: 300, delay: 100, easing: linear }}
 >
 	{#if activeIndex == null}
 		<div
 			class={[
-				'flex w-full flex-col justify-start gap-6 transition-all duration-300 ease-linear',
+				'flex h-full w-full flex-col justify-start gap-6 overflow-hidden transition-all duration-300 ease-linear',
 				activeIndex == null ? 'opacity-100' : 'opacity-0'
 			]}
 		>
@@ -74,7 +68,7 @@
 				<div class="title">Tatva</div>
 				<div class="heading-1">Choose An Ingredient</div>
 			</div>
-			<div class="body font-sans tracking-normal text-black">
+			<div class="body flex-1 overflow-y-auto font-sans tracking-normal text-black">
 				If we look back in history, there are many moments we could point to and say, “Ah, yes, this
 				is why it happened.” For instance, the immediate cause of the First World War was the
 				assassination of Archduke Franz Ferdinand, heir to the Austro-Hungarian throne. Of course,
@@ -89,80 +83,78 @@
 				and North America but readily accepted in Italy. Why? What was it about the sour fruit and about
 				Italy at that time that made the ingredient and the culture click together? What other secrets
 				lie hidden in the intertwined history of food and culture?
+				<br /><br />
+				So, I’ve created this website to explore the origins of ingredients. Each ingredient I've chosen
+				is through the lens of my dining experiences since moving to the U.S. Click on an ingredient
+				to learn more about its story!
 			</div>
 		</div>
 	{:else}
 		<div class="flex h-full w-full flex-col items-start gap-6">
-			<!-- <button
-				class="heading-2 absolute top-0 right-0 cursor-pointer text-black"
-				onclick={() => {
-					value = 'inactive';
-					activeIndex = null;
-				}}
-				aria-label="Close tooltip"
-			>
-				X
-			</button> -->
-			<div class="h-max-content flex w-full flex-col items-start" bind:clientHeight={titleHeight}>
-				<p class="title">{ingredient.name}</p>
-				{#if ingredient.year.label != ''}
-					<p class="heading-1">
-						{ingredient.country.label} ~ <NumberFlow
-							plugins={[continuous]}
-							value={activeIndex != null ? ingredient.year.label : '2025'}
-							format={{ notation: 'standard', useGrouping: false }}
-							suffix={activeIndex != null ? ingredient.year.suffix : ''}
-						/>
-					</p>
+			<div class="h-max-content flex w-full flex-col gap-3">
+				<div class="flex flex-col">
+					<p class="title">{ingredient.name}</p>
+					{#if ingredient.year.label != ''}
+						<p class="heading-1">
+							{ingredient.country.label} ~ <NumberFlow
+								plugins={[continuous]}
+								value={activeIndex != null ? ingredient.year.label : '2025'}
+								format={{ notation: 'standard', useGrouping: false }}
+								suffix={activeIndex != null ? ingredient.year.suffix : ''}
+							/>
+						</p>
+					{:else}
+						<p class="heading-1">{ingredient.country.label} ~ YEAR UNKNOWN</p>
+					{/if}
+				</div>
+				<div class="flex w-full flex-row items-center gap-4">
+					<Button
+						label={'ORIGIN'}
+						state={storyActive ? 'active' : 'default'}
+						onClickFn={() => (storyActive = true)}
+						ariaLabel={'Show Origin Story'}
+					/>
+					<Button
+						label={'MY EXPERIENCES'}
+						state={storyActive ? 'default' : 'active'}
+						onClickFn={() => (storyActive = false)}
+						ariaLabel={'Show My Experiences'}
+					/>
+				</div>
+			</div>
+			<div class="flex min-h-0 flex-1 flex-col" bind:clientHeight={colHeight}>
+				{#if storyActive}
+					<div
+						class="body columns-2 gap-x-8 font-sans tracking-normal text-black"
+						style:column-fill="auto"
+						style:height={`${colHeight}px`}
+					>
+						{#each ingredient.text as t}
+							{t}<br /><br />
+						{/each}
+					</div>
 				{:else}
-					<p class="heading-1">{ingredient.country.label} ~ YEAR UNKNOWN</p>
+					<div class="grid w-full grid-cols-1 gap-y-4 lg:grid-cols-3">
+						{#each restaurantInformation as rest, i}
+							<div class="body flex-grow flex-col gap-0.5 p-2">
+								<p class="w-full self-center uppercase">{rest.name}</p>
+								<div class="flex w-full flex-row justify-between">
+									<p>⭐</p>
+									<p>{rest.ranking}</p>
+								</div>
+								<div class="flex w-full flex-row justify-between">
+									<p>🍝</p>
+									<p>{rest.dishName}</p>
+								</div>
+								<div class="flex w-full flex-row justify-between">
+									<p>📍</p>
+									<p>{rest.location}</p>
+								</div>
+							</div>
+						{/each}
+					</div>
 				{/if}
 			</div>
-			<div class="h-max-content flex w-full flex-row items-center gap-4">
-				<Button
-					label={'ORIGIN'}
-					state={storyActive ? 'active' : 'default'}
-					onClickFn={() => (storyActive = true)}
-					ariaLabel={'Show Origin Story'}
-				/>
-				<Button
-					label={'MY EXPERIENCES'}
-					state={storyActive ? 'default' : 'active'}
-					onClickFn={() => (storyActive = false)}
-					ariaLabel={'Show My Experiences'}
-				/>
-			</div>
-			{#if storyActive}
-				<div
-					class="body columns-2 gap-x-8 font-sans tracking-normal text-black"
-					style:column-fill="auto"
-					style:height={`${colHeight - 40}px`}
-				>
-					{#each ingredient.text as t}
-						{t}<br /><br />
-					{/each}
-				</div>
-			{:else}
-				<div class="grid w-full grid-cols-1 gap-y-4 lg:grid-cols-3">
-					{#each restaurantInformation as rest, i}
-						<div class="body flex-grow flex-col gap-0.5 p-2">
-							<p class="w-full self-center uppercase">{rest.name}</p>
-							<div class="flex w-full flex-row justify-between">
-								<p>⭐</p>
-								<p>{rest.ranking}</p>
-							</div>
-							<div class="flex w-full flex-row justify-between">
-								<p>🍝</p>
-								<p>{rest.dishName}</p>
-							</div>
-							<div class="flex w-full flex-row justify-between">
-								<p>📍</p>
-								<p>{rest.location}</p>
-							</div>
-						</div>
-					{/each}
-				</div>
-			{/if}
 		</div>
 	{/if}
 </div>
